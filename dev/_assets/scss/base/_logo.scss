@@ -1,0 +1,14 @@
+.logo {
+	width: 200px;
+	margin: auto;
+	
+	@include breakpoint(small){
+        position: absolute;
+		top: $ratio#{em};
+		left: $ratio#{em};
+    }
+}
+
+.icon__logo--white {
+	fill: $color__white;
+}

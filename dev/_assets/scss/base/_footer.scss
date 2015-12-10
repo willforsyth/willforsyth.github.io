@@ -1,0 +1,10 @@
+footer {
+	@extend .clearfix;
+}
+
+.ftr {
+	position: absolute;
+	bottom: $ratio#{em};
+	left: 0;
+  	right: 0;
+}

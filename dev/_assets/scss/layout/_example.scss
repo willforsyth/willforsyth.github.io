@@ -1,0 +1,9 @@
+
+.css-example {
+    margin-bottom: $ratio#{em};
+}
+
+.css-example__dl {
+    dd { font-weight: bold;}
+    dt,dd { display: inline-block; }
+}

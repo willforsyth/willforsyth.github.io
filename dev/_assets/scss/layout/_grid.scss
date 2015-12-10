@@ -1,0 +1,53 @@
+$grid__columns: 12;
+
+$grid__gutter-size: 2em;
+
+.grid{
+    @extend .clearfix;
+}
+
+.column{
+    float: left;
+    padding: $ratio--inv * $grid__gutter-size / 2 $grid__gutter-size / 2;
+
+    .grid--no-gutter &{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.column__center{
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}{
+        width: percentage( $i / $grid__columns );
+    }
+}
+
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}--small{
+        @include breakpoint(small){
+            width: percentage( $i / $grid__columns );
+        }
+    }
+}
+
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}--medium{
+        @include breakpoint(medium){
+            width: percentage( $i / $grid__columns );
+        }
+    }
+}
+
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}--large{
+        @include breakpoint(large){
+            width: percentage( $i / $grid__columns );
+        }
+    }
+}

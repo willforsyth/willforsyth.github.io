@@ -1,0 +1,34 @@
+$heading-font: 'Crimson Text', serif;
+$body-font: 'Lato', sans-serif;
+
+$line-height: $ratio#{em};
+$font-weight: 100;
+$base-font-size: 14;
+
+
+html{
+    font-family: $body-font;
+    line-height: $line-height;
+    font-size: $base-font-size#{px};
+    font-weight: $font-weight;
+    direction: ltr;
+    display: block;
+    unicode-bidi: embed;
+    -webkit-locale: en-UK;
+    text-align: center;
+}
+
+body{
+    @include breakpoint(small){
+        font-size: 16 / $base-font-size#{em};
+        line-height: $line-height;
+    }
+    @include breakpoint(medium){
+        font-size: 18 / $base-font-size#{em};
+        line-height: $line-height;
+    }
+    @include breakpoint(large){
+        font-size: 22 / $base-font-size#{em};
+        line-height: $line-height;
+    }
+}

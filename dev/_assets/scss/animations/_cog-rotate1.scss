@@ -1,0 +1,39 @@
+.cog.go {		
+	animation-delay:2.0s;
+	animation: cog 5s infinite;
+	animation-timing-function: linear	
+}
+@-webkit-keyframes cog {
+100%{ -webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes cog {
+100%{ -webkit-transform: rotate(360deg)}
+}
+@-ms-keyframes cog {
+100%{ -webkit-transform: rotate(360deg)}
+}
+@keyframes cog {
+100%{ 
+	transform: rotate(360deg)
+}
+}
+.cog-anti.go {
+	animation-delay:2.0s;
+	transform: rotate(0deg);
+	animation: cog-anti 5s infinite;
+	animation-timing-function: linear
+}
+@-webkit-keyframes cog-anti {
+100%{ -webkit-transform: rotate(-360deg)}
+}
+@-moz-keyframes cog-anti {
+100%{ -webkit-transform: rotate(-360deg)}
+}
+@-ms-keyframes cog-anti {
+100%{ -webkit-transform: rotate(-360deg)}
+}
+@keyframes cog-anti {
+100%{ 
+	transform: rotate(-360deg)
+}
+}

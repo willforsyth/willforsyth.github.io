@@ -1,0 +1,27 @@
+%hn{
+   font-family: $heading-font;
+   font-weight: 400;
+   font-style: italic;
+   line-height: 1em;
+   margin: 0 0 $ratio--inv#{em};
+   -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    @extend %hn;
+
+    font-size: pow($ratio, 3)#{em};
+}
+
+h2{
+    @extend %hn;
+
+    font-size: $ratio#{em};
+}
+
+h3,
+h4{
+    @extend %hn;
+
+    font-size: 1 + ($ratio--inv / 2)#{em};
+}

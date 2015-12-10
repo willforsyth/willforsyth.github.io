@@ -1,0 +1,14 @@
+// based on the micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix{
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

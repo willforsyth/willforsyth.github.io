@@ -1,0 +1,140 @@
+.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: $color__black;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: $ratio--inv#{em};
+}
+
+.menu a {
+    color: $color__blue;
+    display: inline-block;
+    height: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $color__blue;
+        transition: all 0.5s;
+    }
+}
+
+
+.nav__main {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close-menu {
+    color: $color__white;
+}
+.close-menu:focus {
+    outline: none
+}
+.push-menu-left,.push-menu-right {
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+.slide-menu-left,.push-menu-left {
+    left: -300px
+}
+.slide-menu-right,
+.push-menu-right {
+    right: -300px
+}
+.sml-open nav.slide-menu-left,
+.pml-open nav.push-menu-left {
+    left: 0
+}
+.smr-open nav.slide-menu-right,
+.pmr-open nav.push-menu-right {
+    right: 0
+}
+.pml-open .post__main {
+    left: 300px
+}
+.pmr-open .post__main{
+    left: -300px
+}
+
+.push-menu-right {
+     background-color: $color__black;
+    color: $color__white;
+}
+
+.nav-toggler {
+    position: absolute;
+    right: 2em;
+    top: 2em
+}
+
+// .toggle-push-right:hover {
+//      background-color: $color__black;
+//     transition: all 0.5s ease-in-out;
+// }
+
+
+.toggle-push-left, .push-menu-left {
+    background-color: $color__black;
+    color: $color__white;
+}
+
+.toggle-push-left:hover {
+    background-color: $color__black;
+    transition: all 0.5s ease-in-out;
+
+}
+
+@media all and (max-width: 660px) { 
+    /* slide menu top and bottom */
+    .push-menu-top ul,
+    .push-menu-bottom ul {
+        padding: 35px 0 0 0
+    }
+    .push-menu-top a,
+    .push-menu-bottom a {
+        line-height: 30px;
+        padding: 0 2px;
+        font-size: 12px;
+    }
+    .push-menu-top button.close-menu,
+    .push-menu-bottom button.close-menu {
+        line-height: 30px;
+        padding: 0 2px;
+    }
+}
+@media all and (max-width: 330px) { 
+    .push-menu-left,
+    .push-menu-right {
+        top: 0;
+        width: 100%;
+    }
+    .push-menu-left {
+        left: -100%
+    }
+    .push-menu-right {
+        right: -100%
+    }
+    .pml-open nav.push-menu-left {
+        left: 0
+    }
+    .pmr-open nav.push-menu-right {
+        right: 0
+    }
+    .pml-open #wrapper {
+        left: 100%
+    }
+    .pmr-open #wrapper {
+        left: -100%
+    }
+}
+

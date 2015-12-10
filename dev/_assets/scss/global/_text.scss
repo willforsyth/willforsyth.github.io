@@ -1,0 +1,20 @@
+u,
+.text--underlined{
+    text-decoration: underline;
+}
+
+b,
+strong,
+.text--bold{
+    font-weight: 700;
+}
+
+i,
+em,
+.text--italic{
+    font-style: italic;
+}
+
+p {
+	line-height: 2em;
+}

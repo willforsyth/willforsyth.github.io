@@ -1,0 +1,31 @@
+default:
+ - 'serve'
+
+serve:
+ - 'clean:server'
+ - 'svgstore'
+ - 'regenerate'
+ - 'connect'
+ - 'watch'
+
+build:
+ - 'clean:dist'
+ - 'svgstore'
+ - 'jekyll:dist'
+ - 'sass:dist'
+ - 'autoprefixer:dist'
+ - 'browserify:dist'
+ - 'requirejs'
+ - 'modernizr'
+ - 'copy:dist'
+ - 'processhtml'
+ - 'htmlmin'
+
+regenerate:
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
+ - 'copy:scripts'
+ - 'browserify:dev'
+ - 'copy:images'
+ - 'copy:fonts'

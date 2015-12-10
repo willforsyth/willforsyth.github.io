@@ -1,0 +1,73 @@
+.pattern__components{
+    text-align: left !important;
+    @include breakpoint(medium){
+        width: 75%;
+        margin-left: 25%;
+    }
+    @include breakpoint(large){
+        width: 80%;
+        margin-left: 20%;
+    }
+
+}
+
+.pattern__component {
+    margin: $ratio#{em} 0;
+    padding-bottom: $ratio#{em};
+    border-bottom: 1px solid $color__gray;
+
+    .wrapper{
+        position: relative;
+    }
+}
+
+.pattern__component__details{
+    text-align: left !important;
+    > h3{
+        padding-top: 1em;
+    }
+
+    .pattern__nav__open-menu{
+        top: $ratio--inv#{em};
+    }
+}
+
+.pattern__component__example {
+    text-align: left !important;
+    @extend .clearfix;
+
+    padding: $ratio#{em};
+    padding-top: 1 + $ratio#{em};
+    border: 1px solid $color__gray;
+    position: relative;
+    margin-top: $ratio#{em};
+    margin-bottom: $ratio#{em};
+    overflow: hidden;
+
+    &:before{
+        content: "e.g.";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $color__white;
+        background-color: $color__primary;
+        padding: 0 $ratio--inv#{em};
+
+        @include breakpoint(small){
+            content: "Usage"
+        }
+    }
+}
+
+.pattern__component__header{
+    text-align: left !important;
+    padding-top: $ratio#{em};
+    margin-bottom: $ratio#{em};
+    border-bottom: 1px solid $color__gray;
+
+    h1{
+        border-bottom: 1px solid $color__gray;
+        display: block;
+        padding-bottom: pow($ratio--inv, 3)#{em};
+    }
+}

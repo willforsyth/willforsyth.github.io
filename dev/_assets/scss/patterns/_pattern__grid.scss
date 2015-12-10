@@ -1,0 +1,16 @@
+html {
+	background: none !important;
+	color: $color__black !important;
+}
+
+.column_fill {
+    background-color: $color__black;
+    color: $color__white;
+    display: block;
+    padding: $ratio--inv#{em};
+    text-align: center;
+
+    &:hover {
+        background-color: $color__blue;
+    }
+}

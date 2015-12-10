@@ -1,0 +1,13 @@
+.icon{
+    display: inline-block;
+    width: $ratio#{em};
+    height: $ratio#{em};
+}
+
+.icon__facebook{
+	fill: $color__facebook;
+}
+
+.icon__twitter{
+	fill: $color__twitter;
+}

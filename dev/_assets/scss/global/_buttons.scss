@@ -1,0 +1,113 @@
+%button {
+    background-color: $color__blue;
+    border: pow($ratio--inv, 4)#{em} solid $color__blue;
+    color: $color__white !important;
+    cursor: pointer;
+    display: inline-block;
+    fill: $color__white;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    line-height: 1em;
+    margin: $ratio--inv#{em} 0;
+    padding: $ratio--inv#{em} $ratio#{em};
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-appearance: none;
+
+    &:visited {
+        color: $color__white;
+        fill: $color__white;
+    }
+
+    &:hover,
+    &:focus,
+    &.zeroclipboard-is-hover {
+        background: $color__gray--light;
+        border: pow($ratio--inv, 4)#{em} solid $color__gray--light;
+        color: $color__white;
+        fill: $color__white;
+        outline: none;
+    }
+
+    &.button--disabled,
+    &:disabled,
+    &[disabled] {
+        background-color: $color__gray !important;
+        border-color: $color__gray !important;
+        color: $color__white !important;
+        cursor: not-allowed;
+        fill: $color__white !important;
+    }
+
+    svg {
+        margin-bottom: -$ratio--inv#{em};
+        margin-top: -$ratio--inv#{em};
+    }
+}
+
+.button--inline {
+    display: inline-block;
+}
+
+.button,
+button {
+    @extend %button;
+    margin-right: $ratio--inv#{em};
+}
+
+.button--auto-width {
+    width: auto;
+}
+
+// %button--alt {
+//     background-color: $color__orange;
+//     border-color: $color__orange;
+
+//     &:hover,
+//     &:focus,
+//     &.zeroclipboard-is-hover {
+//         background: $color__orange--light;
+//     }
+// }
+
+// .button--alt {
+//     @extend %button--alt;
+// }
+
+input[type="submit"] {
+    margin: 0;
+    width: auto;
+    -webkit-appearance: none;
+}
+
+.button--active {
+    background-color: $color__green;
+    border-color: $color__green;
+
+    &:hover,
+    &:focus,
+    &.zeroclipboard-is-hover {
+        background: $color__green--light;
+    }
+}
+
+button {
+    // Fixes a weird bug
+    -webkit-font-smoothing: antialiased;
+}
+
+.button--description__button {
+    display: inline;
+    margin-right: $ratio--inv#{em};
+}
+
+.button--description__text {
+    display: inline;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 !important;
+}

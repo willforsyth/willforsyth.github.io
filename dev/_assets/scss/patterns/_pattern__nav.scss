@@ -1,0 +1,91 @@
+.pattern__header{
+    text-align: left !important;
+    padding-top: $ratio#{em};
+    padding-bottom: $ratio#{em};
+    margin-bottom: $ratio#{em};
+    background: $color__primary;
+    color: $color__white;
+
+    a { color: $color__white; fill: $color__black }
+
+    h1{
+        border-bottom: 1px solid;
+        display: block;
+        padding-bottom: pow($ratio--inv, 3)#{em};
+    }
+
+    @include breakpoint(medium){
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    @include breakpoint(large){
+        width: 20%;
+    }
+}
+
+.pattern__nav{
+    text-align: left !important;
+    margin-bottom: $ratio#{em};
+
+    ul{
+        margin: $ratio#{em} 0;
+
+        @include breakpoint(small){
+            columns: 2;
+        }
+        @include breakpoint(medium){
+            columns: 1;
+        }
+    }
+
+}
+
+.pattern__component__link{
+    position: absolute;
+    top: 1 + ($ratio--inv / 2)#{em};
+    right: $ratio#{em};
+}
+
+.pattern__nav__group{
+    text-transform: capitalize;
+    margin-top: $ratio--inv#{em};
+}
+
+.pattern__nav__component{
+    margin-left: $ratio--inv#{em};
+
+    @include breakpoint(medium){
+        font-size: 0.8em;
+    }
+}
+.pattern__nav__open-menu{
+    position: absolute;
+    top: 1 + ($ratio--inv / 2)#{em};
+    right: $ratio#{em};
+
+    @include breakpoint(medium){
+        display: none;
+    }
+}
+
+#pattern__menu{
+    opacity: 0;
+    margin-top: -999px;
+
+    @include breakpoint(medium){
+        opacity: 1;
+        margin-top: 0;
+    }
+
+     &:target{
+        transition: all 1s ease-in;
+        opacity: 1;
+        margin-top: 0;
+    }
+}

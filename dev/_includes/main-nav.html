@@ -1,0 +1,16 @@
+<nav class="menu push-menu-right">
+    <ul>
+        <li><a class="close-menu">Close &rarr;</a></li>
+         <ul>
+            <li><a href="" title="">About</a></li>
+            <li><a href="" title="">Github</a></li>
+            <li><a href="" title="">Twitter</a></li>
+            <li><a href="/pattern.html" title="">Pattern Library</a></li>
+        </ul>
+        {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

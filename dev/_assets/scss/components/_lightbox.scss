@@ -1,0 +1,49 @@
+#overlay {
+	background:rgb(14,215,190);
+    background:rgba(14,215,190,0.9);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    text-align:center;
+    cursor: pointer;
+    z-index: 2000;
+    animation-name: bounceInDown; 
+    animation-duration: 1s; 
+    animation-fill-mode: both; 
+}
+
+.overlay-inner {
+	text-align: center;
+    height: 625px;
+    max-width: 72em;
+    margin: auto;
+    position: absolute;
+    top: 18em;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    p { width: 30em; margin: auto; }
+    a { color: $color__white; }
+
+    @include breakpoint(small){
+        top: 5em;
+    }
+}
+
+.overlay-inner__inner {
+	position: relative;
+}
+
+.close-lightbox { 
+	position: absolute;
+	top: -2em;
+	right: 5em;
+}
+
+.noscroll {
+	overflow:hidden;
+}
