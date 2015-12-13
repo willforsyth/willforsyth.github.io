@@ -20,6 +20,7 @@ build:
  - 'copy:dist'
  - 'processhtml'
  - 'htmlmin'
+ - 'gh-pages'
 
 regenerate:
  - 'jekyll:dev'

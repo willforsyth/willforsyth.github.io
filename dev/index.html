@@ -1,20 +1,39 @@
 ---
 layout: base
-title: Epcoh community
+title: Will forsyth
 ---
 
 
-<div class="grid inner">
-	<svg viewBox="0 0 400 400" class="logo icon__logo icon__logo--white grow-In">
-    	<use xlink:href="/imgs/sprite/icon-sprite.svg#icon__logo"></use>
-	</svg>
-    <blockquote class="column column__center column__12-of-12 column__12-of-12--small column__9-of-12--medium column__7-of-12--large"><h1>You don't have to be great to start, but you have to start to be great.</h1>
-        <footer>
-            <cite>
-                - Zig Ziglar -
-            </cite>
-        </footer>
-    </blockquote>
-	{% include sign-up-form.html%}
-	{% include footer.html %}
-</div>
+{% assign posts = site.posts | sort: 'group' %}
+
+<main class="post__main">
+    <header>
+        <h1>willForsyth</h1>
+        <nav class="nav__main">
+            <ul>
+                <li><a href="" title="">About</a></li>
+                <li><a class="nav-toggler toggle-push-right">Notes archive</a></li>     
+                <li><a href="" title="">Github</a></li>
+                <li><a href="" title="">Twitter</a></li>
+                <li><a href="/pattern.html" title="">Pattern Library</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <aside class="column column__12-of-12 posts__inner">
+        <h1>The greatest ideas are the simplest</h1>
+    </aside>
+    <ul class="posts grid">
+        {% for post in site.posts %}
+            <li id="post__{{ post.title | slugify }}" class="post__intro column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__6-of-12--large">
+                <a href="{{ post.url }}" class="posts__more">
+                    <div class="posts__inner">
+                            <h3>{{ post.title }}</h3>
+                            <time class="posts__date">{{ post.date | date: '%B %d, %Y' }}</time>
+                            <span>{{ post.category }}</span>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</main>
