@@ -15,8 +15,7 @@ h1{
 
 h2{
     @extend %hn;
-
-    font-size: $ratio#{em};
+    font-size: 2 + $ratio#{em};
 }
 
 h3,
@@ -24,4 +23,8 @@ h4{
     @extend %hn;
 
     font-size: 1 + ($ratio--inv / 2)#{em};
+}
+
+.post--title {
+  margin: 0;
 }

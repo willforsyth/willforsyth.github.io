@@ -15,23 +15,32 @@
     background: rgba(0, 0, 0, 0);
 }
 
-.posts__more {
+.posts__link {
     transition: all .2s ease-in-out;
     display: block;
     z-index: 0;
+    color: $color__green;
     text-decoration: none;
     &:hover{
-        transform: scale(1.2); 
-        box-shadow: 5px 5px 41px #888888;
-        z-index: 1;
-        background-color: $color__white;
+        transform: scale(1.1);
+
     }
+}
+
+.post--title {
+    color: $color__blue;
+}
+
+.posts__date, .post--cat {
+    color: $color__white;
 }
 
 .post__content { 
     padding: 0 !important; 
     .highlight {
-        max-width: 43em;
+        padding: $ratio#{em} 0;
+        background: $color__white;
+        color: $color__black;
     }
 }
 .posts__inner { 

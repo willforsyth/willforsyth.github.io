@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Talk to the user
-image: /imgs/backgrounds/blue.png
+published: false
 comments: false
 category: UX
 description: |

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Front end pattern library
-image: /imgs/backgrounds/bikes2.jpg
 comments: false
+published: false
 category: Pattern-library
 description: |
   This is a test post of a post thats really nice and wonderful

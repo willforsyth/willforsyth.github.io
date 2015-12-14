@@ -2,6 +2,7 @@
 layout: post
 title: Ethical design
 image: /imgs/backgrounds/blue.png
+published: false
 comments: false
 category: Design
 description: |
