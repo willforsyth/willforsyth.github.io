@@ -34,6 +34,7 @@ module.exports = {
         files: [
             'dev/*.{html,md}',
             'dev/_layouts/*.html',
+            'dev/_posts/*.md',
             'dev/_includes/*.html',
             'dev/_templates/*.{md,markdown,html}',
             'dev/_components/*.{md,markdown,html}',

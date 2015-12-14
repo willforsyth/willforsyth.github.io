@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     transition: all 0.3s;
+    margin-top: $ratio#{em};
 }
 
 .mask {
@@ -23,7 +24,6 @@
     text-decoration: none;
     &:hover{
         transform: scale(1.1);
-
     }
 }
 
@@ -41,6 +41,9 @@
         padding: $ratio#{em} 0;
         background: $color__white;
         color: $color__black;
+    }
+    h3 {
+        margin-top: $ratio--inv#{em};
     }
 }
 .posts__inner { 
