@@ -1,73 +1,23 @@
 ---
-layout: base-pattern-library
-title: Pattern Library
+layout: base
+title: Will forsyth
 ---
 
-{% assign components = site.components | sort: 'group-id'  %}
-{% assign templates = site.templates | sort: 'group' %}
 
-<main role="main">
-    <header class="pattern__header">
-        <div class="wrapper">
-            <h1>Pattern Library</h1>
-            <a href="#pattern__menu" class="pattern__nav__open-menu">
-                <svg viewBox="0 0 100 100" class="icon icon__menu">
-                    <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__menu"></use>
-                </svg>
-            </a>
-             <nav class="pattern__nav" id="pattern__menu">
-                <ul>
-                    {% for component in components %}
-                        {% if component.group-id != lastGroup %}
-                            <li class="pattern__nav__group">
-                                <a href="#component__{{ component.title | slugify }}">{{ component.group-name }}</a>
-                            </li>
-                        {% endif %}
-                            <li class="pattern__nav__component">
-                                <a href="#component__{{ component.title | slugify }}">{{ component.title }}</a>
-                            </li>
-                        {% assign lastGroup = component.group-id %}
-                    {% endfor %}
-                    {% for template in templates %}
-                        {% if template.group != lastGroup %}
-                            <li class="pattern__nav__group">
-                                <p>{{ template.group }}</p>
-                            </li>
-                        {% endif %}
-                            <li class="pattern__nav__component">
-                                <a href="{{template.url}}">{{ template.title }}</a>
-                            </li>
-                        {% assign lastGroup = template.group %}
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
-    </header>
+{% assign posts = site.posts | sort: 'group' %}
 
-    <ul class="pattern__components">
-        {% for component in components %}
-            <li id="component__{{ component.title | slugify }}" class="pattern__component">
-                <div class="wrapper">
-                    <div class="pattern__component__details">
-                        <h3>{{ component.title }}</h3>
-                        <a href="{{ component.url }}" class="pattern__component__link">
-                            <svg viewBox="0 0 100 100" class="icon icon__view">
-                                <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__view"></use>
-                            </svg>
-                        </a>
-                        {{ component.description | markdownify }}
+<main class="post__main">
+    <ul class="posts grid">
+        {% for post in site.posts %}
+            <li id="post__{{ post.title | slugify }}" class="post__intro column column__center column__12-of-12 column__12-of-12--small column__10-of-12--medium">
+                <a href="{{ post.url }}" class="posts__link">
+                    <div class="posts__inner">
+                            <h2 class="post--title">{{ post.title }}</h2>
+                            <span class="post--cat">{{ post.category }}</span>
                     </div>
-                    <div class="pattern__component__example">
-                        {{ component.content }}
-                    </div>
-                </div>
-{% capture code %}
-{% highlight html %}
-{{ component.content }}
-{% endhighlight %}
-{% endcapture %}
-                {{ code | markdownify }}
+                </a>
             </li>
         {% endfor %}
     </ul>
+    {% include footer.html %}
 </main>
