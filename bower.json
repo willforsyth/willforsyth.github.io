@@ -2,7 +2,7 @@
   "name": "pattern-library-template",
   "private": true,
   "dependencies": {
-    "modernizr": "latest",
+    "modernizr": "~2.8.3",
     "jquery": "~1.11.0",
     "requirejs": "~2.1.15",
     "svg4everybody": "~1.0.0",

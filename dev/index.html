@@ -6,14 +6,18 @@ title: Will forsyth
 
 {% assign posts = site.posts | sort: 'group' %}
 
+<header class="hdr column column__4-of-12 column__2-of-12--small column__1-of-12--medium">
+  {% include logo.html %}
+</header>
 <main class="post__main">
+    {{ page.categories }}
     <ul class="posts grid">
         {% for post in site.posts %}
-            <li id="post__{{ post.title | slugify }}" class="post__intro column column__center column__12-of-12 column__12-of-12--small column__10-of-12--medium">
+            <li class="column column__center column__12-of-12 column__12-of-12--small column__10-of-12--medium">
                 <a href="{{ post.url }}" class="posts__link">
                     <div class="posts__inner">
-                            <h2 class="post--title">{{ post.title }}</h2>
-                            <span class="post--cat">{{ post.category }}</span>
+                          <h2 class="post--title">{{ post.title }}</h2>
+                          <span class="post--cat">{{ post.category }}</span>
                     </div>
                 </a>
             </li>
