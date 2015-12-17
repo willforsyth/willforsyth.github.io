@@ -1,4 +1,4 @@
-.post__main { 
+.post__main {
     z-index: 10;
     top: 0;
     left: 0;
@@ -27,6 +27,10 @@
     }
 }
 
+.post__title {
+  margin-bottom: $ratio#{em};
+}
+
 .post--title {
     color: $color__blue;
 }
@@ -35,8 +39,8 @@
     color: $color__white;
 }
 
-.post__content { 
-    padding: 0 !important; 
+.post__content {
+    padding: 0 !important;
     .highlight {
         padding: $ratio#{em} 0;
         background: $color__white;
@@ -46,8 +50,8 @@
         margin-top: $ratio--inv#{em};
     }
 }
-.posts__inner { 
-	padding: 2 + $ratio#{em}; 
+.posts__inner {
+	padding: 2 + $ratio#{em};
     color: $color__primary;
 }
 .time {

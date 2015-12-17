@@ -9,7 +9,6 @@
 
 h1{
     @extend %hn;
-
     font-size: pow($ratio, 3)#{em};
 }
 
@@ -21,7 +20,7 @@ h2{
 h3,
 h4{
     @extend %hn;
-
+    font-family: $body-font;
     font-size: 1 + ($ratio--inv / 2)#{em};
 }
 

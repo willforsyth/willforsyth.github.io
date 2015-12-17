@@ -8,8 +8,6 @@ description: |
 
 ---
 
-##Some UX techniques
-
 ###Stakeholder Interviews:
 Talk to key individuals within your client’s organization to understand business requirements.
 Requirements Workshops: Gather key stakeholders together to discuss the brief and conduct exercises to give you a deeper understanding of the project.

@@ -16,12 +16,10 @@
     <!-- /build -->
 </head>
 <body>
+    <header class="hdr column column__4-of-12 column__2-of-12--small column__1-of-12--medium">
+      <a href="/" title="Back home">{% include logo.html %}</a>
+    </header>
     {{ content }}
-    <div class="loading">
-        <div class="la-ball-clip-rotate la-lg">
-            <div></div>
-        </div>
-    </div>
     <script src="/scripts/common.js"></script>
     <!-- build:js /scripts/vendor/svg4everybody.js -->
         <script src="/../bower_components/svg4everybody/svg4everybody.js"></script>
