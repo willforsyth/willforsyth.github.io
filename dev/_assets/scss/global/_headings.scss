@@ -21,6 +21,7 @@ h3,
 h4{
     @extend %hn;
     font-family: $body-font;
+    margin-top: 1 + $ratio#{em};
     font-size: 1 + ($ratio--inv / 2)#{em};
 }
 

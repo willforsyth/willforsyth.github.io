@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running a project kick of meeting
+title: Project kick of meeting
 comments: false
 published: true
 category: ux
@@ -10,14 +10,15 @@ description: |
 
 If you are involved in the initial meeting with a client after, try to get them involved as possible.
 
-##What to say to get the clients involved.
+###What to say to get the clients involved.
 
 We would like the stakeholders and those involved in the project to outline who they think the users are and some short tasks.
-##What we are trying to achieve.
-* Represent a major user group for your website
-* Express and focus on the major needs and expectations of the most important user groups
-* Give a clear picture of the user's expectations and how they're likely to use the site
-* Describe real people with backgrounds, goals, and values
+
+###What we are trying to achieve.
+* Represent a major user group for your website.
+* Express and focus on the major needs and expectations of the most important user groups.
+* Give a clear picture of the user's expectations and how they're likely to use the site.
+* Describe real people with backgrounds, goals, and values.
 
 ### 1) Write out personas
 Ask them to fill in a document of who they think the main users are for the site? Give them three to fill in using the template below.

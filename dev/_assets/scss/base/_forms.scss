@@ -10,11 +10,6 @@
     margin-bottom:0;
 }
 
-label {
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-}
 
 // Basic styles on inputs.
 
@@ -61,6 +56,22 @@ label {
         color: $color__white;
         cursor: not-allowed;
     }
+}
+
+.filterSection {
+  clear: both;
+  float: left;
+}
+
+.blog--filter {
+  & ~ label{
+      background: none;
+  }
+  &:checked{
+      & ~ label{
+          background: $color__blue;
+      }
+  }
 }
 
 input[type='text'],

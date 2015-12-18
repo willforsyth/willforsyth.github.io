@@ -4,16 +4,22 @@ title: Will forsyth
 ---
 {% assign posts = site.posts | sort: 'group' %}
 
-<ul class="grid filterSection">
-    {% for category in site.categories %}
-        <li class="column column__12-of-12 column__4-of-12--small column__2-of-12--medium">
-            <input checked="true" type="checkbox" value="{{ category | first }}"/>
-            <label>{{ category | first }}</label>
-        </li>
-    {% endfor %}
-</ul>
+<div class="sidebar grid column column__12-of-12 column__4-of-12--small column__2-of-12--medium">
+  <ul class="grid filterSection">
+      <li class="">
+          <input class="selectAll blog--filter " checked="true" type="checkbox" value="view all" id="checkbox-all"/>
+          <label for="checkbox-all" class="button button--auto-width">View all</label>
+      </li>
+      {% for category in site.categories %}
+          <li class="">
+              <input class="blog--filter" checked="true" type="checkbox" value="{{ category | first }}" id="checkbox-{{ category | first }}"/>
+              <label for="checkbox-{{ category | first }}" class="button button--auto-width">{{ category | first }}</label>
+          </li>
+      {% endfor %}
+  </ul>
+</div>
 
-<main class="post__main">
+<main class="column column__12-of-12 column__8-of-12--small column__10-of-12--medium">
     <ul class="posts grid">
         {% for post in site.posts %}
             <li class="column column__center column__12-of-12 column__12-of-12--small column__10-of-12--medium">

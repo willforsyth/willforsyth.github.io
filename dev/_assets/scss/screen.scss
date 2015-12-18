@@ -4,6 +4,7 @@
 @import "base/color-scheme.scss";
 @import "base/mixins.scss";
 @import "base/typography.scss";
+@import "base/forms.scss";
 @import "base/footer.scss";
 @import "base/logo.scss";
 
@@ -11,6 +12,8 @@
 
 @import "components/lightbox.scss";
 @import "components/loading.scss";
+@import "components/sidebar.scss";
+@import "components/blockquote.scss";
 
 @import "layout/clearfix.scss";
 @import "layout/structure.scss";

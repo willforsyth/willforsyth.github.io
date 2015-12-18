@@ -1,5 +1,7 @@
 name: Pattern Library Template
 markdown: kramdown
+kramdown:
+  auto_ids: false
 collections:
   components:
    output: true

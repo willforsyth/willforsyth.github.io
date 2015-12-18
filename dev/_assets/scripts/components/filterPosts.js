@@ -12,6 +12,20 @@ $.fn.filterPosts = function (options) {
             checkBoxes[i].checked = true;
           }
 
+          $('.selectAll').click(function(event) {  //on click
+            if(this.checked) { // check select status
+              $(checkBoxes).each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"
+                $(itemsToFilter).removeClass('hideItem');
+              });
+            }else{
+              $(checkBoxes).each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"
+                $(itemsToFilter).addClass('hideItem');
+              });
+            }
+          });
+
           // the event handler!
           function filterItems(e) {
             var clickedItem = e.target;
@@ -20,8 +34,10 @@ $.fn.filterPosts = function (options) {
                 hideOrShowItems(clickedItem.value, "hideItem", "showItem");
             } else if (clickedItem.checked == false) {
                 hideOrShowItems(clickedItem.value, "showItem", "hideItem");
+                $('.selectAll').prop('checked', false);
+
             } else {
-                // deal with the indeterminate state if needed
+
             }
           }
 

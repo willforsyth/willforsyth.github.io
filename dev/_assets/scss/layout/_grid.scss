@@ -4,6 +4,8 @@ $grid__gutter-size: 2em;
 
 .grid{
     @extend .clearfix;
+    margin-left: -1em;
+    margin-right: -1em;
 }
 
 .column{

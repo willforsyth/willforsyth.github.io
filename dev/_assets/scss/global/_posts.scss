@@ -1,5 +1,6 @@
 .post__main {
     z-index: 10;
+    float: left;
     top: 0;
     left: 0;
     transition: all 0.3s;
@@ -41,13 +42,12 @@
 
 .post__content {
     padding: 0 !important;
+    margin-bottom:1 + $ratio#{em};
     .highlight {
-        padding: $ratio#{em} 0;
+        padding: $ratio#{em};
         background: $color__white;
         color: $color__black;
-    }
-    h3 {
-        margin-top: $ratio--inv#{em};
+        margin-top: $ratio#{em};
     }
 }
 .posts__inner {
