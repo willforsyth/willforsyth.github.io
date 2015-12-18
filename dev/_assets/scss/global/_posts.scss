@@ -51,7 +51,7 @@
     }
 }
 .posts__inner {
-	padding: 2 + $ratio#{em};
+	   padding: $ratio#{em} 0;
     color: $color__primary;
 }
 .time {

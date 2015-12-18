@@ -2,7 +2,7 @@
 layout: post
 title: Command line tips
 comments: false
-category: Development
+category: development
 description: |
   Some useful command line tips
 ---
@@ -19,4 +19,3 @@ I have been using the command line for a while now, but I don't use it as much a
 {% highlight html %}
 	cat ~ /.ssh/id_rsa.pub | pbcopy
 {% endhighlight %}
-

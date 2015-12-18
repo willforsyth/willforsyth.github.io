@@ -3,7 +3,7 @@ layout: post
 title: Talk to the user
 published: false
 comments: false
-category: UX
+category: ux
 description: |
   This is a test post of a post thats really nice and wonderful
 ---
@@ -21,6 +21,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 		console.log('testing');
 	});
 {% endhighlight %}
-
-<!-- 
-![yakocat]({{ site.url }}/imgs/yaktocat.png) -->

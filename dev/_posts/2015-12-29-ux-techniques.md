@@ -3,7 +3,7 @@ layout: post
 title: UX techniques
 published: true
 comments: false
-category: UX
+category: ux
 description: |
 
 ---

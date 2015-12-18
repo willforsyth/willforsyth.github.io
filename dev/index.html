@@ -4,15 +4,11 @@ title: Will forsyth
 ---
 {% assign posts = site.posts | sort: 'group' %}
 
-
-<ul class="posts grid">
+<ul class="grid filterSection">
     {% for category in site.categories %}
-        <li class="column column__center column__12-of-12 column__12-of-12--small column__10-of-12--medium">
-            <a href="{{ category.url }}" class="posts__link">
-                <div class="posts__inner">
-                      <h2 class="post--title">{{ category | first }}</h2>
-                </div>
-            </a>
+        <li class="column column__12-of-12 column__4-of-12--small column__2-of-12--medium">
+            <input checked="true" type="checkbox" value="{{ category | first }}"/>
+            <label>{{ category | first }}</label>
         </li>
     {% endfor %}
 </ul>
@@ -21,7 +17,7 @@ title: Will forsyth
     <ul class="posts grid">
         {% for post in site.posts %}
             <li class="column column__center column__12-of-12 column__12-of-12--small column__10-of-12--medium">
-                <a href="{{ post.url }}" class="posts__link">
+                <a data-type="{{ post.category }}" href="{{ post.url }}" class="posts__link">
                     <div class="posts__inner">
                           <h2 class="post--title">{{ post.title }}</h2>
                           <span class="post--cat">{{ post.category }}</span>

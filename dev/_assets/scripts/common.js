@@ -4,8 +4,8 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 
 // Show Me The Code
 // ----------
-// require('./components/testPlugin');
-// $('body').logWidth();
+require('./components/filterPosts');
+$('.filterSection').filterPosts();
 
 require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
 require('./components/mailchimp');

@@ -3,7 +3,7 @@ layout: post
 title: Website checklist
 comments: false
 published: true
-category: Development
+category: development
 description: |
 
 ---
@@ -108,4 +108,3 @@ description: |
 ### == Functionality ==
 
 * [ ] Test all email notifications
-
