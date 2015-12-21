@@ -16,6 +16,10 @@ body{
     // min-height: 1100px;
 }
 
+body {
+    padding-top: 1 + $ratio#{em};
+}
+
 
 
 %wrapper{

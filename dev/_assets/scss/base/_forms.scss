@@ -59,19 +59,15 @@
 }
 
 .filterSection {
-  clear: both;
-  float: left;
+    @extend .clearfix;
+    margin-bottom: $ratio--inv#{em};
+    padding: $ratio--inv#{em};
+    margin-top: $ratio#{em};
+    li {
+    }
 }
-
 .blog--filter {
-  & ~ label{
-      background: none;
-  }
-  &:checked{
-      & ~ label{
-          background: $color__blue;
-      }
-  }
+    float: left;
 }
 
 input[type='text'],
@@ -120,7 +116,9 @@ input[type="radio"]{
         display: inline-block;
         width: 1em;
         height: 1em;
-        background-color: $color__gray;
+        background-color: none;
+        border: 1px solid $color__white;
+        margin-left: $ratio--inv#{em};
     }
 
     & ~ label{
@@ -130,7 +128,8 @@ input[type="radio"]{
 
     &:checked{
         & ~ span{
-            background: $color__green;
+            border: 1px solid $color__blue;
+            background: $color__blue;
         }
     }
 }

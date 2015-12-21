@@ -2,12 +2,12 @@
 layout: post
 title: Custom share icons
 comments: false
-published: false
+published: true
 category: javascript
 description: |
 
 ---
-Give an explanation of how to do it.
+Add in custom share links.
 
 {% highlight html %}
       <a class="twitter" href="#" data-message="I love this product @" title="Share this on twitter">

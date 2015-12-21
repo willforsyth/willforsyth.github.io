@@ -324,11 +324,6 @@ $.fn.filterPosts = function (options) {
                 this.checked = true;  //select all checkboxes with class "checkbox1"
                 $(itemsToFilter).removeClass('hideItem');
               });
-            }else{
-              $(checkBoxes).each(function() { //loop through each checkbox
-                this.checked = false; //deselect all checkboxes with class "checkbox1"
-                $(itemsToFilter).addClass('hideItem');
-              });
             }
           });
 

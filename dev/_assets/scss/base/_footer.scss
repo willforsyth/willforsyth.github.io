@@ -1,3 +1,6 @@
 footer {
 	@extend .clearfix;
 }
+.ftr {
+	margin-top: 2 + $ratio#{em};
+}
