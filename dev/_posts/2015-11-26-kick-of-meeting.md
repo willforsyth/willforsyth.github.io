@@ -47,7 +47,7 @@ Next ask them to write out 5 things that rated in importance of what they would 
 ### 3) Ask them to rate user stories.
 Before you go to the meeting fill in as many user stories as you can related to the site. Write these out on cards and get the shareholders and project leads to rate them in importance.
 
-** As a ........... I want to .................. **
+> ** As a ........... I want to .................. **
 
 
 ### 4) Rate resources

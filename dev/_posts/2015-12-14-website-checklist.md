@@ -3,7 +3,7 @@ layout: post
 title: Website checklist
 comments: false
 published: true
-category: 
+category: tips
 description: |
 
 ---
