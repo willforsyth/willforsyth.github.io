@@ -119,11 +119,13 @@ input[type="radio"]{
         background-color: none;
         border: 1px solid $color__white;
         margin-left: $ratio--inv#{em};
+        margin-left: -3em;
     }
 
     & ~ label{
         position: relative;
         cursor: pointer;
+        padding-right: 4em;
     }
 
     &:checked{

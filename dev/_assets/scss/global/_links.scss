@@ -29,3 +29,8 @@ a{
         cursor: not-allowed;
     }
 }
+
+.active {
+  background: $color__blue;
+  border: pow($ratio--inv, 4)#{em} solid $color__blue;
+}

@@ -2,7 +2,7 @@
 layout: post
 title: Command line tips
 comments: false
-category: command line
+category: tips
 description: |
   Some useful command line tips
 ---

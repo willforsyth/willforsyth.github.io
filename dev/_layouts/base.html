@@ -15,7 +15,7 @@
         <script src="/../bower_components/modernizr/modernizr.js"></script>
     <!-- /build -->
 </head>
-<body>
+<body class="{% if page.class %}{{ page.class }}{% endif %}">
     {{ content }}
     <script src="/scripts/common.js"></script>
     <!-- build:js /scripts/vendor/svg4everybody.js -->

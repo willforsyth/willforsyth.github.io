@@ -1,10 +1,10 @@
-    <nav>
+    <nav class="main__nav">
         <ul>
             <li>
-                <a href="/"class="button button--auto-width">Words</a>
+                <a href="/"class="button button--auto-width {% if page.class and page.class == 'home' %}active{% endif %}">home</a>
             </li>
             <li>
-                <a href="/sandbox.html"class="button button--auto-width">Sandbox</a>
+                <a href="/sandbox.html"class="button button--auto-width {% if page.class and page.class == 'sandbox' %}active{% endif %}">Sandbox</a>
             </li>
         </ul>
     </nav>
