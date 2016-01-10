@@ -1,30 +1,53 @@
----
-layout: base
-pattern-stylesheet: true
----
-<div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
-{% include nav.html %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="keywords" content="">
 
-<main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium">
-  <div class="post__main" role="main">
-      <header class="post__header">
-          <div class="wrapper">
-              <h1 class="post__title">{{ page.title }}</h1>
-          </div>
-      </header>
-      <article class="wrapper">
-          <section class="post__content">
-              {{ content }}
-          </section>
-          <footer>
-            {% if page.previous.url %}
-              <a class="post-prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-            {% endif %}
-            {% if page.next.url %}
-              <a class="post-next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-            {% endif %}
-          </footer>
-      </article>
-  </div>
-</div>
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+
+    <link rel="stylesheet" media="all" href="/css/screen.css">
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- build:js /scripts/vendor/modernizr.js -->
+        <script src="/../bower_components/modernizr/modernizr.js"></script>
+    <!-- /build -->
+    
+</head>
+<body>
+    <div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
+    {% include nav.html %}
+    </div>
+
+    <main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium">
+      <div class="post__main" role="main">
+          <header class="post__header">
+              <div class="wrapper">
+                  <h1 class="post__title">{{ page.title }}</h1>
+              </div>
+          </header>
+          <article class="wrapper">
+              <section class="post__content">
+                  {{ content }}
+              </section>
+              <footer>
+                {% if page.previous.url %}
+                  <a class="post-prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                {% endif %}
+                {% if page.next.url %}
+                  <a class="post-next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+                {% endif %}
+              </footer>
+          </article>
+      </div>
+    </main>
+    <script src="/scripts/common.js"></script>
+
+    <!-- build:js /scripts/vendor/svg4everybody.js -->
+        <script src="/../bower_components/svg4everybody/svg4everybody.js"></script>
+    <!-- /build -->
+    {% include google.html %}
+</body>
+</html>
