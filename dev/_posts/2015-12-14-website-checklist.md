@@ -67,7 +67,7 @@ description: |
 
 * [ ] SenSEO score of 85+ [http://goo.gl/mRQEB](http://goo.gl/mRQEB)
 * [ ] Google Rich Snippets [Info: ](Info: http://goo.gl/kdDRY) [Tester: ](http://goo.gl/AhPN)
-* [ ] robots.txt [http://www.robotsgenerator.com/](http://www.robotsgenerator.com/)
+* [ ] robots.txt [http://www.robotsgenerator.com/](http://www.robotsgenerator.com/) or [http://www.toolsiseek.com/robots-txt-generator-validator/](http://www.toolsiseek.com/robots-txt-generator-validator/)
 * [ ] XML sitemap added & in place [http://www.xml-sitemaps.com/](http://www.xml-sitemaps.com/)
 * [ ] Keywords: [google.com/sktool](google.com/sktool)
 * [ ] Check all log urls: screamingfrog / seo spider

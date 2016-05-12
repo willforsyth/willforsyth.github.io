@@ -20,3 +20,9 @@ I have been using the command line for a while now, but I don't use it as much a
 {% highlight html %}
 	cat ~ /.ssh/id_rsa.pub | pbcopy
 {% endhighlight %}
+
+
+####Change the ownerships.
+{% highlight html %}
+  sudo chown -R USERNAME FILE YOU WANT TO CHANGE
+{% endhighlight %}
