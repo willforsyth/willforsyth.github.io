@@ -1,6 +1,7 @@
 module.exports = {
     options: {
-        livereload: true
+        livereload: true,
+        spawn: false
     },
     styles: {
         files: ['dev/_assets/scss/{,*/}*.scss'],

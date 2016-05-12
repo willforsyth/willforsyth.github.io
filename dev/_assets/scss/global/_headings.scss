@@ -14,7 +14,7 @@ h1{
 
 h2{
     @extend %hn;
-    font-size: 2 + $ratio#{em};
+    font-size: 1 + $ratio#{em};
 }
 
 h3,

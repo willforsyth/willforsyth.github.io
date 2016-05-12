@@ -1,0 +1,40 @@
+---
+layout: base
+title: Will forsyth
+class: home
+---
+{% assign posts = site.posts | sort: 'group' %}
+
+
+<div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
+<ul class="column__12-of-12 filterSection">
+          <li>
+              <input class="selectAll blog--filter" checked="true" type="radio" name="radio" value="all" id="checkbox-all"/>
+              <label for="checkbox-all">view all</label>
+              <span></span>
+          </li>
+          {% for category in site.categories %}
+              <li>
+                  <input class="blog--filter" type="radio" name="radio" value="{{ category | first }}" id="checkbox-{{ category | first }}"/>
+                  <label for="checkbox-{{ category | first }}">{{ category | first }}</label>
+                  <span></span>
+              </li>
+          {% endfor %}
+    </ul>
+</div>
+
+<main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium posts__main">
+    <ul class="posts grid">
+        {% for post in site.posts %}
+            <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__10-of-12--medium">
+                <a href="{{ post.url }}" class="posts__link">
+                    <div class="posts__inner">
+                          <h2 class="post--title">{{ post.title }}</h2>
+                          <span class="post--cat">{{ post.category }}</span>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    {% include footer.html %}
+</main>
