@@ -1,0 +1,31 @@
+.hdr {
+  background: url(../imgs/backgrounds/sunset.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  color: $color__white;
+  a {
+    color: $color__white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+}
+
+.hdr--cont {
+  position: relative;
+  height: 100%;
+}
+
+.hdr--title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hdr--nav {
+  position: absolute;
+  top: 1em;
+  right: 0em;
+}

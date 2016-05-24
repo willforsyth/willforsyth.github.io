@@ -1,5 +1,6 @@
-$heading-font: 'Crimson Text', serif;
+$heading-font: 'Lato', sans-serif;
 $body-font: 'Lato', sans-serif;
+
 
 $line-height: $ratio#{em};
 $font-weight: 100;
@@ -19,7 +20,7 @@ html{
 
 body{
     @include breakpoint(small){
-        font-size: 16 / $base-font-size#{em};
+        font-size: 14 / $base-font-size#{em};
         line-height: $line-height;
     }
     @include breakpoint(medium){
@@ -27,7 +28,7 @@ body{
         line-height: $line-height;
     }
     @include breakpoint(large){
-        font-size: 22 / $base-font-size#{em};
+        font-size: 20 / $base-font-size#{em};
         line-height: $line-height;
     }
 }
