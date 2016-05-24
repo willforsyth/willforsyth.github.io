@@ -2,8 +2,7 @@ a{
     color: $color__black;
     fill: $color__black;
     cursor: pointer;
-    text-decoration: underline;
-
+    text-decoration: none;
 
     &:hover,
     &:focus{
