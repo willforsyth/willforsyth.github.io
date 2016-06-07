@@ -302,6 +302,10 @@ window.onload = function() {
     $(".loading").fadeOut('slow');
 };
 
+$('.back').on('click', function(){
+  window.history.back()
+});
+
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"../../../bower_components/ajaxchimp/jquery.ajaxchimp.min":1,"../../../bower_components/jquery/dist/jquery.min":2,"../../../bower_components/js-md5/js/md5":3,"./components/filterPosts":5,"./components/mailchimp":6}],5:[function(require,module,exports){
 /*global define:false */

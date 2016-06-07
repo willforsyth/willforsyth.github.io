@@ -1,10 +1,52 @@
-// Don't leave stuff in here, it's lazy and everyone will hate you for it.
-
-
+.sidebar {
+	padding: 2em;
+	a {
+		color: $color__white;
+	}
+}
 .code--snippet {
 	margin: $ratio#{em} 0;
 }
 
 .hideItem {
     display: none;
+}
+
+.cmn-toggle-yes-no + label {
+  padding: 5px 30px 30px 30px;
+  width: 120px;
+  height: 60px;
+}
+.cmn-toggle-yes-no + label:before, input.cmn-toggle-yes-no + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+	background-color: $color__gray--light;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+	font-family: $body-font;
+}
+.cmn-toggle-yes-no + label:before {
+  background-color: $color__black;
+	color: #fff;
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+.cmn-toggle-yes-no + label:after {
+  background-color: $color__black;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.cmn-toggle-yes-no:checked + label:before {
+  transform: rotateY(180deg);
+}
+.cmn-toggle-yes-no:checked + label:after {
+  transform: rotateY(0);
 }

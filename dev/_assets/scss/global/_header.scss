@@ -1,5 +1,5 @@
 .hdr {
-  background: url(../imgs/backgrounds/sunset.jpg) no-repeat center center;
+  background: url(../imgs/backgrounds/sky.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -18,7 +18,7 @@
 
 .hdr--title {
   position: absolute;
-  top: 35%;
+  top: 21%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -28,4 +28,15 @@
   position: absolute;
   top: 1em;
   right: 0em;
+}
+
+.hdr-scroll {
+  color: $color__white;
+  width: 5em;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }

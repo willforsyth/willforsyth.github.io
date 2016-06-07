@@ -11,23 +11,40 @@ class: home
       <h1 class="">Will forsyth</h1>
       <p>Ui / UX developer</p>
     </div>
-    <nav class="hdr--nav">
-      <ul>
-        <li>
-          <a href="posts.html" href="" title="">Blog</a>
-        </li>
-        <li>
-          <a href="posts.html" href="" title="">About</a>
-        </li>
-        <li>
-          <a href="posts.html" href="" title="">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="hdr-scroll">
+      <svg viewBox="0 0 100 100" class="icon icon--center icon__mouse">
+          <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__mouse"></use>
+      </svg>
+      <p>Scroll down</p>
+    </div>
   </div>
 </header>
 
 <main class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium posts__main">
-
-    {% include footer.html %}
+  <ul class="column__12-of-12 filterSection">
+            <li>
+                <input class="selectAll blog--filter cmn-toggle-yes-no" checked="true" type="radio" name="radio" value="all" id="checkbox-all"/>
+                <label for="checkbox-all" data-on="Viewing all" data-off="View all"></label>
+            </li>
+            {% for category in site.categories %}
+                <li>
+                    <input class="blog--filter cmn-toggle-yes-no" type="radio" name="radio" value="{{ category | first }}" id="checkbox-{{ category | first }}"/>
+                    <label for="checkbox-{{ category | first }}" data-on="{{ category | first }}" data-off="{{ category | first }}"></label>
+                </li>
+            {% endfor %}
+      </ul>
+  </div>
+  <ul class="posts grid">
+      {% for post in site.posts %}
+          <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__10-of-12--medium">
+              <a href="{{ post.url }}" class="posts__link">
+                  <div class="posts__inner">
+                        <h2 class="post--title">{{ post.title }}</h2>
+                        <span class="post--cat">{{ post.category }}</span>
+                  </div>
+              </a>
+          </li>
+      {% endfor %}
+  </ul>
+  {% include footer.html %}
 </main>

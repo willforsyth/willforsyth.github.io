@@ -60,10 +60,10 @@
 
 .filterSection {
     @extend .clearfix;
-    margin-bottom: $ratio--inv#{em};
-    padding: $ratio--inv#{em};
-    margin-top: $ratio#{em};
+    margin-top: 3em;
     li {
+      float: left;
+      margin-right: 0.5em;
     }
 }
 .blog--filter {
@@ -126,6 +126,7 @@ input[type="radio"]{
         position: relative;
         cursor: pointer;
         padding-right: 4em;
+        font-family: $body-font;
     }
 
     &:checked{

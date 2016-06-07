@@ -14,3 +14,7 @@ $('body').mailchimp();
 window.onload = function() {
     $(".loading").fadeOut('slow');
 };
+
+$('.back').on('click', function(){
+  window.history.back()
+});
