@@ -1,9 +1,26 @@
+.welcome--note {
+	text-align: center;
+	margin: 1 + $ratio#{em} auto 0;
+	@include breakpoint(small){
+			margin: 2 + $ratio#{em} auto 8 + $ratio#{em};
+	}
+}
+
+.center {
+		text-align: center;
+}
+
+.info--block {
+	margin-top: 2 + $ratio#{em};
+}
+
 .sidebar {
 	padding: 2em;
 	a {
-		color: $color__white;
+		color: $color__white
 	}
 }
+
 .code--snippet {
 	margin: $ratio#{em} 0;
 }
@@ -17,6 +34,7 @@
   width: 120px;
   height: 60px;
 }
+
 .cmn-toggle-yes-no + label:before, input.cmn-toggle-yes-no + label:after {
   display: block;
   position: absolute;

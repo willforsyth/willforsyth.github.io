@@ -7,6 +7,16 @@ class: home
 
 <header class="hdr">
   <div class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium hdr--cont">
+    <nav class="hdr--nav">
+      <ul>
+        <li>
+          <a href="posts.html" href="" title="">Blog</a>
+        </li>
+        <li>
+          <a href="mailto:info@willforsyth.co.uk" href="" title="">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <div class="hdr--title">
       <h1 class="">Will forsyth</h1>
       <p>Ui / UX developer</p>
@@ -20,31 +30,62 @@ class: home
   </div>
 </header>
 
-<main class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium posts__main">
-  <ul class="column__12-of-12 filterSection">
-            <li>
-                <input class="selectAll blog--filter cmn-toggle-yes-no" checked="true" type="radio" name="radio" value="all" id="checkbox-all"/>
-                <label for="checkbox-all" data-on="Viewing all" data-off="View all"></label>
-            </li>
-            {% for category in site.categories %}
-                <li>
-                    <input class="blog--filter cmn-toggle-yes-no" type="radio" name="radio" value="{{ category | first }}" id="checkbox-{{ category | first }}"/>
-                    <label for="checkbox-{{ category | first }}" data-on="{{ category | first }}" data-off="{{ category | first }}"></label>
-                </li>
-            {% endfor %}
-      </ul>
+<main class="column column__center column__12-of-12 column__8-of-12--medium column__9-of-12--medium posts__main">
+  <div class="column column__center column__8-of-12 welcome--note">
+    <h2>Welcome</h2>
+    <p>You'll find a little bit about me on this site and some <a href="posts.html" title="have a gander">blog posts</a> of things I find interesting, mainly they are for my reference but if someone finds it useful then even better.
+    I currently head up a small front end team looking after the UX and front end output for <a href="www.drummondcentral.co.uk" title="Puddle trouble">Drummond cental</a>.</p>
   </div>
-  <ul class="posts grid">
-      {% for post in site.posts %}
-          <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__10-of-12--medium">
-              <a href="{{ post.url }}" class="posts__link">
-                  <div class="posts__inner">
-                        <h2 class="post--title">{{ post.title }}</h2>
-                        <span class="post--cat">{{ post.category }}</span>
-                  </div>
-              </a>
-          </li>
-      {% endfor %}
-  </ul>
+
+  <div class="column column__12-of-12 column__6-of-12--medium column__4-of-12--large info--block">
+    <svg viewBox="0 0 100 100" class="icon--large icon--center icon__html">
+        <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__html"></use>
+    </svg>
+    <h3>Ui development</h3>
+    <ul>
+      <li>HTML &amp; CSS</li>
+      <li>Javascript and jquery</li>
+      <li><h5>Experimenting with:</h5>
+        <ul>
+          <li>React.js</li>
+          <li>Angular.js 2</li>
+          <li>Underscore.js</li>
+          <li>Handlerbars.js</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="column column__12-of-12 column__6-of-12--medium column__4-of-12--large info--block">
+    <svg viewBox="0 0 100 100" class="icon--large icon--center icon__wireframe">
+        <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__wireframe"></use>
+    </svg>
+    <h3>UX development</h3>
+    <ul>
+      <li>
+        <ul>
+          <li>Problem defined</li>
+          <li>Usability testing against a live product, or a prototype</li>
+          <li>Wireframing and Prototyping</li>
+          <li>Laying out wirefarames and sitemaps</li>
+          <li>Creating a working prototype</li>
+          <li>Usability testing ( again )</li>
+          <li>Site analysis</li>
+          <li>Alaytics research</li>
+          <li>Defining any problem areas and iterating</li>
+          <li>Usability testing ( see a pattern? )</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="column column__12-of-12 column__6-of-12--medium column__4-of-12--large info--block">
+    <svg viewBox="0 0 100 100" class="icon--large icon--center icon__design">
+        <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__design"></use>
+    </svg>
+    <h3>Art direction</h3>
+    <ul>
+      <li>Guiding designers on best web practice and aiding in the design and ideas process.</li>
+    </ul>
+  </div>
   {% include footer.html %}
 </main>

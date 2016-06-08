@@ -6,35 +6,52 @@ class: home
 {% assign posts = site.posts | sort: 'group' %}
 
 
-<div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
-<ul class="column__12-of-12 filterSection">
-          <li>
-              <input class="selectAll blog--filter" checked="true" type="radio" name="radio" value="all" id="checkbox-all"/>
-              <label for="checkbox-all">view all</label>
-              <span></span>
-          </li>
-          {% for category in site.categories %}
-              <li>
-                  <input class="blog--filter" type="radio" name="radio" value="{{ category | first }}" id="checkbox-{{ category | first }}"/>
-                  <label for="checkbox-{{ category | first }}">{{ category | first }}</label>
-                  <span></span>
-              </li>
-          {% endfor %}
-    </ul>
-</div>
+<header class="hdr hdr--posts">
+  <div class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium hdr--cont">
+    <nav class="hdr--nav">
+      <ul>
+        <li>
+          <a href="/" href="" title="">Home</a>
+        </li>
+        <li>
+          <a href="posts.html" href="" title="">Blog</a>
+        </li>
+        <li>
+          <a href="mailto:info@willforsyth.co.uk" href="" title="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hdr--title">
+      <h1 class="">“Does it better”<br> will always beat <br> “did it first.”</h1>
+    </div>
+  </div>
+</header>
 
-<main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium posts__main">
-    <ul class="posts grid">
-        {% for post in site.posts %}
-            <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__10-of-12--medium">
-                <a href="{{ post.url }}" class="posts__link">
-                    <div class="posts__inner">
-                          <h2 class="post--title">{{ post.title }}</h2>
-                          <span class="post--cat">{{ post.category }}</span>
-                    </div>
-                </a>
+<main class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium posts__main">
+  <ul class="column__12-of-12 filterSection">
+            <li>
+                <input class="selectAll blog--filter cmn-toggle-yes-no" checked="true" type="radio" name="radio" value="all" id="checkbox-all"/>
+                <label for="checkbox-all" data-on="Viewing all" data-off="View all"></label>
             </li>
-        {% endfor %}
-    </ul>
-    {% include footer.html %}
+            {% for category in site.categories %}
+                <li>
+                    <input class="blog--filter cmn-toggle-yes-no" type="radio" name="radio" value="{{ category | first }}" id="checkbox-{{ category | first }}"/>
+                    <label for="checkbox-{{ category | first }}" data-on="{{ category | first }}" data-off="{{ category | first }}"></label>
+                </li>
+            {% endfor %}
+      </ul>
+  </div>
+  <ul class="posts grid">
+      {% for post in site.posts %}
+          <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__10-of-12--medium">
+              <a href="{{ post.url }}" class="posts__link">
+                  <div class="posts__inner">
+                        <h2 class="post--title">{{ post.title }}</h2>
+                        <span class="post--cat">{{ post.category }}</span>
+                  </div>
+              </a>
+          </li>
+      {% endfor %}
+  </ul>
+  {% include footer.html %}
 </main>
