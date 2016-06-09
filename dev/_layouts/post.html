@@ -5,23 +5,37 @@
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1">
     <meta name="keywords" content="">
-
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
-
     <link rel="stylesheet" media="all" href="/css/screen.css">
-
-
 </head>
+
+
 <body class="post--page">
+  <header class="hdr hdr--post">
+    <div class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium hdr--cont">
+      <nav class="hdr--nav">
+        <ul>
+          <li>
+            <a href="/" href="" title="">Home</a>
+          </li>
+          <li>
+            <a href="posts.html" href="" title="">Blog</a>
+          </li>
+          <li>
+            <a href="mailto:info@willforsyth.co.uk" href="" title="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hdr--title">
+        <h1 class="">{{ page.title }}</h1>
+      </div>
+    </div>
+  </header>
     <div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
       <a class="back" href="#" title="back">Back</a>
     </div>
-
     <main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium">
       <article class="post__main" role="main">
-          <header class="post__header">
-            <h1 class="post__title">{{ page.title }}</h1>
-          </header>
           <section class="post__content">
               {{ content }}
           </section>

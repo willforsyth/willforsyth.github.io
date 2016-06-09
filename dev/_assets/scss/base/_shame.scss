@@ -7,8 +7,7 @@
 }
 
 .offscreen {
-	right: -9000px;
-	position: absolute;
+	visibility: hidden;
 }
 
 .center {
@@ -21,9 +20,6 @@
 
 .sidebar {
 	padding: 2em;
-	a {
-		color: $color__white
-	}
 }
 
 .code--snippet {
