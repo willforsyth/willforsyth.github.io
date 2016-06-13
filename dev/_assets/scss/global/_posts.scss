@@ -1,3 +1,8 @@
+.post--page {
+  background: $color__white;
+  color: $color__black;
+}
+
 .post__main {
     z-index: 10;
     float: left;
@@ -7,14 +12,8 @@
     margin-top: $ratio#{em};
     @extend .clearfix;
     a {
-      color: $color__white;
       text-decoration: underline;
     }
-}
-
-.post--page {
-  background: $color__black;
-  color: $color__white;
 }
 
 .posts {
@@ -47,9 +46,10 @@
     @extend .clearfix;
     .highlight {
         padding: $ratio#{em};
-        background: $color__white;
-        color: $color__black;
-        margin-top: $ratio#{em};
+        background: $color__black;
+        color: $color__white;
+        margin-top: $ratio__inv#{em};
+        clear: both;
     }
 }
 .posts__inner {

@@ -27,6 +27,7 @@ regenerate:
  - 'sass:dev'
  - 'autoprefixer:dev'
  - 'copy:scripts'
+ - 'copy:json'
  - 'browserify:dev'
  - 'copy:images'
  - 'copy:fonts'

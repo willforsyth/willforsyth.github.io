@@ -4,6 +4,13 @@
     height: $ratio#{em};
 }
 
+.icon--large {
+  display: inline-block;
+  width: 3 + $ratio#{em};
+  height: 3 + $ratio#{em};
+  fill: $color__black;
+}
+
 .icon__facebook{
 	fill: $color__facebook;
 }
