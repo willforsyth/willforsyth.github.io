@@ -61,9 +61,13 @@
 .filterSection {
     @extend .clearfix;
     margin-top: 3em;
+    display: none;
     li {
       float: left;
       margin-right: 0.5em;
+    }
+    @include breakpoint(medium){
+        display: block;
     }
 }
 .blog--filter {
