@@ -18,3 +18,6 @@ window.onload = function() {
 $('.back').on('click', function(){
   window.history.back()
 });
+
+require('./components/map');
+$('header').map();

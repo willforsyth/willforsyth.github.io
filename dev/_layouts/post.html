@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
     <link rel="stylesheet" media="all" href="/css/screen.css">
+    <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
 </head>
 
 
@@ -34,7 +35,7 @@
     <div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
       <a class="back" href="/posts.html" title="back">Back</a>
     </div>
-    <main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium">
+    <main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__6-of-12--large">
       <article class="post__main" role="main">
           <section class="post__content">
               {{ content }}
@@ -49,6 +50,11 @@
           </footer>
         </article>
     </main>
+
+
+    <script data-require="leaflet@0.7.3" data-semver="0.7.3" src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="/scripts/fuse-search.js"></script>
+    <script src="/scripts/fuse-search-two.js"></script>
     <script src="/scripts/common.js"></script>
 
     {% include google.html %}

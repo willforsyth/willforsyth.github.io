@@ -46,9 +46,9 @@
     @extend .clearfix;
     .highlight {
         padding: $ratio#{em};
-        background: $color__white;
-        color: $color__black;
-        margin-top: $ratio#{em};
+        background: $color__black;
+        color: $color__white;
+        margin-top: $ratio__inv#{em};
     }
 }
 .posts__inner {

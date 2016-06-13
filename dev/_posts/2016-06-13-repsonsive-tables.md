@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Front end pattern library
+title: Making responsive tables
 comments: false
 published: false
 category: tips

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Front end pattern library
+title: Closures in javascript
 comments: false
 published: false
 category: tips

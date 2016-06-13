@@ -25,6 +25,15 @@ module.exports = {
             src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
         }]
     },
+    json: {
+        files: [{
+            expand: true,
+            dot: true,
+            cwd: 'dev/_assets/',
+            dest: '.tmp',
+            src: 'json/{,*/}*.{geojson,json}'
+        }]
+    },
      dist:{
         files: [{
             expand: true,
@@ -44,6 +53,12 @@ module.exports = {
             cwd: 'dev/_assets/',
             dest: 'web',
             src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
+        },{
+            expand: true,
+            dot: true,
+            cwd: 'dev/_assets/',
+            dest: 'web',
+            src: 'json/{,*/}*.{geojson,json}'
         }]
     }
 };
