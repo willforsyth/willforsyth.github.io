@@ -83,6 +83,11 @@
 
 .controls {
   float: right;
+	width: 100%;
+	a {
+		background: $color__gray--light;
+		padding: 0.2em 1em 1em;
+	}
 }
 
 .leaflet-fusesearch-control {

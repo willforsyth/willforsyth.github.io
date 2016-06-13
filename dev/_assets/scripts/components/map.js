@@ -11,32 +11,6 @@ $.fn.map = function (options) {
       'layers': [tileLayer]
     });
 
-  //   var featureCollection = [{
-  //     "type": "Feature",
-  //     "properties": {
-  //       "title": "marker1",
-  //       "url": 'http://google.com',
-  //       "img": 'http://placehold.it/50x50',
-  //       'id': 'marker1'
-  //     },
-  //     "geometry": {
-  //         "type": "Point",
-  //         "coordinates": [-1.60899, 54.97223]
-  //     }
-  // },{
-  //     "type": "Feature",
-  //     "properties": {
-  //       "title": "marker2",
-  //       "url": 'http://google.com',
-  //       "img": 'http://placehold.it/50x50',
-  //       'id': 'marker2'
-  //     },
-  //     "geometry": {
-  //         "type": "Point",
-  //         "coordinates": [-1.61899, 54.98223]
-  //     }
-  // }];
-
 
   $.getJSON("/json/data.geojson", function(featureCollection) {
 

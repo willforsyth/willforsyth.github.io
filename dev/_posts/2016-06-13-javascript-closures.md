@@ -3,7 +3,7 @@ layout: post
 title: Closures in javascript
 comments: false
 published: false
-category: tips
+category: javascript
 description: |
   This is a test post of a post thats really nice and wonderful
 ---
