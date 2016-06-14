@@ -29,7 +29,8 @@ Here is the working prototype. Styles are not existent but I produced it for pro
     'zoom': 10,
     'layers': [tileLayer]
   });
-
+{% endhighlight %}
+{% highlight javascript %}
   $.getJSON("/json/data.geojson", function(featureCollection) {
 
   var searchCtrl = L.control.fuseSearch()
