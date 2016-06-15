@@ -6,6 +6,10 @@
 	}
 }
 
+#disqus_thread {
+	margin-top: 3 + $ratio#{em}
+}
+
 .offscreen {
 	visibility: hidden;
 }

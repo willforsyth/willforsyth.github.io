@@ -8,7 +8,7 @@ description: |
  Website checklist complete before going live.
 ---
 
-###== Best practices ==
+### == Best practices ==
 
 * [ ] Checked for broken links [http://validator.w3.org/checklink](http://validator.w3.org/checklink)
 * [ ] Spell-checked

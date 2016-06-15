@@ -40,6 +40,7 @@
       <article class="post__main" role="main">
           <section class="post__content">
               {{ content }}
+              {% include comments.html %}
           </section>
           <footer>
             {% if page.previous.url %}
@@ -50,6 +51,7 @@
             {% endif %}
           </footer>
         </article>
+        {% include footer.html %}
     </main>
 
 
