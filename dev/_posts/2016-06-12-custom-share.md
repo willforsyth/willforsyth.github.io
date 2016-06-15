@@ -5,8 +5,9 @@ comments: false
 published: true
 category: javascript
 description: |
-
+  If your anything like me you will have been asked or wanted to add share icons to your site or clients site / app. Here is how.
 ---
+
 #Add in custom share links.
 If your anything like me you will have been asked or wanted to add share icons to your site or clients site / app. But the designers have proposed custom icons so adding in the default social share icons will make the design look crap or your haven't managed to convince them that the default functionality is actually ok. Having said that the default look is ugly. So what to do? I have used this method in production and all has went well. Here is the code and a simple explanation.
 

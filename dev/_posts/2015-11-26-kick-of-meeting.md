@@ -5,7 +5,7 @@ comments: false
 published: true
 category: ux
 description: |
-  This is a test post of a post thats really nice and wonderful
+  If you are involved in the initial meeting with a client after, try to get them involved as possible.
 ---
 
 If you are involved in the initial meeting with a client after, try to get them involved as possible.

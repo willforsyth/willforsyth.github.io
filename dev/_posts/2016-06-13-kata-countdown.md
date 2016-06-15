@@ -5,7 +5,7 @@ comments: false
 published: true
 category: javascript
 description: |
-  This is a test post of a post thats really nice and wonderful
+  Countdown word game task. Javascript and underscore.js
 ---
 
 We set ourselves a kata as part of out monthly meeting at work, to create a [countdown word game](https://en.wikipedia.org/wiki/Countdown_(game_show)) from the UK gameshow. We could use any language we liked. The front end guys used [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and the back end guys used [go](https://golang.org/) and some used [php](http://php.net/).

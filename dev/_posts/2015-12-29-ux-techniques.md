@@ -5,7 +5,7 @@ published: true
 comments: false
 category: ux
 description: |
-
+ A list of different UX research techniques.
 ---
 
 ###Stakeholder Interviews:

@@ -5,7 +5,7 @@ comments: false
 published: true
 category: tips
 description: |
-
+  Accessibility goes hand in hand with user experience. As developers its something that needs to be considered as you build your product.
 ---
 
 Accessibility goes hand in hand with user experience. As developers its something that needs to be considered as you build your product.

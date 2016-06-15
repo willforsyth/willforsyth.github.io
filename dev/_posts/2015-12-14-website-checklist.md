@@ -5,7 +5,7 @@ comments: false
 published: true
 category: tips
 description: |
-
+ Website checklist complete before going live.
 ---
 
 ###== Best practices ==
