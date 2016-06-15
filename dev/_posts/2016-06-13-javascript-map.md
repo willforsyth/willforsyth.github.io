@@ -60,3 +60,6 @@ Here is the working prototype. Styles are not existent but I produced it for pro
   });
 {% endhighlight %}
 I will comment the code and give some guidelines on my approach if anyone is interested.
+
+###Source code
+[github repo](https://github.com/willforsyth/maps)

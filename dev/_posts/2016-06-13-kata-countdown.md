@@ -8,14 +8,14 @@ description: |
   This is a test post of a post thats really nice and wonderful
 ---
 
-We set ourselves a kata as part of out monthly meeting, to create a [countdown word game](https://en.wikipedia.org/wiki/Countdown_(game_show)) from the UK gameshow. We could use any language we liked. The front end guys used [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and the back end guys used [go](https://golang.org/) and some used [php](http://php.net/).
+We set ourselves a kata as part of out monthly meeting at work, to create a [countdown word game](https://en.wikipedia.org/wiki/Countdown_(game_show)) from the UK gameshow. We could use any language we liked. The front end guys used [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and the back end guys used [go](https://golang.org/) and some used [php](http://php.net/).
 
 ###Here is my approach
-My idea was to get the list for letters and compare them against the words in the json. If the words contained the letters return the words. The if the words only container the letters I knew these would be the words I need. Save the key for these so I could then return the words. That was the idea anyway. After lots of research I decided to use [underscore.js](http://underscorejs.org/) as it had this nice function [intersection](http://underscorejs.org/#intersection). The docs says "Computes the list of values that are the intersection of all the arrays. Each value in the result is present in each of the arrays." So this was exactly what I wanted.
+My idea was to get the list for letters and compare them against the words in the json. If the words contained the letters return the words. Then if the words only contained the letters, I knew these would be the words I needed. Then save the key for these so I could then return the words later. That was the idea anyway. After lots of research I decided to use [underscore.js](http://underscorejs.org/) as it had this nice function [intersection](http://underscorejs.org/#intersection). The docs says "Computes the list of values that are the intersection of all the arrays. Each value in the result is present in each of the arrays." So this was exactly what I wanted.
 
 1. Get a word list to use to compare. [npm word list](https://www.npmjs.com/package/word-list)
 2. Access the word list and create a list of letters to use (add this into input later)
-3. Using a for loop, loop over the objects and get the kets and the values.
+3. Using a for loop, loop over the objects and get the keys and the values.
 4. Save the values to a variable.
 5. Get the length of the values.
 6. Using the [intersection](http://underscorejs.org/#intersection) function compare my letters against the list of words.
@@ -61,3 +61,6 @@ var letters =['b','e','d','n','e','r','s','h'];
 
 ####Improvements:
 Currently this method wont compare double letters :-(
+
+###Source code
+[github](https://github.com/willforsyth/kata-countdown)
