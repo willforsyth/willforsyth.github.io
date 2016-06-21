@@ -3,6 +3,10 @@
   color: $color__black;
 }
 
+.posts__main {
+    @extend .clearfix;
+}
+
 .post__main {
     z-index: 10;
     float: left;
