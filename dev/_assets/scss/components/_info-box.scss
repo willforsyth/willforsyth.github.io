@@ -1,0 +1,41 @@
+.info--block {
+	margin-top: 2 + $ratio#{em};
+	padding: 0 !important;
+}
+
+.info--block--title {
+	color: $color__gray;
+	font-size: $ratio#{em};
+}
+
+.info--block--content {
+	padding-right: $ratio#{em};
+}
+
+
+// .info--block--first {
+// 	background:
+// 	linear-gradient(
+// 		rgba(0, 0, 0, 0.4),
+// 		rgba(0, 0, 0, 0.4)
+// 	),url(../imgs/backgrounds/space.jpg) no-repeat center center;
+// 	background-size: cover;
+// }
+//
+// .info--block--second {
+// 	background:
+// 	linear-gradient(
+// 		rgba(0, 0, 0, 0.4),
+// 		rgba(0, 0, 0, 0.4)
+// 	),url(../imgs/backgrounds/sky.jpg) no-repeat center center;
+// 	background-size: cover;
+// }
+//
+// .info--block--third {
+// 	background:
+// 	linear-gradient(
+// 		rgba(0, 0, 0, 0.4),
+// 		rgba(0, 0, 0, 0.4)
+// 	),url(../imgs/backgrounds/dog.jpg) no-repeat center center;
+// 	background-size: cover;
+// }

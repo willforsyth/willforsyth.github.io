@@ -2,7 +2,7 @@
 	text-align: center;
 	margin: 1 + $ratio#{em} auto 0;
 	@include breakpoint(small){
-			margin: 2 + $ratio#{em} auto 8 + $ratio#{em};
+			margin: 8 + $ratio#{em} auto 8 + $ratio#{em};
 	}
 }
 
@@ -16,10 +16,6 @@
 
 .center {
 		text-align: center;
-}
-
-.info--block {
-	margin-top: 2 + $ratio#{em};
 }
 
 .sidebar {

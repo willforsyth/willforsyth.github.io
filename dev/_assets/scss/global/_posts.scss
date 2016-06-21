@@ -5,6 +5,7 @@
 
 .posts__main {
     @extend .clearfix;
+    margin-bottom: 8 + $ratio#{em};
 }
 
 .post__main {
