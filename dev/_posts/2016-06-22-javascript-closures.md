@@ -2,7 +2,7 @@
 layout: post
 title: Closures in javascript
 comments: false
-published: false
+published: true
 category: javascript
 description: |
   Javascript closures
@@ -11,7 +11,7 @@ description: |
 ### Working with closures
 A closure returns a function from within a function. The inner function retains access to the scope. It has reference to a variable from its parents environment.
 
-> benefits to closures
+> Closures create private functions
 
 #### Simple example
 {% highlight javascript %}
