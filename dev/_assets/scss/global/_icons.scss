@@ -22,3 +22,15 @@
 .icon--center {
   margin: auto;
 }
+
+.icon--inline {
+  margin-right: 0.61803em;
+  vertical-align: middle;
+  + span {
+    vertical-align: middle;
+  }
+}
+
+footer .icon {
+  fill: $color__white;
+}

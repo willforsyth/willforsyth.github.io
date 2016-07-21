@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closures in javascript
+title: Typescript
 comments: false
 published: false
 category: javascript

@@ -1,5 +1,13 @@
-name: Pattern Library Template
+title: Willforsyth
+name: Blog and play ground
+description: A blog about front end developing tips and referance and lots of UX stuff.
+url: willforsyth.co.uk
+author: Will Forsyth
 markdown: kramdown
+gems:
+  - jekyll-seo-tag
+twitter:
+  username: willforsyth
 kramdown:
   auto_ids: false
 collections:

@@ -7,7 +7,6 @@
 @import "layout/clearfix.scss";
 @import "layout/example.scss";
 
-// Load these here because we don't need them in the app.
 @import "components/code-blocks.scss";
 @import "components/syntax.scss";
 
@@ -15,5 +14,3 @@
 @import "patterns/pattern__nav.scss";
 @import "patterns/pattern__grid.scss";
 @import "patterns/pattern__toolbar.scss";
-
-

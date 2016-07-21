@@ -2,8 +2,12 @@
 	text-align: center;
 	margin: 1 + $ratio#{em} auto 0;
 	@include breakpoint(small){
-			margin: 2 + $ratio#{em} auto 8 + $ratio#{em};
+			margin: 8 + $ratio#{em} auto 8 + $ratio#{em};
 	}
+}
+
+#disqus_thread {
+	margin-top: 3 + $ratio#{em}
 }
 
 .offscreen {
@@ -12,10 +16,6 @@
 
 .center {
 		text-align: center;
-}
-
-.info--block {
-	margin-top: 2 + $ratio#{em};
 }
 
 .sidebar {

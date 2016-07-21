@@ -29,3 +29,10 @@ body{
 .hide{
     display: none;
 }
+
+ol {
+  li {
+    list-style-position: inside;
+    margin: 1em 0;
+  }
+}

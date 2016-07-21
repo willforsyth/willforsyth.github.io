@@ -10,9 +10,11 @@
 
 @import "animations/animations.scss";
 
+@import "components/code-blocks.scss";
 @import "components/lightbox.scss";
 @import "components/loading.scss";
 @import "components/code-blocks.scss";
+@import "components/info-box.scss";
 @import "components/sidebar.scss";
 @import "components/blockquote.scss";
 
@@ -23,6 +25,7 @@
 @import "global/base.scss";
 @import "global/headings.scss";
 @import "global/buttons.scss";
+@import "global/posts.scss";
 @import "global/header.scss";
 @import "global/icons.scss";
 @import "global/images.scss";

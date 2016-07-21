@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1">
-    <meta name="keywords" content="">
+    <link rel="prefetch" href="/imgs/backgrounds/sky.jpg">
+    {% seo %}
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
     <link rel="stylesheet" media="all" href="/css/screen.css">
     <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
@@ -39,6 +39,7 @@
       <article class="post__main" role="main">
           <section class="post__content">
               {{ content }}
+              {% include comments.html %}
           </section>
           <footer>
             {% if page.previous.url %}
@@ -50,6 +51,7 @@
           </footer>
         </article>
     </main>
+    {% include footer.html %}
 
 
     <script data-require="leaflet@0.7.3" data-semver="0.7.3" src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>

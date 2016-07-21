@@ -5,7 +5,7 @@ comments: false
 published: true
 category: javascript
 description: |
-  This is a test post of a post thats really nice and wonderful
+  Custom map using leaflet, and geoJson.
 ---
 
 We had an interesting pitch come in at work that I looked into a couple of techniques. It was to build an interactive map similar to [airBnBs](https://www.airbnb.co.uk/things-to-do/new-york) approach.
@@ -29,7 +29,8 @@ Here is the working prototype. Styles are not existent but I produced it for pro
     'zoom': 10,
     'layers': [tileLayer]
   });
-
+{% endhighlight %}
+{% highlight javascript %}
   $.getJSON("/json/data.geojson", function(featureCollection) {
 
   var searchCtrl = L.control.fuseSearch()
@@ -59,3 +60,7 @@ Here is the working prototype. Styles are not existent but I produced it for pro
   });
 {% endhighlight %}
 I will comment the code and give some guidelines on my approach if anyone is interested.
+
+### Source code
+
+[github repo](https://github.com/willforsyth/maps)
