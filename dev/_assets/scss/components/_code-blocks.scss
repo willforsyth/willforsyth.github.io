@@ -18,6 +18,7 @@ code{
 	    padding: $ratio#{em};
 	    overflow: auto;
 	    position: relative;
+      word-break: break-all;
     }
 
     &:after,
