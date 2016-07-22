@@ -42,8 +42,8 @@ code{
     }
 }
 
-.language-javascript {
-  .kd, .kr {
+.language-javascript, .language-html {
+  .kd, .kr, .nt {
     color: $color__red;
   }
   .nx {
