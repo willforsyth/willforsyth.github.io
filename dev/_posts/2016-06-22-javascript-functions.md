@@ -45,3 +45,76 @@ Example of calling functions from within other functions and adding simple numbe
 
         num1(2);
 {% endhighlight %}
+
+
+### Example using modules to call functions from within other functions
+
+Copy this code to you ide and view in your browser to see the console logs.
+
+The html
+
+{% highlight html %}
+
+<p>Hello world! This is HTML5 Boilerplate.</p>
+<a href="#">test</a>
+
+{% endhighlight %}
+
+The javascript
+
+{% highlight javascript %}
+
+var testingFunction = (function(){
+    var test2;
+
+    function loading(e){
+      testingFunctionTwo.ConsoleClick(test2);
+    };
+
+    function sausages(i){
+      console.log('I am in function 1' + " " + i);
+    };
+
+    function init(){
+      test2 = "I am in function 1";
+      $('p').on('click', loading);
+    }
+
+    return {
+      init: init,
+      sausages: sausages
+    }
+
+})();
+
+$(document).ready(testingFunction.init);
+
+var testingFunctionTwo = (function(){
+  var test;
+  var test2;
+
+  function ConsoleClick(i) {
+    console.log('I am in function 2' + " " + i);
+  }
+
+  function link(e){
+    console.log('I clicked in function 2 and calling a function in function 1');
+    testingFunction.sausages(test);
+  };
+
+  function init(){
+    test = "pressed and called from within function 2";
+    test2 = "I am in function 2";
+    $('a').on('click', link);
+  }
+
+  return {
+    init: init,
+    ConsoleClick: ConsoleClick
+  }
+
+})();
+
+$(document).ready(testingFunctionTwo.init);
+
+{% endhighlight %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML5 banner ads
+title: HTML5 banner ads - Double Click
 comments: false
 published: true
 category: tips

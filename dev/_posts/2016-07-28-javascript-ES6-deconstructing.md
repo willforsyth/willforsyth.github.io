@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES6 - deconstructing
+title: ES6 - arrow functions
 comments: false
 published: true
 category: javascript
