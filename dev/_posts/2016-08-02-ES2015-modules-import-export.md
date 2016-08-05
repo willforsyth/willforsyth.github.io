@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES6 - arrow functions
+title: ES2015 - modules Import and Export
 comments: false
 published: false
 category: javascript
@@ -8,9 +8,13 @@ description: |
   Binds this to the function
 ---
 
-### Arrow functions
+### import and export
 
-The new Arrow functions created a contained scope for this
+import
+
+export
+
+Loading api
 
 {% highlight javascript %}
 

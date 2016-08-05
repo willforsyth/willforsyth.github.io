@@ -24,7 +24,7 @@ Explanation
 
 {% endhighlight %}
 
-### call()
+### call() / apply()
 
 Explanation
 
@@ -39,3 +39,25 @@ Explanation
 {% highlight javascript %}
 
 {% endhighlight %}
+
+### map
+
+Explanation
+
+{% highlight javascript %}
+
+{% endhighlight %}
+
+### filter
+
+Explanation
+
+{% highlight javascript %}
+
+{% endhighlight %}
+
+## Native array functionality
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function

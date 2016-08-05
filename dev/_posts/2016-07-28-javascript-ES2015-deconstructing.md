@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES6 - arrow functions
+title: ES2015 - arrow functions
 comments: false
 published: true
 category: javascript

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES6 - promises
+title: ES2015 - arrow functions
 comments: false
 published: false
 category: javascript
@@ -8,9 +8,9 @@ description: |
   Binds this to the function
 ---
 
-### Promises
+### Arrow functions
 
-
+The new Arrow functions created a contained scope for this
 
 {% highlight javascript %}
 

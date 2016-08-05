@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES6 - let and const
+title: ES2015 - let and const
 comments: false
 published: true
 category: javascript
