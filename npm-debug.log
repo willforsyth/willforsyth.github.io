@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 warn package.json pattern-library-template@0.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/willforsyth/Sites/willforsyth.co.uk/new',
+6 verbose install   [ 'browserify',
+6 verbose install     'browserify-shim',
+6 verbose install     'grunt',
+6 verbose install     'grunt-autoprefixer',
+6 verbose install     'grunt-browserify',
+6 verbose install     'grunt-contrib-clean',
+6 verbose install     'grunt-contrib-connect',
+6 verbose install     'grunt-contrib-copy',
+6 verbose install     'grunt-contrib-htmlmin',
+6 verbose install     'grunt-contrib-requirejs',
+6 verbose install     'grunt-contrib-sass',
+6 verbose install     'grunt-contrib-uglify',
+6 verbose install     'grunt-contrib-watch',
+6 verbose install     'grunt-gh-pages',
+6 verbose install     'grunt-jekyll',
+6 verbose install     'grunt-modernizr',
+6 verbose install     'grunt-processhtml',
+6 verbose install     'grunt-svgstore',
+6 verbose install     'jit-grunt',
+6 verbose install     'load-grunt-config' ] ]
+7 info preinstall pattern-library-template@0.0.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping grunt-contrib-connect@^0.7.1 /Users/willforsyth/Sites/willforsyth.co.uk/new
+10 verbose already installed skipping grunt-contrib-copy@^0.5.0 /Users/willforsyth/Sites/willforsyth.co.uk/new
+11 verbose already installed skipping grunt-contrib-htmlmin@^0.3.0 /Users/willforsyth/Sites/willforsyth.co.uk/new
+12 verbose already installed skipping grunt-contrib-requirejs@^0.4.4 /Users/willforsyth/Sites/willforsyth.co.uk/new
+13 verbose already installed skipping grunt-contrib-sass@^0.7.3 /Users/willforsyth/Sites/willforsyth.co.uk/new
+14 verbose already installed skipping grunt-contrib-uglify@^0.7.0 /Users/willforsyth/Sites/willforsyth.co.uk/new
+15 verbose already installed skipping grunt-contrib-watch@^0.6.1 /Users/willforsyth/Sites/willforsyth.co.uk/new
+16 verbose already installed skipping grunt-gh-pages@^0.9.1 /Users/willforsyth/Sites/willforsyth.co.uk/new
+17 verbose already installed skipping grunt-jekyll@^0.4.2 /Users/willforsyth/Sites/willforsyth.co.uk/new
+18 verbose cache add [ 'grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677',
+18 verbose cache add   null ]
+19 verbose cache add name=undefined spec="grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677" args=["grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: '#d6657bf302bd9288e25a513197fb0e30c64ce677',
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'grunt-modernizr@metaloha/grunt-modernizr',
+20 verbose parsed url   path: 'grunt-modernizr@metaloha/grunt-modernizr',
+20 verbose parsed url   href: 'grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677' }
+21 verbose cache add name="grunt-modernizr" spec="metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677" args=["grunt-modernizr","metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: '#d6657bf302bd9288e25a513197fb0e30c64ce677',
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'metaloha/grunt-modernizr',
+22 verbose parsed url   path: 'metaloha/grunt-modernizr',
+22 verbose parsed url   href: 'metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677' }
+23 verbose addNamed [ 'grunt-modernizr',
+23 verbose addNamed   'metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677' ]
+24 verbose addNamed [ null, null ]
+25 verbose already installed skipping grunt-processhtml@^0.3.3 /Users/willforsyth/Sites/willforsyth.co.uk/new
+26 verbose already installed skipping grunt-svgstore@^0.3.5 /Users/willforsyth/Sites/willforsyth.co.uk/new
+27 silly lockFile 6cd260c4-02bd9288e25a513197fb0e30c64ce677 grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677
+28 verbose lock grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677 /Users/willforsyth/.npm/6cd260c4-02bd9288e25a513197fb0e30c64ce677.lock
+29 info addNameTag [ 'grunt-modernizr',
+29 info addNameTag   'metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677' ]
+30 verbose already installed skipping jit-grunt@^0.7.0 /Users/willforsyth/Sites/willforsyth.co.uk/new
+31 verbose url raw grunt-modernizr
+32 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-modernizr' ]
+33 verbose url resolved https://registry.npmjs.org/grunt-modernizr
+34 info trying registry request attempt 1 at 20:53:30
+35 verbose etag "2NGHVIF0X20HAISQSS28HHOUB"
+36 http GET https://registry.npmjs.org/grunt-modernizr
+37 verbose already installed skipping load-grunt-config@^0.9.2 /Users/willforsyth/Sites/willforsyth.co.uk/new
+38 verbose already installed skipping grunt@^0.4.5 /Users/willforsyth/Sites/willforsyth.co.uk/new
+39 verbose already installed skipping browserify@~3.44.2 /Users/willforsyth/Sites/willforsyth.co.uk/new
+40 verbose already installed skipping browserify-shim@~3.4.1 /Users/willforsyth/Sites/willforsyth.co.uk/new
+41 verbose already installed skipping grunt-autoprefixer@^1.0.1 /Users/willforsyth/Sites/willforsyth.co.uk/new
+42 verbose already installed skipping grunt-browserify@^3.8.0 /Users/willforsyth/Sites/willforsyth.co.uk/new
+43 verbose already installed skipping grunt-contrib-clean@^0.6.0 /Users/willforsyth/Sites/willforsyth.co.uk/new
+44 http 304 https://registry.npmjs.org/grunt-modernizr
+45 silly registry.get cb [ 304,
+45 silly registry.get   { date: 'Fri, 22 Jul 2016 19:53:31 GMT',
+45 silly registry.get     via: '1.1 varnish',
+45 silly registry.get     'cache-control': 'max-age=300',
+45 silly registry.get     etag: '"2NGHVIF0X20HAISQSS28HHOUB"',
+45 silly registry.get     age: '0',
+45 silly registry.get     connection: 'keep-alive',
+45 silly registry.get     'x-served-by': 'cache-lhr6345-LHR',
+45 silly registry.get     'x-cache': 'HIT',
+45 silly registry.get     'x-cache-hits': '1',
+45 silly registry.get     'x-timer': 'S1469217211.209328,VS0,VE365',
+45 silly registry.get     vary: 'Accept-Encoding' } ]
+46 verbose etag grunt-modernizr from cache
+47 info maybeGithub Attempting metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677 from git://github.com/metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677
+48 silly lockFile cfaef13c-hub-com-metaloha-grunt-modernizr git://github.com/metaloha/grunt-modernizr
+49 verbose lock git://github.com/metaloha/grunt-modernizr /Users/willforsyth/.npm/cfaef13c-hub-com-metaloha-grunt-modernizr.lock
+50 verbose addRemoteGit [ 'git://github.com/metaloha/grunt-modernizr',
+50 verbose addRemoteGit   'd6657bf302bd9288e25a513197fb0e30c64ce677' ]
+51 warn `git config --get remote.origin.url` returned wrong result (git://github.com/metaloha/grunt-modernizr) xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+52 verbose git clone git://github.com/metaloha/grunt-modernizr xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+53 silly lockFile cfaef13c-hub-com-metaloha-grunt-modernizr git://github.com/metaloha/grunt-modernizr
+54 silly lockFile cfaef13c-hub-com-metaloha-grunt-modernizr git://github.com/metaloha/grunt-modernizr
+55 info maybeGithub Attempting metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677 from git+ssh://git@github.com:metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677
+56 silly lockFile dc726874-hub-com-metaloha-grunt-modernizr git@github.com:metaloha/grunt-modernizr
+57 verbose lock git@github.com:metaloha/grunt-modernizr /Users/willforsyth/.npm/dc726874-hub-com-metaloha-grunt-modernizr.lock
+58 verbose addRemoteGit [ 'git@github.com:metaloha/grunt-modernizr',
+58 verbose addRemoteGit   'd6657bf302bd9288e25a513197fb0e30c64ce677' ]
+59 warn `git config --get remote.origin.url` returned wrong result (git@github.com:metaloha/grunt-modernizr) xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+60 verbose git clone git@github.com:metaloha/grunt-modernizr xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+61 silly lockFile dc726874-hub-com-metaloha-grunt-modernizr git@github.com:metaloha/grunt-modernizr
+62 silly lockFile dc726874-hub-com-metaloha-grunt-modernizr git@github.com:metaloha/grunt-modernizr
+63 silly lockFile 6cd260c4-02bd9288e25a513197fb0e30c64ce677 grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677
+64 silly lockFile 6cd260c4-02bd9288e25a513197fb0e30c64ce677 grunt-modernizr@metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677
+65 error notarget No compatible version found: grunt-modernizr@'metaloha/grunt-modernizr#d6657bf302bd9288e25a513197fb0e30c64ce677'
+65 error notarget Valid install targets:
+65 error notarget ["0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5","0.1.6","0.2.0","0.2.1","0.2.2","0.3.0","0.3.1","0.4.0","0.4.1","0.5.0","0.5.1","0.5.2","0.6.0","0.6.1","1.0.0","1.0.1","1.0.2"]
+65 error notarget
+65 error notarget This is most likely not a problem with npm itself.
+65 error notarget In most cases you or one of your dependencies are requesting
+65 error notarget a package version that doesn't exist.
+66 error System Darwin 15.6.0
+67 error command "node" "/usr/local/bin/npm" "install"
+68 error cwd /Users/willforsyth/Sites/willforsyth.co.uk/new
+69 error node -v v0.10.28
+70 error npm -v 1.4.9
+71 error code ETARGET
+72 verbose exit [ 1, true ]
