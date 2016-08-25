@@ -24,6 +24,7 @@ Accessibility goes hand in hand with user experience. As developers its somethin
 * Use the focus pseudo to aid screen readers and users
 
 ### Color accessibility
+
 Color accessibility is normally something that the designer should look at, but with the shift to designing in the browser ( something i am not a fan off ) and that its something thats over looked or maybe as the gurus of all things web he designers will ask for some guidance here are some best practice tips.
 
 > As per the AA guidelines the contrast ratio between your text and background needs to be at least 4.5:1. Use light background and dark text or use dark background and light text.
@@ -39,14 +40,31 @@ Some resources:
 [Simulate colour blindness](http://colororacle.org/)
 
 ### Adding accessibility to keyboard users
-A typical keyboard user will use tab to navigate the site. So to help there experience we need to make use of several techniques to help them navigate.
 
-Some resources:
+A typical keyboard user will use tab to navigate the site. So to help there experience we need to make use of several techniques to help them navigate. Using the "tabindex" attribute and skip link.
 
-[keyboard techniques](http://webaim.org/techniques/keyboard/)
+#### Example tabindex and skip link
 
-### Resources
+{% highlight javascript %}
 
-[w3.org](https://www.w3.org/standards/webdesign/accessibility)
+<nav class="hdr--nav">
 
-[w3.org intro](https://www.w3.org/WAI/intro/accessibility.php)
+  // setting a skip link (of the screen) as the first link and allowing the user to click to go to content stops the user having to click through the nav on each page.
+  <a href="#content" class="offscreen" tabindex="1">Skip to Content</a>
+
+  // the tabindex attribute allows keyboard users to navigate the page in the way you have designed
+  <ul>
+    <li>
+      <a href="/" title="" tabindex="2">Home</a>
+    </li>
+    <li>
+      <a href="/posts.html" title="" tabindex="3">Blog</a>
+    </li>
+    <li>
+      <a href="mailto:info@willforsyth.co.uk" title="" tabindex="4">Contact</a>
+    </li>
+  </ul>
+
+</nav>
+
+{% endhighlight %}

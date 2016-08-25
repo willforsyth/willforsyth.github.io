@@ -1,11 +1,11 @@
 ---
 layout: post
-title: ES6 - deconstructing
+title: ES2015 - arrow functions
 comments: false
-published: false
+published: true
 category: javascript
 description: |
-  Whats different with the new let
+  How to access objects easier but using curly braces
 ---
 
 ### Deconstructing

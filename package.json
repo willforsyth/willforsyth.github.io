@@ -1,6 +1,8 @@
 {
-  "name": "pattern-library-template",
-  "description": "A simple template/boilerplate for a Jekyll-generated pattern library.",
+  "name": "Will forsyth",
+  "description": "An experienced Developer with strong Front End skills; Strong knowledge of HTML/CSS/JS, graceful degradation and progressive enhancement; Familiar with NPM, git, and build systems;
+Experience with React and Meteor;Code is neat, tested, readable and well documented; Large Experience with UX taking large sites from concept to hand over to designers ( Wireframes, sitemaps, IA, and research. ); Ability to work within multidisciplinary teams with visual designers, motion designers and developers; Quickly prototype concepts to demonstrate and test ideas;
+You’re resilient under pressure and thrive in a fast paced environment.",
   "version": "0.0.0",
   "browser": {
     "jquery": "./dev/scripts/jquery.js"

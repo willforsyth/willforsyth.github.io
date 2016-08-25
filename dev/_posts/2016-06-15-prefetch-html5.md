@@ -3,12 +3,12 @@ layout: post
 title: Prefetch
 published: false
 comments: false
-category: ux
+category: tips
 description: |
-  rel="prefetch"
+  Prefetching images and content as the page sits idle
 ---
 
-### testiing 123
+## Prefetching content to speed up page load
 
 <link rel="prefetch" href="/posts.html">
 
