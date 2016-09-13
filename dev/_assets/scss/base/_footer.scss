@@ -1,7 +1,7 @@
 [role=contentinfo] {
 	@extend .clearfix;
 	clear: both;
-	background: url(../imgs/backgrounds/space.jpg) no-repeat center center;
+	background: $color__red;
 	background-size: cover;
 	padding: 5 + $ratio#{em} 0;
 	a,small {

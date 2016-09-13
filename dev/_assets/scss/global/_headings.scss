@@ -4,7 +4,7 @@
    line-height: 1.5em;
    margin: 0 0 $ratio--inv#{em};
    -webkit-font-smoothing: antialiased;
-   letter-spacing: 0.3em;
+   letter-spacing: 0.12em;
 }
 
 h1{
@@ -24,7 +24,7 @@ h3,
 h4{
     @extend %hn;
     font-family: $body-font;
-    margin-top: 1 + $ratio#{em};
+    // margin-top: 1 + $ratio#{em};
     font-size: 1 + ($ratio--inv / 2)#{em};
 }
 h5 {

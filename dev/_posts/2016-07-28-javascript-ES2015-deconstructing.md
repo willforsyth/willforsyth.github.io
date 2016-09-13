@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ES2015 - arrow functions
+title: ES2015 - Deconstructing
 comments: false
-published: true
+published: false
 category: javascript
 description: |
   How to access objects easier but using curly braces
@@ -10,7 +10,7 @@ description: |
 
 ### Deconstructing
 
-This is a new way of accessing objects by using curly braces.
+<!-- This is a new way of accessing objects by using curly braces.
 
 {% highlight javascript %}
 
@@ -23,6 +23,6 @@ let dog = {
 // using curly braces you can call them in the method signature  
 function displayDog ({name, age}){
   // do something with name and age results
-}
+} -->
 
 {% endhighlight %}
