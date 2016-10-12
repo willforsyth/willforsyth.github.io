@@ -131,3 +131,9 @@ The final code
   $(document).ready(header.init);
 
 {% endhighlight %}
+
+
+So I wanted to experiment making a quiz with the new things we have learned. Now since my javascript is not super nice yet I want to make as many small programme's as I can do practice as much as I can. 
+
+<p data-height="265" data-theme-id="0" data-slug-hash="EyGRBP" data-default-tab="html" data-user="willforsyth" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/willforsyth/pen/EyGRBP/">Quiz</a> by Will Forsyth (<a href="http://codepen.io/willforsyth">@willforsyth</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>

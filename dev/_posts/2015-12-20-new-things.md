@@ -2,8 +2,8 @@
 layout: post
 title: Future techniques
 published: true
-comments: false
-category: future
+comments: true
+category: tips
 description: |
     There is a few exiting apis and things that I want to look into when I have some spare time. Here are a few :-)
 ---

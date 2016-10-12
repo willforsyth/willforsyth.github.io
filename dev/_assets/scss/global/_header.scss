@@ -17,18 +17,15 @@
 .hdr--posts {
   background: $gradient;
   max-height: 700px;
-  .hdr--title {
-      top: 61%;
-  }
 }
 
-.hdr--post {
-  background: $color__green;
-  max-height: 300px;
-  .hdr--title {
-      top: 61%;
-  }
-}
+// .hdr--post {
+//   background: $color__green;
+//   max-height: 300px;
+//   .hdr--title {
+//       top: 61%;
+//   }
+// }
 
 .hdr--cont {
   position: relative;
