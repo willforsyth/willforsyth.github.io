@@ -7,52 +7,13 @@ class: home
 
 <header class="hdr home">
   <div class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium hdr--cont">
-    <nav class="hdr--nav">
-      <a href="#content" class="offscreen" tabindex="1">Skip to Content</a>
-      <ul>
-        <li>
-          <a href="/" title="" tabindex="2">Home</a>
-        </li>
-        <li>
-          <a href="/posts.html" title="" tabindex="3">Blog</a>
-        </li>
-        <li>
-          <a href="mailto:info@willforsyth.co.uk" title="" tabindex="4">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hdr--title">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 156.493" class="icon--center icon__logo"><defs>
-        <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="206.731" y1="221.727" x2="-1.028" y2="31.393">
-          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c1c1c1"/>
-        </linearGradient>
-        <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="213.577" y1="184.298" x2="12.329" y2="-.072">
-          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c1c1c1"/>
-        </linearGradient>
-        <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="242.991" y1="115.523" x2="67.21" y2="-45.514">
-          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c1c1c1"/>
-        </linearGradient>
-      </defs>
-      <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#a)" d="M52.781 138.867s-23.137-49.161-30.066-64.425c-6.396-14.089-12.971-28.098-19.15-42.28-5.982-13.731-1.812-23.5 9.389-29.015 11.127-5.478 23.005-.147 28.658 12.263 8.212 18.025 35.936 65.438 35.936 65.438"/>
-      <path opacity=".05" fill-rule="evenodd" clip-rule="evenodd" fill="#0D3147" d="M45.202 122.736l25.714-53.351 7.303 11.888-25.438 57.594z"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#b)" d="M178.829 84.054c-9.926 15.236-14.885 34.075-23.668 50.27-7.44-16.082-22.345-44.75-29.982-61.259-2.081 4.206-3.529 6.943-4.812 9.754-9.103 19.925-18.168 39.867-27.252 59.8-4.544 9.971-13.403 15.199-23.001 13.584-10.003-1.684-16.62-9.557-18.102-20.479-.6-4.416-.004-7.83 2.704-11.426 2.11-2.805 3.141-6.422 4.642-9.682 15.402-33.439 30.755-66.899 46.231-100.305 5.232-11.297 15.955-16.051 27.121-11.468 3.928 1.612 9.405 10.25 9.868 11.282 8.873 19.77 27.713 50.886 36.251 69.929z"/>
-      <path opacity=".05" fill-rule="evenodd" clip-rule="evenodd" fill="#0D3147" d="M149.537 121.766l23.294-49.942s4.895 11.107 5.615 11.129l-22.043 53.915-6.866-15.102z"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" fill="url(#c)" d="M155.021 134.34c1.014-3.203 1.705-6.557 3.093-9.588 16.714-36.55 33.517-73.062 50.334-109.565 5.82-12.631 17.767-17.226 30.049-11.671 9.87 4.463 13.58 17.048 8.213 28.872-16.858 37.137-33.802 74.235-50.778 111.317-4.468 9.76-14.294 14.572-24.222 12.135-9.535-2.342-16.306-11.295-16.689-21.5z"/>
-    </svg>
-      <!-- <svg viewBox="0 0 100 100" class="icon--center icon__logo">
-          <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__logo"></use>
-      </svg> -->
-      <p>Ui / UX developer</p>
-    </div>
+    {% include nav.html %}
+      <h1>Ui / UX developer &amp; Designer</h1>
+      <p class="column column__center column__6-of-12">Welcome to my small space on the internet, you'll find a little bit about me here and some blog posts of things I find interesting. I currently head up the digital output for <a href="http://drummondcentral.co.uk" title="Drummond central">Drummond central.</a></p>
   </div>
 </header>
 
 <main class="column column__center column__12-of-12 column__8-of-12--medium column__9-of-12--medium posts__main" id="content">
-  <div class="column column__center column__12-of-12 column__8-of-12--medium welcome--note" tabindex="4">
-    <h2>Welcome</h2>
-    <p>You'll find a little bit about me on this site and some <a href="posts.html" title="have a gander">blog posts</a> of things I find interesting, mainly they are for my reference but if someone finds it useful then even better.
-    I currently head up a small front end team looking after the UX and front end output for <a href="http://www.drummondcentral.co.uk" title="Puddle trouble">Drummond central</a>.</p>
-  </div>
   <div class="info--boxes">
     <div class="column column__12-of-12 column__6-of-12--medium column__4-of-12--large info--block">
       <header class="info--block--first" >
@@ -64,22 +25,41 @@ class: home
       <div class="info--block--content">
         <blockquote>
           <ul tabindex="5">
-            <li><p>HTML &amp; CSS</p></li>
-            <li><p>Javascript/Jquery/Grunt/webpack</p></li>
-            <li><p>Pattern libraries</p></li>
-            <li><p>Repsonsive layouts</p></li>
+            <li>
+              <h4>HTML &amp; CSS</h4>
+              <p>HTML5 and CSS3 using latest standards including W3C Web Content Accessibility guidelines, fully browser testing and ensuring final code is accessible and semantic and with the use of BEM and Modular code approach aiming to make reusable and future proof code.</p>
+            </li>
+            <li>
+              <h4>Javascript/Jquery</h4>
+              <p>Using babel I have started to use ES6.</p>
+            </li>
+            <li>
+              <h4>Preprocessors</h4>
+              <p>Grunt, webpack and babel</p>
+            </li>
+            <li>
+              <h4>Custom Pattern libraries</h4>
+              <p>I use a custom pattern library to create templates and componenets making it easy for back end developers in implement the code.</p>
+            </li>
+            <li><h4>Repsonsive layouts</h4></li>
           </ul>
         </blockquote>
         <blockquote>
           <ul tabindex="6">
-            <li><h5>Currently Working with:</h5>
-                <li><p>React.js</p></li>
-                <li><p>React-router.js</p></li>
-                <li><p>Meteor.js</p></li>
-                <li><p>Webpack</p></li>
+            <li><h3>Currently experimenting with:</h3>
+                <li><h4>React.js</h4></li>
+                <li><h4>React-router.js</h4></li>
+                <li><h4>Meteor.js</h4></li>
               </ul>
             </li>
           </ul>
+          <blockquote>
+            <ul tabindex="6">
+              <li>
+                  <a href="mailto:info@willforsyth.co.uk" title="">email me for latest links</a>
+                </ul>
+              </li>
+            </ul>
         </blockquote>
       </div>
     </div>
@@ -88,7 +68,7 @@ class: home
       <header class="info--block--second">
         <svg viewBox="0 0 100 100" class="icon--large icon--inline icon--center icon__wireframe">
             <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__wireframe"></use>
-            <span class="info--block--title" tabindex="7">UX research</span>
+            <span class="info--block--title" tabindex="7">UX process</span>
         </svg>
       </header>
       <div class="info--block--content">
@@ -96,16 +76,24 @@ class: home
           <ul>
             <li>
               <ul tabindex="8">
-                <li><p>Problem defined</p></li>
-                <li><p>Usability testing against a live product, or a prototype</p></li>
-                <li><p>Wireframing and Prototyping</p></li>
-                <li><p>Laying out wireframes and sitemaps</p></li>
-                <li><p>Creating a working prototype</p></li>
-                <li><p>Usability testing ( again )</p></li>
-                <li><p>Site analysis</p></li>
-                <li><p>Alaytics research</p></li>
+                <li><p>Qualitative &amp; quantitative research reports utilising surveys, contextual inquiries, usability testing.</p></li>
+                <li>
+                  <h4>Wireframing and Prototyping</h4>
+                  <p>I supply detailed and annotated wireframes showing all functionality, including notifications touch points and interactions on the product. I can develop click through prototypes to test on users if you are in early development phase.</p>
+                </li>
+                <li><h4>Data analysis</h4>
+                  <p>Using UX software and in-depth analytics research I can gather data on where improvements need to be made. Completing a prioritisation matrix we can prioritise the improvements over a time period checking against technical feasibility, design feasibility, and impact on user.</p>
+                </li>
                 <li><p>Defining any problem areas and iterating</p></li>
                 <li><p>Usability testing ( see a pattern? )</p></li>
+              </ul>
+            </li>
+          </ul>
+        </blockquote>
+        <blockquote>
+          <ul tabindex="6">
+            <li>
+              <a href="/ux-process.html" title="">UX process</a>
               </ul>
             </li>
           </ul>
@@ -122,7 +110,17 @@ class: home
       <div class="info--block--content">
         <blockquote>
           <ul tabindex="10">
-            <li><p>Using the UX research to design the interface</p></li>
+            <li>
+              <p>Using the UX research I design high fidelity layouts using sketch.</p>
+            </li>
+          </ul>
+        </blockquote>
+        <blockquote>
+          <ul tabindex="6">
+            <li>
+              <a href="" title="behance">Bahance portfolio</a>
+              </ul>
+            </li>
           </ul>
         </blockquote>
       </div>

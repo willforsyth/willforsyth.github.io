@@ -232,3 +232,27 @@
         width: 350px;
     }
 }
+
+.content--divide {
+	margin: 3em;
+	padding-bottom: 3em;
+	border-bottom: 1px solid;
+	@extend .clearfix;
+
+	img {
+		width: 100%;
+	}
+}
+
+.grid {
+	margin-left: -1em;
+}
+
+.nav {
+	float: right;
+	padding-top: 1em;
+}
+
+.icon__logo {
+	width: 3em;
+}

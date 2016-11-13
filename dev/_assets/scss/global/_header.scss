@@ -1,17 +1,24 @@
 .hdr {
   background: $color__red;
-  height: 12%;
+  @extend .clearfix;
   position: relative;
   color: $color__white;
+  padding-bottom: 3em;
+  h1 {
+    margin-top: 3em;
+    margin-bottom: 0;
+    text-align: center;
+  }
   a {
     color: $color__white;
-    text-transform: uppercase;
-    font-size: 0.8em;
     font-weight: 300;
   }
-  @include breakpoint(small){
-      height: 40%;
+  p {
+    text-align: center;
   }
+  // @include breakpoint(small){
+  //     height: 30%;
+  // }
 }
 
 .hdr--posts {
@@ -32,14 +39,14 @@
   height: 100%;
 }
 
-.home {
-  .hdr--title {
-    left: 30%;
-    @include breakpoint(small){
-      left: 50%;
-    }
-  }
-}
+// .home {
+//   .hdr--title {
+//     left: 30%;
+//     @include breakpoint(small){
+//       left: 50%;
+//     }
+//   }
+// }
 
 .fourofour .hdr--title {
   margin-top: 5em;

@@ -8,26 +8,11 @@ class: home
 
 <header class="hdr hdr--posts">
   <div class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium hdr--cont">
-    <nav class="hdr--nav">
-      <ul>
-        <li>
-          <a href="/" href="" title="">Home</a>
-        </li>
-        <li>
-          <a href="posts.html" href="" title="">Blog</a>
-        </li>
-        <li>
-          <a href="mailto:info@willforsyth.co.uk" href="" title="">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hdr--title">
+    {% include nav.html %}
       <h1 class="">The best solutions are always the simplest</h1>
-    </div>
   </div>
 </header>
-
-<main class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium posts__main">
+<main class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium column__7-of-12--large posts__main">
   <ul class="column__12-of-12 filterSection">
             <li>
                 <input class="selectAll blog--filter cmn-toggle-yes-no" checked="true" type="radio" name="radio" value="all" id="checkbox-all"/>
