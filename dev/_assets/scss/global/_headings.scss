@@ -2,34 +2,40 @@
    font-family: $heading-font;
    font-weight: 400;
    line-height: 1.5em;
-   margin: 0 0 $ratio--inv#{em};
+   margin: $ratio--inv#{em} 0 $ratio--inv#{em};
    -webkit-font-smoothing: antialiased;
-   letter-spacing: 0.3em;
+   letter-spacing: 0.12em;
 }
 
 h1{
     @extend %hn;
-    font-size: pow($ratio, 1)#{em};
-    letter-spacing: 0.6em;
-    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 0;
+}
 
+.posts__main h2 {
+  @extend %hn;
+  font-size: 2.1em;
+  border-bottom: none;
+  margin-bottom: 0em;
 }
 
 h2{
     @extend %hn;
-    font-size: 1 + $ratio#{em};
+    font-size: $ratio#{em};
+    border-bottom: 1px solid $color__green--light;
 }
 
-h3,
-h4{
+h3 {
+  @extend %hn;
+  margin-bottom: 0.3em;
+  font-size: 1 + ($ratio--inv / 2)#{em};
+}
+h4, h5{
     @extend %hn;
     font-family: $body-font;
-    margin-top: 1 + $ratio#{em};
-    font-size: 1 + ($ratio--inv / 2)#{em};
-}
-h5 {
-  font-weight: bold;
-  font-size: 1em;
+    // margin-top: 1 + $ratio#{em};
+    font-size: 1em;
 }
 
 .post--title {

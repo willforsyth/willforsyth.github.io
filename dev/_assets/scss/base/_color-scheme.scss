@@ -9,17 +9,16 @@ $color__white: #fff;
   color: $color__white;
 }
 
-
 //example of colors and there usage
-$color__blue: #0ed7be;
+$color__blue: #00ab90;
 $color__blue--light: lighten($color__blue, 20%);
 $color__blue--dark: darken($color__blue, 20%);
 
-$color__red: #ec6060;
+$color__red: #f06a6b;
 $color__red--light: lighten($color__red, 20%);
 $color__red--dark: darken($color__red, 20%);
 
-$color__green: #27ae60;
+$color__green: #5dc2a7;
 $color__green--light: lighten($color__green, 20%);
 $color__green--dark: darken($color__green, 20%);
 
@@ -40,3 +39,5 @@ $color__positive : $color__green;
 $color__negative : $color__red;
 
 $color__primary : $color__gray;
+
+$gradient: linear-gradient(to left, $color__blue , $color__green);

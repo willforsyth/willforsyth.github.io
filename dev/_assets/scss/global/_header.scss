@@ -1,7 +1,6 @@
 .hdr {
-  background: url(../imgs/backgrounds/space.jpg) no-repeat center center;
-  background-size: cover;
-  height: 20%;
+  background: $color__red;
+  height: 12%;
   position: relative;
   color: $color__white;
   a {
@@ -11,42 +10,67 @@
     font-weight: 300;
   }
   @include breakpoint(small){
-      height: 80%;
+      height: 40%;
   }
 }
 
 .hdr--posts {
-  background: url(../imgs/backgrounds/dog.jpg) no-repeat center center;
+  background: $gradient;
   max-height: 700px;
-  .hdr--title {
-      top: 61%;
-  }
 }
 
-.hdr--post {
-  background: black;
-  max-height: 300px;
-  .hdr--title {
-      top: 61%;
-  }
-}
+// .hdr--post {
+//   background: $color__green;
+//   max-height: 300px;
+//   .hdr--title {
+//       top: 61%;
+//   }
+// }
 
 .hdr--cont {
   position: relative;
   height: 100%;
 }
 
+.home {
+  .hdr--title {
+    left: 30%;
+    @include breakpoint(small){
+      left: 50%;
+    }
+  }
+}
+
+.fourofour .hdr--title {
+  margin-top: 5em;
+  .icon--center {
+    width: 3em;
+  }
+  @include breakpoint(small){
+      .icon--center {
+        width: 7em;
+      }
+  }
+}
+
 .hdr--title {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  .icon--center {
+    width: 3em;
+  }
   h1 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   @include breakpoint(small){
-      top: 21%;
+      top: 50%;
+      left: 50%;
+      .icon--center {
+        width: 14em;
+      }
       h1 {
         font-size: 1.6em;
       }

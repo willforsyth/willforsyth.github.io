@@ -10,7 +10,7 @@ description: |
 
 ## Native built-in functionality
 
-Javascript is made up of the standard built in objects which creates the essential functionality of the language. Then using the building blocks like functions, objects, arrays and variables etc we can build whatever our imagination takes us.
+Javascript is made up of the standard built in objects which creates the essential functionality of the language. Then using the building blocks like functions, objects, arrays and variables etc we can build whatever our imagination desires.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 

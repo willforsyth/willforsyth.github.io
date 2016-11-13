@@ -2,7 +2,7 @@
 	text-align: center;
 	margin: 1 + $ratio#{em} auto 0;
 	@include breakpoint(small){
-			margin: 8 + $ratio#{em} auto 8 + $ratio#{em};
+			margin: 5 + $ratio#{em} auto 5 + $ratio#{em};
 	}
 }
 
