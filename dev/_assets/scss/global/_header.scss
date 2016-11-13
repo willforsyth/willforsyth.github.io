@@ -39,14 +39,12 @@
   height: 100%;
 }
 
-// .home {
-//   .hdr--title {
-//     left: 30%;
-//     @include breakpoint(small){
-//       left: 50%;
-//     }
-//   }
-// }
+  #content {
+    h2 {
+      text-align: center;
+      margin-top: 3em;
+    }
+  }
 
 .fourofour .hdr--title {
   margin-top: 5em;
