@@ -526,8 +526,6 @@ $.fn.particles = function (options) {
     }, false);
 
   // Initialisation
-
-
 };
 
 },{}]},{},[4]);
