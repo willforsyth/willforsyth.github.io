@@ -4,7 +4,7 @@ $.fn.map = function (options) {
     var tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     });
-
+    
     var map = new L.Map('map', {
       'center': [54.972222, -1.608],
       'zoom': 10,

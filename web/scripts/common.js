@@ -294,7 +294,9 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 require('./components/filterPosts');
 $('.filterSection').filterPosts();
 
-require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
+console.log('action')
+
+require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min');
 require('./components/mailchimp');
 $('body').mailchimp();
 
@@ -306,11 +308,15 @@ $('.back').on('click', function(){
   window.history.back()
 });
 
+require('./components/particles');
+$('header').particles();
+
+
 require('./components/map');
 $('header').map();
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../../bower_components/ajaxchimp/jquery.ajaxchimp.min":1,"../../../bower_components/jquery/dist/jquery.min":2,"../../../bower_components/js-md5/js/md5":3,"./components/filterPosts":5,"./components/mailchimp":6,"./components/map":7}],5:[function(require,module,exports){
+},{"../../../bower_components/ajaxchimp/jquery.ajaxchimp.min":1,"../../../bower_components/jquery/dist/jquery.min":2,"../../../bower_components/js-md5/js/md5":3,"./components/filterPosts":5,"./components/mailchimp":6,"./components/map":7,"./components/particles":8}],5:[function(require,module,exports){
 /*global define:false */
 $.fn.filterPosts = function (options) {
         $("input[name$='radio']").click(function() {
@@ -456,7 +462,7 @@ $.fn.map = function (options) {
     var tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     });
-
+    
     var map = new L.Map('map', {
       'center': [54.972222, -1.608],
       'zoom': 10,
@@ -491,6 +497,36 @@ $.fn.map = function (options) {
     searchCtrl.indexFeatures(featureCollection, ['title']);
 
   });
+
+};
+
+},{}],8:[function(require,module,exports){
+/*global $ */
+$.fn.particles = function (options) {
+    'use strict';
+    console.log('action2');
+    document.addEventListener('DOMContentLoaded', function () {
+    particleground(document.getElementById('particles'), {
+      dotColor: '#f08888',
+      lineColor: '#f08888',
+      density: '10000',
+      proximity: 100,
+      directionX: 'center'
+    });
+    }, false);
+
+    document.addEventListener('DOMContentLoaded', function () {
+    particleground(document.getElementById('particles-green'), {
+      dotColor: '#80d6bf',
+      lineColor: '#80d6bf',
+      density: '10000',
+      proximity: 100,
+      directionX: 'center'
+    });
+    }, false);
+
+  // Initialisation
+
 
 };
 

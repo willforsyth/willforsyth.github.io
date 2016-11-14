@@ -7,7 +7,9 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 require('./components/filterPosts');
 $('.filterSection').filterPosts();
 
-require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min')
+console.log('action')
+
+require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min');
 require('./components/mailchimp');
 $('body').mailchimp();
 
@@ -18,6 +20,10 @@ window.onload = function() {
 $('.back').on('click', function(){
   window.history.back()
 });
+
+require('./components/particles');
+$('header').particles();
+
 
 require('./components/map');
 $('header').map();
