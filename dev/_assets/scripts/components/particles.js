@@ -1,7 +1,6 @@
 /*global $ */
 $.fn.particles = function (options) {
     'use strict';
-    console.log('action2');
     document.addEventListener('DOMContentLoaded', function () {
     particleground(document.getElementById('particles'), {
       dotColor: '#f08888',
