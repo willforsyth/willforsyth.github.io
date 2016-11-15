@@ -294,8 +294,6 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 require('./components/filterPosts');
 $('.filterSection').filterPosts();
 
-console.log('action')
-
 require('../../../bower_components/ajaxchimp/jquery.ajaxchimp.min');
 require('./components/mailchimp');
 $('body').mailchimp();
@@ -504,7 +502,6 @@ $.fn.map = function (options) {
 /*global $ */
 $.fn.particles = function (options) {
     'use strict';
-    console.log('action2');
     document.addEventListener('DOMContentLoaded', function () {
     particleground(document.getElementById('particles'), {
       dotColor: '#f08888',
