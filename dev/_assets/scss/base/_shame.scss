@@ -256,3 +256,11 @@
 .icon__logo {
 	width: 3em;
 }
+
+.content--divide {
+	    perspective: 1000px;
+			.content--divide__img {
+				transform: rotateX(13deg);
+				box-shadow: rgb(219, 219, 219) 22px 13px 43px -8px;
+			}
+}
