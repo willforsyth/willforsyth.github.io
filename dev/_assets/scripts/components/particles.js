@@ -1,6 +1,7 @@
 /*global $ */
 $.fn.particles = function (options) {
     'use strict';
+    console.log('particles')
     document.addEventListener('DOMContentLoaded', function () {
     particleground(document.getElementById('particles'), {
       dotColor: '#f08888',
@@ -20,6 +21,5 @@ $.fn.particles = function (options) {
       directionX: 'center'
     });
     }, false);
-
   // Initialisation
 };

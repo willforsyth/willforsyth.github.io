@@ -4,6 +4,7 @@ var $ = global.window.$ = window.jQuery = require('../../../bower_components/jqu
 
 // Show Me The Code
 // ----------
+
 require('./components/filterPosts');
 $('.filterSection').filterPosts();
 
@@ -21,6 +22,34 @@ $('.back').on('click', function(){
 
 require('./components/particles');
 $('header').particles();
+
+
+
+console.log('testing')
+$('body').on('click', '[data-type="page-transition"]', function(event){
+    event.preventDefault();
+    //detect which page has been selected
+    var newPage = $(this).attr('href');
+    changePage(newPage, true);
+});
+
+function changePage(url, bool) {
+    // trigger page animation
+    $('body').addClass('page-is-changing');
+    //  $('body').addClass('page-has-changed');
+    //...
+    setTimeout(function() {
+        loadNewContent(url, bool);
+    }, 450);
+
+    //...
+}
+
+// setTimeout(loadNewContent, 1000);
+
+function loadNewContent(url, bool){
+  window.location.assign(url);
+}
 
 
 require('./components/map');
