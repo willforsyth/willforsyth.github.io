@@ -14,11 +14,6 @@ a{
         text-decoration: line-through;
     }
 
-    &:active{
-        color: $color__black;
-        fill: $color__black;
-    }
-
     &:disabled,
     &[disabled],
     &.disabled{
@@ -27,9 +22,4 @@ a{
         opacity: $ratio--inv;
         cursor: not-allowed;
     }
-}
-
-.active {
-  background: $color__blue;
-  border: pow($ratio--inv, 4)#{em} solid $color__blue;
 }

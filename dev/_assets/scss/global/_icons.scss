@@ -4,6 +4,10 @@
     height: $ratio#{em};
 }
 
+.icon__logo {
+  animation: bounceIn 0.3s normal ease-in-out;
+}
+
 .icon--large {
   display: inline-block;
   width: 3 + $ratio#{em};

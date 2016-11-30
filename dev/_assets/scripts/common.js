@@ -40,7 +40,7 @@ function changePage(url, bool) {
     //...
     setTimeout(function() {
         loadNewContent(url, bool);
-    }, 450);
+    }, 400);
 
     //...
 }
