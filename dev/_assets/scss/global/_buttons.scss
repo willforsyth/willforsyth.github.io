@@ -1,5 +1,5 @@
 %button {
-    background-color: none;
+    background-color: $color__blue;
     border: pow($ratio--inv, 4)#{em} solid $color__white;
     color: $color__white !important;
     cursor: pointer;
@@ -48,6 +48,7 @@
     }
 }
 
+
 .button--inline {
     display: inline-block;
 }
@@ -62,20 +63,20 @@ button {
     width: auto;
 }
 
-// %button--alt {
-//     background-color: $color__orange;
-//     border-color: $color__orange;
+%button--alt {
+    background-color: $color__orange;
+    border-color: $color__orange;
 
-//     &:hover,
-//     &:focus,
-//     &.zeroclipboard-is-hover {
-//         background: $color__orange--light;
-//     }
-// }
+    &:hover,
+    &:focus,
+    &.zeroclipboard-is-hover {
+        background: $color__orange--light;
+    }
+}
 
-// .button--alt {
-//     @extend %button--alt;
-// }
+.button--alt {
+    @extend %button--alt;
+}
 
 input[type="submit"] {
     margin: 0;
