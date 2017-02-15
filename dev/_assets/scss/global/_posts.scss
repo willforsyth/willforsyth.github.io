@@ -6,6 +6,7 @@
 .posts__main {
     @extend .clearfix;
     margin-bottom: 8 + $ratio#{em};
+    animation: slideUpfade 0.4s normal ease-in-out;
 }
 
 .post__main {
@@ -16,6 +17,7 @@
     width: 100%;
     transition: all 0.3s;
     margin-top: $ratio#{em};
+    animation: slideUpfade 0.4s normal ease-in-out;
     @extend .clearfix;
     a {
       text-decoration: underline;
@@ -50,6 +52,7 @@
     padding: 0 !important;
     margin-bottom:1 + $ratio#{em};
     @extend .clearfix;
+    animation: slideUpfade 0.4s normal ease-in-out;
     .highlight {
         padding: $ratio#{em};
         background: $color__black;

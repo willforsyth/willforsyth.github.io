@@ -30,7 +30,7 @@ class: home
   <ul class="posts grid">
       {% for post in site.posts %}
           <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__10-of-12--medium">
-              <a href="{{ post.url }}" class="posts__link">
+              <a href="{{ post.url }}" class="posts__link" data-type="page-transition">
                   <div class="posts__inner">
                         <h2 class="post--title">{{ post.title }}</h2>
                         <span class="post--cat">{{ post.category }}</span>

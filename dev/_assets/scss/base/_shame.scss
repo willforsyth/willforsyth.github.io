@@ -250,8 +250,14 @@
 }
 
 .nav {
-	float: right;
 	padding-top: 1em;
+	clear: both;
+  margin: auto;
+	text-align: center;
+	@include breakpoint(medium){
+			float: right;
+			clear: none;
+	}
 }
 
 .icon__logo {
@@ -287,7 +293,7 @@
      height: 0vh;
    }
    100% {
-     height: 100vh;
+     height: 180vh;
    }
  }
 
@@ -320,22 +326,24 @@
 
 .fullPage {
   height: 0;
-  width: 0;
-  position: absolute;
+  width: 100vw;
+  position: fixed;
   z-index: 0;
-  bottom:0;
-  left: -20%;
-  background-color: #c1c1c1;
-  transition: height 0.4s, background-color 0.4s, transform 0.4s;
+	bottom: 0;
+	display: none;
+	background-color: none;
+	transition: all 0.4s;
+	svg {
+		fill: #ffffff;
+	}
 }
 
 .page-is-changing .fullPage{
-  /*animation: pulseBack 0.4s normal backwards ease-in-out;*/
-  height: 250vh;
-  width: 200vw;
-  bottom: -73vh;
-  background-color: #ffffff;
-  transform: rotate(-10deg);
+	display: block;
+  animation: pulseBack 0.4s normal ease-in-out;
+	background-color: #ffffff;
+  height: 180vh;
+  width: 120vw;
 }
 
 /*.page-is-changing > .fullPageTwo{

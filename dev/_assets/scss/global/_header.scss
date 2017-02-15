@@ -22,9 +22,13 @@
   padding-bottom: 3em;
   overflow: hidden;
   h1 {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 0;
+    @include breakpoint(small){
+      margin-top: 2em;
+    }
     text-align: center;
+    animation: slideUpfade 0.25s normal ease-in-out;
   }
   a {
     color: $color__white;
@@ -32,6 +36,7 @@
   }
   p {
     text-align: center;
+    animation: slideUpfade 0.7s normal ease-in-out;
   }
   // @include breakpoint(small){
   //     height: 30%;

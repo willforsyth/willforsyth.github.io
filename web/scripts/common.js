@@ -327,7 +327,11 @@ function changePage(url, bool) {
     //...
     setTimeout(function() {
         loadNewContent(url, bool);
+<<<<<<< HEAD
     }, 450);
+=======
+    }, 400);
+>>>>>>> cb56c932dffe9b89c25b1f05c6b75bb313cef841
 
     //...
 }
