@@ -346,10 +346,10 @@
   width: 120vw;
 }
 
-/*.page-is-changing > .fullPageTwo{
-  animation: pulseBack 0.75s normal backwards ease-in-out;
-}*/
-
-/*#main-content, header {
-  animation: opacity 0.6s normal backwards ease-in-out;
-}*/
+.home__icons {
+	text-align:center;
+	li {
+		display: inline-block;
+		margin-right:10px;
+	}
+}

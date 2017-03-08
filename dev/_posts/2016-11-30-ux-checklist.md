@@ -5,9 +5,9 @@ published: true
 comments: false
 category: ux
 description: |
- I attended a workshop on ux earlier this yeah and this was a very useful checklist that was supplied.
+ I attended a workshop on ux earlier this year and this was a very useful checklist that was supplied.
 ---
-I attended a workshop on ux earlier this yeah and this was a very useful checklist that was supplied. 
+I attended a workshop on ux earlier this year and this was a very useful checklist that was supplied.
 
 ### User research
 All design decisions on this project have been based on research conducted with our users
