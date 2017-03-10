@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UX checklist
+title: UX techniques
 published: true
 comments: false
 category: ux
