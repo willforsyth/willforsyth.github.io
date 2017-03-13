@@ -5,43 +5,18 @@ class: home
 ---
 {% assign posts = site.posts | sort: 'group' %}
 
+
 <header class="hdr home">
-  <div id="particles"></div>
+  {% include nav.html %}
   <div class="column column__center column__12-of-12 column__8-of-12--small column__10-of-12--medium hdr--cont">
-    {% include nav.html %}
-      <h1>UI / UX developer &amp; designer</h1>
-      <p class="column column__center column__12-of-12 column__6-of-12--large">I specialise in UX design and UI development, I currently head up the UI and UX design and research output for <a href="http://drummondcentral.co.uk" title="Drummond central">Drummond central.</a></p>
-      <div class="column column__center column__12-of-12">
-    		<ul class="home__icons">
-    			<li>
-    				<a href="https://github.com/willforsyth" title="Git hub" tabindex="11">
-    					<svg viewBox="0 0 100 100" class="icon icon--inline icon__github">
-    					    <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__github"></use>
-    					</svg>
-    				</a>
-    			</li>
-    			<li>
-    				<a href="https://twitter.com/willforsyth" title="follow me" tabindex="12">
-    					<svg viewBox="0 0 100 100" class="icon icon--inline icon__twitter">
-    							<use xlink:href="/imgs/sprite/icon-sprite.svg#icon__twitter"></use>
-    					</svg>
-    				</a>
-    			</li>
-    			<li>
-    				<a href="https://www.behance.net/willf" title="view some of my designs" tabindex="13">
-    					<svg viewBox="0 0 100 100" class="icon icon--inline icon__behance">
-    							<use xlink:href="/imgs/sprite/icon-sprite.svg#icon__behance"></use>
-    					</svg>
-    				</a>
-    			</li>
-    			<li>
-    				<a href="mailto:info@willforsyth.co.uk" title="email me" tabindex="13">
-    					<svg viewBox="0 0 100 100" class="icon icon--inline icon__mail">
-    							<use xlink:href="/imgs/sprite/icon-sprite.svg#icon__mail"></use>
-    					</svg>
-    				</a>
-    			</li>
-    		</ul>
-    	</div>
+      <h1>The best ideas are always the simplest</h1>
   </div>
 </header>
+<main class="main-home">
+  <div class="column column__12-of-12--small column__6-of-12--medium intro">
+    <p>I specialise in UX design and UI development, I currently head up the UI and UX design and research output for <a href="http://drummondcentral.co.uk" title="Drummond central">Drummond central.</a></p>
+  </div>
+  <div class="column column__12-of-12--small column__6-of-12--medium">
+    <img src="imgs/backgrounds/person-01.svg" title="">
+  </div>
+</main>
