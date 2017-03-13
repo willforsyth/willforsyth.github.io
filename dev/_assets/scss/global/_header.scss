@@ -64,8 +64,11 @@
       }
     }
     .hdr--cont {
-      background: url("../imgs/backgrounds/bulb.svg") center center no-repeat;
+      background: none;
       background-size: contain;
+      @include breakpoint(small){
+        background: url("../imgs/backgrounds/bulb.svg") center center no-repeat;
+      }
     }
 }
 
