@@ -48,12 +48,15 @@
 }
 
 .home {
-  height: 65%;
+  height: auto;
+  @include breakpoint(small){
+    height: 65%;
+  }
     h1 {
       margin-top: 2em;
       background: $color__white;
       color: $color__blue;
-      width: 500px;
+      max-width: 500px;
       text-align: left;
       float: right;
       @include breakpoint(small){
@@ -70,7 +73,10 @@
 .hdr--cont {
   position: relative;
   height: 95%;
-  margin-top: 4em;
+  margin-top: 0;
+  @include breakpoint(small){
+    margin-top: 4em;
+  }
 }
 
   #content {

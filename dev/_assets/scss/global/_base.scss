@@ -10,7 +10,6 @@ html{
 
 html,
 body{
-    width: 90%;
     margin: auto;
     height: 100%;
     min-height: 1100px;
@@ -42,6 +41,9 @@ ol {
 
 .main-home {
   @extend .clearfix;
-    background: url(../imgs/backgrounds/divider-01.svg) top no-repeat;
+  background: url(../imgs/backgrounds/divider-01.svg) top no-repeat;
+  padding-top: 0em;
+  @include breakpoint(small){
     padding-top: 10em;
+  }
 }

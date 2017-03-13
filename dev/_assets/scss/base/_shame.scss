@@ -51,14 +51,14 @@
 	font-family: $body-font;
 }
 .cmn-toggle-yes-no + label:before {
-  background-color: $color__black;
+  background-color: $color__blue;
 	color: #fff;
   content: attr(data-off);
   transition: transform 0.5s;
   backface-visibility: hidden;
 }
 .cmn-toggle-yes-no + label:after {
-  background-color: $color__black;
+  background-color: $color__blue;
   content: attr(data-on);
   transition: transform 0.5s;
   transform: rotateY(180deg);
@@ -253,15 +253,11 @@
 	padding-top: 1em;
 	clear: both;
   margin: auto;
-	text-align: center;
+	text-align: left;
 	@include breakpoint(medium){
 			float: right;
 			clear: none;
 	}
-}
-
-.icon__logo {
-	width: 3em;
 }
 
 .content--divide {
