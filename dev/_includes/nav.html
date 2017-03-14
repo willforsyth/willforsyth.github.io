@@ -24,12 +24,18 @@
         </svg>
       </a>
     </li>
+    <li>
+      <a href="/about.html" title="A weee bit about me" {% if page.url == '/about.html' %}class='active'{% endif %} tabindex="5" data-type="page-transition">
+        <svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__about">
+            <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__about"></use>
+            <span tabindex="4">About</span>
+        </svg>
+      </a>
+    </li>
     <!-- <li>
       <a href="/case-study.html" title="View a design and UX case study" {% if page.url == '/case-study.html' %}class='active'{% endif %} tabindex="4" data-type="page-transition">Case study</a>
     </li>
-    <li>
-      <a href="/about.html" title="A weee bit about me" {% if page.url == '/about.html' %}class='active'{% endif %} tabindex="5" data-type="page-transition">About</a>
-    </li> -->
+-->
     <!-- <li>
       <a href="mailto:info@willforsyth.co.uk" title="" tabindex="6">Contact</a>
     </li> -->

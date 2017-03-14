@@ -1,0 +1,35 @@
+---
+layout: base
+title: Will forsyth
+class: home
+---
+{% assign posts = site.posts | sort: 'group' %}
+
+
+<header class="hdr hdr--posts">
+  {% include nav.html %}
+</header>
+
+<main class="column column__center column__12-of-12 column__8-of-12--small column__7-of-12--medium column__8-of-12--large posts__main">
+
+
+  <section class="content--divide">
+
+    <div class="grid">
+            <h2>My front end development process</h2>
+      <h3>HTML &amp; CSS</h3>
+      <p>HTML5 and CSS3 using latest standards including W3C Web Content Accessibility guidelines, fully browser testing and ensuring final code is accessible and semantic and with the use of BEM and Modular code approach aiming to make reusable and future proof code.</p>
+      <h3>Javascript/Jquery</h3>
+      <p>Using babel I have started to use ES6. I also experiment with lastest librarys such as D3.js and framer.js</p>
+      <h3>Preprocessors</h3>
+      <p>Grunt, webpack and babel</p>
+      <h3>Custom Pattern libraries</h3>
+      <p>I use a custom pattern library to create templates and componenets making it easy for back end developers in implement the code.</p>
+      <h3>Currently experimenting with:</h3>
+      <p>React.js, React-router.js, Meteor.js</p>
+    </div>
+  </section>
+  <a class="back" href="/" title="back">Back</a>
+
+</main>
+{% include footer.html %}
