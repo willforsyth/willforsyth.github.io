@@ -29,7 +29,8 @@ h2{
 
 h3 {
   @extend %hn;
-  margin-bottom: 0.3em;
+  margin-bottom: 0em;
+  margin-top: 2em;
   font-size: 1 + ($ratio--inv / 2)#{em};
 }
 h4, h5{

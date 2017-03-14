@@ -8,7 +8,7 @@ description: |
  Experiments with creating user interaction prototypes with framer.js.
 ---
 
-When designing interfaces its hard to explain how you want the user interactions to look. Step in [framer](https://framerjs.com/), it uses  [coffeescript](http://coffeescript.org/) and the Framer Api to allow for prototypes to be coded using javascript. I have only just started playing around with it and it seems very powerful. Here are some examples of what you can do.
+When designing interfaces its hard to explain how you want the user interactions to look. Step in [framer](https://framerjs.com/), it uses [coffeescript](http://coffeescript.org/) and the Framer Api to allow for prototypes to be coded using javascript. This is a useful [resource](http://www.whoishostingthis.com/resources/coffeescript/) to get up to speed on coffee script. I have only just started playing around with it and it seems very powerful. Here are some examples of what you can do.
 
 
 ### Navigation prototype
