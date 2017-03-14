@@ -21,4 +21,24 @@ class: home
     <img src="imgs/backgrounds/person-01.svg" title="">
   </div>
 </main>
+<div class="main-home">
+  <ul class="posts column column__center column__10-of-12">
+    <h2 class="center">
+      <svg viewBox="0 0 100 100" class="icon icon__large icon--inline icon--center icon__pen">
+          <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__pen"></use>
+          <span tabindex="4">Latest from the blog</span>
+      </svg>
+    </h2>
+      {% for post in site.posts limit:4 %}
+          <li class="show{{ post.category }} column column__12-of-12 column__12-of-12--small column__6-of-12--medium grid">
+              <a href="{{ post.url }}" class="posts__link" data-type="page-transition">
+                  <div class="posts__inner">
+                        <h3 class="post--title">{{ post.title }}</h3>
+                        <span class="post--cat">{{ post.category }}</span>
+                  </div>
+              </a>
+          </li>
+      {% endfor %}
+  </ul>
+</div>
 {% include footer.html %}

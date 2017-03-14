@@ -9,10 +9,20 @@
   <a href="#content" class="offscreen" tabindex="1">Skip to Content</a>
   <ul class="nav">
     <li>
-      <a href="/posts.html" title="A selection of blog posts, javascript, UX and design" {% if page.url == '/posts.html' %}class='active'{% endif %} tabindex="2" data-type="page-transition">Blog</a>
+      <a href="/posts.html" title="A selection of blog posts, javascript, UX and design" {% if page.url == '/posts.html' %}class='active'{% endif %} tabindex="2" data-type="page-transition">
+        <svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__pen">
+            <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__pen"></use>
+            <span tabindex="4">Blog</span>
+        </svg>
+      </a>
     </li>
     <li>
-      <a href="/ux-process.html" title="View my UX process" {% if page.url == '/ux-process.html' %}class='active'{% endif %} tabindex="3" data-type="page-transition">UX process</a>
+      <a href="/ux-process.html" title="View my UX process" {% if page.url == '/ux-process.html' %}class='active'{% endif %} tabindex="3" data-type="page-transition">
+        <svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__ux">
+            <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__ux"></use>
+            <span tabindex="4">UX process</span>
+        </svg>
+      </a>
     </li>
     <!-- <li>
       <a href="/case-study.html" title="View a design and UX case study" {% if page.url == '/case-study.html' %}class='active'{% endif %} tabindex="4" data-type="page-transition">Case study</a>

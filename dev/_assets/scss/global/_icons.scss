@@ -1,7 +1,7 @@
 .icon{
     display: inline-block;
-    width: $ratio#{em};
-    height: $ratio#{em};
+    width: 1em;
+    height: 1em;
 }
 
 .icon__logo {
@@ -29,7 +29,6 @@
 }
 
 .icon--inline {
-  margin-right: 0.61803em;
   vertical-align: middle;
   + span {
     vertical-align: middle;

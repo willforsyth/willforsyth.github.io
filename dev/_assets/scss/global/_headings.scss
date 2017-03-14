@@ -1,7 +1,7 @@
 %hn{
    font-family: $heading-font;
    font-weight: 400;
-   line-height: 1.5em;
+   line-height: 1.3em;
    margin: $ratio--inv#{em} 0 $ratio--inv#{em};
    -webkit-font-smoothing: antialiased;
    letter-spacing: 0.12em;
@@ -20,11 +20,9 @@ h1{
   border-bottom: none;
   margin-bottom: 0em;
 }
-
 h2{
     @extend %hn;
     font-size: $ratio#{em};
-    border-bottom: 1px solid $color__green--light;
 }
 
 h3 {
