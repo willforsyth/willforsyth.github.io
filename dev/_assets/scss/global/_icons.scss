@@ -38,3 +38,25 @@
 footer .icon {
   fill: $color__white;
 }
+
+.logo {
+  background: url(../imgs/svg/sprite-logo.svg);
+  width: 300px;
+  height: 100px;
+  display: block;
+  animation: splashit 10s steps(11) infinite;
+}
+
+/* sprite needs to be fixed */
+
+@keyframes splashit {
+	0%{
+		background-position: 0 0;
+	}
+	29%{
+		background-position: 0 0;
+	}
+ 30%, 100% {
+    background-position: 0 -1100px;
+  }
+}
