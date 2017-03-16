@@ -3,30 +3,15 @@ layout: base
 title: Your lost
 permalink: /404.html
 ---
-{% assign posts = site.posts | sort: 'group' %}
 
-<header class="hdr fourofour">
-  <div class="column column__center column__12-of-12 column__8-of-12--small column__9-of-12--medium hdr--cont">
-    <nav class="hdr--nav">
-      <a href="#content" class="offscreen" tabindex="1">Skip to Content</a>
-      <ul>
-        <li>
-          <a href="/" title="Home page" tabindex="2">Home</a>
-        </li>
-        <li>
-          <a href="/posts.html" title="Blog" tabindex="3">Blog</a>
-        </li>
-        <li>
-          <a href="mailto:info@willforsyth.co.uk" title="Contact me" tabindex="4">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hdr--title">
-      <svg viewBox="0 0 94.9 164.6" class="icon--center icon__dude-404">
-          <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__dude-404"></use>
-      </svg>
-      <p>That page doesn't exist. Sorry</p>
-    </div>
+<header class="hdr">
+  {% include nav.html %}
+  <div class="column column__center column__12-of-12 column__8-of-12--small column__10-of-12--medium hdr--cont">
+      <h1>404</h1>
+
   </div>
 </header>
+<main class="column column__center column__12-of-12 column__8-of-12--small column__7-of-12--medium column__5-of-12--large posts__main">
+  <h3>Sorry this page does not exist</h3>
+</main>
 {% include footer.html %}
