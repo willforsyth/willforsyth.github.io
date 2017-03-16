@@ -254,8 +254,8 @@
 	padding-top: 1em;
 	clear: both;
   margin: auto;
-	text-align: left;
-	@include breakpoint(medium){
+	text-align: center;
+	@include breakpoint(small){
 			float: right;
 			clear: none;
 	}
