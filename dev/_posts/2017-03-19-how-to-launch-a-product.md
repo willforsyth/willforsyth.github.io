@@ -11,12 +11,8 @@ If your not up to speed read this [How the journey started](/ux/2017/03/17/how-n
 
 This step is about basing most of my decisions on assumptions so I can get a MVP out there to test. ideally I will get some usability testing on a story board or click through prototype. Get out there and as some questions about what people are looking for in a product like this. The good thing about this particular product is that there are hundreds of good examples of good sites with nice user experiences to get me started.
 
-hello
-
 ## The research
 Since I don't have anything to test on yet this will take a route based on assumptions. At this stage I can't do any usability testing, or any testing on users. Its about getting a MVP that I can do this on.
-
----
 
 ### Contextual enquiry
 I will put this on hold till I get a product.
@@ -25,11 +21,11 @@ I will put this on hold till I get a product.
 So I guess I am the only stakeholder on this project.
 
 #### Project vision
-**What is your vision for this offering?**
+What is your vision for this offering?
 To create a safe secure place for people to sell products, with little or no fees. Create a safe community of sellers and buyers. Sell small amounts of high end items. The large sites often sell fakes and people don’t have faith in them. I am going to start out selling limited edition trainers.
-**What defines success for this project?**
+What defines success for this project?
 Creating something users wants and giving them a option.
-**What are the potential pitfalls (i.e. what keeps you up at night about this project)?**
+What are the potential pitfalls (i.e. what keeps you up at night about this project)?
 No one finds it or marketing is to expensive.
 USERS
 Different types of users (salesperson vs supervisor vs analyst)
