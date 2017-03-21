@@ -5,7 +5,95 @@
     "datePublished": "2016-10-11T00:00:00+01:00",
     "description": "Basic set up of a webpack environment using babel and jslint and ES6",
     "url": "willforsyth.co.uk/javascript/2016/10/11/webpack-basic-setup.html"
-  }</script><title>Webpack basic set up with ES6</title><link rel="stylesheet" media="all" href="/css/screen.css"><link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/></head><body class="post--page"><header class="hdr hdr--post"><nav role="navigation"><div class="column logo"><a href="/" data-type="page-transition" title="Go to home page" tabindex="2"></a></div><a href="#content" class="offscreen" tabindex="1">Skip to Content</a><ul class="nav"><li><a href="/posts.html" title="A selection of blog posts, javascript, UX and design" tabindex="2" data-type="page-transition"><svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__pen"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__pen"></use><span tabindex="4">Blog</span></svg></a></li><li><a href="/ux-process.html" title="View my UX process" tabindex="3" data-type="page-transition"><svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__ux"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__ux"></use><span tabindex="4">UX process</span></svg></a></li><li><a href="/about.html" title="A weee bit about me" tabindex="5" data-type="page-transition"><svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__about"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__about"></use><span tabindex="4">About</span></svg></a></li></ul></nav></header><div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium"><a class="back" href="/posts.html" title="back">Back</a></div><main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__8-of-12--large"><article class="post__main" role="main"><h1 class="">Webpack basic set up with ES6</h1><section class="post__content"><p>Start of by ensuring you have <a href="https://nodejs.org/en/">node</a>, and <a href="https://webpack.github.io/">webpack</a> and <a href="https://webpack.github.io/docs/webpack-dev-server.html">webkit server</a> installed on your system.</p><h3>File set up</h3><p>We start with setting up a file structure to make the project as easy to use as possible. Splitting up our javascript files and creating a public directory.</p><figure class="highlight"><pre><code class="language-html" data-lang="html">js
+  }</script><title>Webpack basic set up with ES6</title><link rel="stylesheet" media="all" href="/css/screen.css"><link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@willforsyth"><meta name="twitter:title" content="Webpack" basic set up with ES6><meta name="twitter:description" content="<p">Start of by ensuring you have <a href="https://nodejs.org/en/">node</a>, and <a href="https://webpack.github.io/">webpack</a> and <a href="https://webpack.github.io/docs/webpack-dev-server.html">webkit server</a> installed on your system.<h3>File set up</h3><p>We start with setting up a file structure to make the project as easy to use as possible. Splitting up our javascript files and creating a public directory.</p><figure class="highlight"><pre><code class="language-html" data-lang="html">js
+  app.js
+  module.1js
+  module2.js
+public
+  index.js
+package.json
+.babelrc
+webpack.config.json</code></pre></figure><h3>Webpack config</h3><p>This is a simple set up. It resolves the paths so we can use the public directory and webpack knows where everything is when it builds and runs. It has watches our files and runs babel so we can use es6.</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">context</span><span class="p">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s1">'js'</span><span class="p">),</span>
+  <span class="na">entry</span> <span class="p">:</span> <span class="p">[</span><span class="s1">'./app'</span><span class="p">,</span> <span class="s1">'./module1'</span><span class="p">],</span>
+  <span class="na">output</span> <span class="p">:</span> <span class="p">{</span>
+    <span class="na">path</span><span class="p">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s1">'build/js/'</span><span class="p">),</span>
+    <span class="na">publicPath</span><span class="p">:</span> <span class="s1">'/public/assets/js/'</span><span class="p">,</span>
+    <span class="na">filename</span><span class="p">:</span> <span class="s1">'bundle.js'</span>
+  <span class="p">},</span>
+  <span class="na">devServer</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">contentBase</span><span class="p">:</span> <span class="s1">'public'</span>
+  <span class="p">},</span>
+  <span class="na">watch</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">module</span> <span class="p">:</span> <span class="p">{</span>
+    <span class="na">preloaders</span> <span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="na">test</span><span class="p">:</span> <span class="sr">/</span><span class="se">\.</span><span class="sr">js$/</span><span class="p">,</span>
+        <span class="na">exclude</span><span class="p">:</span> <span class="sr">/node_modules/</span><span class="p">,</span>
+        <span class="na">loader</span><span class="p">:</span> <span class="s2">"jshint-loader"</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="na">loaders</span> <span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="na">test</span><span class="p">:</span> <span class="sr">/</span><span class="se">\.</span><span class="sr">es6$/</span><span class="p">,</span>
+        <span class="na">exclude</span><span class="p">:</span> <span class="sr">/node_modules/</span><span class="p">,</span>
+        <span class="na">loader</span><span class="p">:</span> <span class="s2">"babel-loader"</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="na">resolve</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">extensions</span><span class="p">:</span> <span class="p">[</span><span class="s1">''</span><span class="p">,</span> <span class="s1">'.js'</span><span class="p">,</span> <span class="s1">'.es6'</span><span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure><h3>.babelrc</h3><p>This files is required when using babel it tells it what version of ecma script to compile out to. When this runs it will create bundle.js in our route.</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="p">{</span>
+    <span class="s2">"presets"</span><span class="err">:</span> <span class="p">[</span><span class="s2">"es2015"</span><span class="p">]</span>
+  <span class="p">}</span></code></pre></figure><h3>package.json</h3><p>Here is a package.json file to use with working dependencies. It has babel, webpack and jslint</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="p">{</span>
+    <span class="s2">"name"</span><span class="err">:</span> <span class="s2">"webpack-demo"</span><span class="p">,</span>
+    <span class="s2">"version"</span><span class="err">:</span> <span class="s2">"1.0.0"</span><span class="p">,</span>
+    <span class="s2">"description"</span><span class="err">:</span> <span class="s2">""</span><span class="p">,</span>
+    <span class="s2">"main"</span><span class="err">:</span> <span class="s2">"app.js"</span><span class="p">,</span>
+    <span class="s2">"scripts"</span><span class="err">:</span> <span class="p">{</span>
+      <span class="s2">"start"</span><span class="err">:</span>  <span class="s2">"webpack-dev-server -d"</span> <span class="p">,</span>
+      <span class="s2">"test"</span><span class="err">:</span> <span class="s2">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+    <span class="p">},</span>
+    <span class="s2">"keywords"</span><span class="err">:</span> <span class="p">[],</span>
+    <span class="s2">"author"</span><span class="err">:</span> <span class="s2">"Will Forsyth"</span><span class="p">,</span>
+    <span class="s2">"license"</span><span class="err">:</span> <span class="s2">"ISC"</span><span class="p">,</span>
+    <span class="s2">"devDependencies"</span><span class="err">:</span> <span class="p">{</span>
+      <span class="s2">"babel-core"</span><span class="err">:</span> <span class="s2">"^6.2.1"</span><span class="p">,</span>
+      <span class="s2">"babel-loader"</span><span class="err">:</span> <span class="s2">"^6.2.0"</span><span class="p">,</span>
+      <span class="s2">"babel-preset-es2015"</span><span class="err">:</span> <span class="s2">"^6.1.18"</span><span class="p">,</span>
+      <span class="s2">"jshint"</span><span class="err">:</span> <span class="s2">"^2.8.0"</span><span class="p">,</span>
+      <span class="s2">"jshint-loader"</span><span class="err">:</span> <span class="s2">"^0.8.3"</span><span class="p">,</span>
+      <span class="s2">"node-libs-browser"</span><span class="err">:</span> <span class="s2">"^0.5.3"</span><span class="p">,</span>
+      <span class="s2">"webpack"</span><span class="err">:</span> <span class="s2">"^1.12.9"</span>
+    <span class="p">}</span>
+  <span class="p">}</span></code></pre></figure><h3>index.html</h3><p>This is the html I have used for this set up its all very simple. Apart from the script tag if you notice this does not look for bundle.js in the route which is where babel is compiling it into. The reason for this is that you wouldn’t go to production with the javascript file in the route. The publicPath key in the webpack-config sorts ensures it knows where to look</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">&lt;!</span><span class="nx">DOCTYPE</span> <span class="nx">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nx">html</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">meta</span> <span class="nx">charset</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">title</span><span class="o">&gt;&lt;</span><span class="sr">/title</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="sr">/head</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"/public/assets/js/bundle.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="sr">/body</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/html&gt;</span></code></pre></figure><h3>app.js</h3><p>The app.js file in this example imports a function called “login” from our module1 file. This is the module import syntax from ES6.</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="kr">import</span> <span class="p">{</span><span class="nx">login</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">"./module1"</span><span class="p">;</span>
+
+  <span class="nx">login</span><span class="p">(</span><span class="s1">'admin'</span><span class="p">,</span> <span class="s1">'idunn'</span><span class="p">);</span>
+
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'App loaded'</span><span class="p">);</span></code></pre></figure><h3>module1.js</h3><p>This file imports a variable called ‘testing’ from module2.js and it also exports itself so it can be imported into app.js.</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="kr">import</span> <span class="p">{</span><span class="nx">testing</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">'./module2'</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">login</span> <span class="o">=</span> <span class="p">(</span><span class="nx">username</span><span class="p">,</span> <span class="nx">password</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">username</span> <span class="o">!==</span> <span class="s1">'admin'</span> <span class="o">||</span> <span class="nx">password</span> <span class="o">!==</span> <span class="s1">'radical'</span><span class="p">){</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'incorrect login'</span> <span class="p">,</span> <span class="nx">testing</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+
+  <span class="c1">// login('admin', 'idunn');</span>
+
+  <span class="kr">export</span> <span class="p">{</span><span class="nx">login</span><span class="p">}</span></code></pre></figure><h3>module1.js</h3><p>This module is just used to export a variable to show an example of how you could use it.</p><figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="kd">let</span> <span class="nx">testing</span> <span class="o">=</span> <span class="s1">'try again'</span><span class="p">;</span>
+  <span class="kr">export</span> <span class="p">{</span><span class="nx">testing</span><span class="p">}</span></code></pre></figure><h3>Run webkit</h3><p>To run this set up type ‘npm start’ this looks at the package.json and we have set a option called start. This runs ‘webpack-dev-server -d’ which fires up the server and waits for changes.</p>><meta name="twitter:image" content="http://willforsyth.co.uk/imgs/eye.png"></head><body class="post--page"><header class="hdr hdr--post"><nav role="navigation"><div class="column logo"><a href="/" data-type="page-transition" title="Go to home page" tabindex="2"></a></div><a href="#content" class="offscreen" tabindex="1">Skip to Content</a><ul class="nav"><li><a href="/posts.html" title="A selection of blog posts, javascript, UX and design" tabindex="2" data-type="page-transition"><svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__pen"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__pen"></use><span tabindex="4">Blog</span></svg></a></li><li><a href="/ux-process.html" title="View my UX process" tabindex="3" data-type="page-transition"><svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__ux"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__ux"></use><span tabindex="4">UX process</span></svg></a></li><li><a href="/about.html" title="A weee bit about me" tabindex="5" data-type="page-transition"><svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__about"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__about"></use><span tabindex="4">About</span></svg></a></li></ul></nav></header><div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium"><a class="back" href="/posts.html" title="back">Back</a></div><main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__8-of-12--large"><article class="post__main" role="main"><h1 class="">Webpack basic set up with ES6</h1><section class="post__content"><p>Start of by ensuring you have <a href="https://nodejs.org/en/">node</a>, and <a href="https://webpack.github.io/">webpack</a> and <a href="https://webpack.github.io/docs/webpack-dev-server.html">webkit server</a> installed on your system.</p><h3>File set up</h3><p>We start with setting up a file structure to make the project as easy to use as possible. Splitting up our javascript files and creating a public directory.</p><figure class="highlight"><pre><code class="language-html" data-lang="html">js
   app.js
   module.1js
   module2.js
