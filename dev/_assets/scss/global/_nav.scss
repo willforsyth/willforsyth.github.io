@@ -5,9 +5,22 @@
 
 nav li{
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 0.5em;
+  text-align: center;
+  @include breakpoint(small){
+      margin-left: 1em;
+  }
 }
 
 .active {
    text-decoration: line-through;
+}
+
+.logo{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(small){
+        float: left;
+    }
 }

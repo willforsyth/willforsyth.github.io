@@ -4,7 +4,7 @@ $body-font: 'Lato', sans-serif;
 
 $line-height: 1.8em;
 $font-weight: 300;
-$base-font-size: 14;
+$base-font-size: 20;
 
 
 html{
@@ -20,7 +20,7 @@ html{
 
 body{
     @include breakpoint(small){
-        font-size: 14 / $base-font-size#{em};
+        font-size: 16 / $base-font-size#{em};
         line-height: $line-height;
     }
     @include breakpoint(medium){
