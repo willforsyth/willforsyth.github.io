@@ -23,4 +23,8 @@ nav li{
     @include breakpoint(small){
         float: left;
     }
+    a{
+      display: block;
+      height: 100%;
+    }
 }
