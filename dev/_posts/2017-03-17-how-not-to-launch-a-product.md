@@ -9,9 +9,13 @@ description: |
 ---
 It began when I was selling an expensive item on Ebay. What I thought was expensive, an ipad air 2. I decided I didn't need it anymore and could do with the cash to buy a shed, (Ohh how things have changed). I listed it and got some bids, it sold for about the average price expected.
 
+> I have lots of other items I want to sell but don't want to give some American giant all my money
+
 Then the charges began, £12 to PayPal, £27 to Ebay, the item that sold £270 resulted in £230 in my pocket. You have got to expect charges and everyone wants their cut but this seemed a bit excessive. I have lots of other items I want to sell but don't want to give some American giant all my money.
 
-### So the idea
+---
+
+### The idea
 Only sell authentic items. No charges except for the payment except to pay pal. Photography of item has to be on point. High personal customer service.
 
 So what to do about it? I can write front end code that can now power the front and back end. I am a UX designer, so can plan, research and design the user experience. I can also do a bit of UI design so why not give this problem some thought.
@@ -27,11 +31,12 @@ I left out the user research, my idea was that I would base it all on assumption
 ### Development
 I fired up atom set up a repo and started to code. I got a simple login sorted, with users and product list. I added categories and pulled in products to the home page. I got a working build together of some key areas. Then I thought the design needed some work and jumped into sketch as new bits popped into my head so I carried on.
 
+---
 
 ## Stop!!!!
 I had fallen into the trap that I had heard about and thought "That would never be me". I was designing as I went and building at the same time. I can do UX as I go and test at the end. I was using React.js, Meteor as my app engine and Mongo databases to hold data. I had a login area and you could post products it was all going so well in my head. Then I got bored, had some doubts like "no one wants to use a product if i don't have a large customer base already" or no one knows about it. The doubt creep in and I shelved the idea for several months.
 
-I was doing everything the "correct way" at work, usability testing, research, analysis, UX design, transaction and user flows. So why wasn't I doing this on my own project? Good question.
+> I was doing everything the "correct way" at work, usability testing, research, analysis, UX design, transaction and user flows. So why wasn't I doing this on my own project? Good question.
 
 I read a book called [UX Strategy](http://userexperiencestrategy.com/) by Jamie Levey that inspired me to pick up the project again but adjust my process. I also read [Lean UX](https://www.amazon.co.uk/Lean-UX-Applying-Principles-Experience/dp/1449311652) and I started to have some new ideas and ways to market.
 
@@ -46,6 +51,7 @@ I read a book called [UX Strategy](http://userexperiencestrategy.com/) by Jamie 
 7. Get as much data as you can from this MVP.
 8. Iterate and develop.
 
+---
 
 ### My new plan
 
@@ -63,38 +69,41 @@ I read a book called [UX Strategy](http://userexperiencestrategy.com/) by Jamie 
 1. Start to sell multiple products.
 2. Start to charge a low percentage to use the service. 1 or 2 percent. (This is how it will start to make money)
 
-# Follow the journey
+> Follow the journey from how-to-not-to-launch-a-product to fingers crossed something we can have enough users to start getting some real data.
 
-## How not to launch a product
+---
+
+## Follow the journey
+Follow the journey from how-to-not-to-launch-a-product to fingers crossed something we can have enough users to start getting some real data.
+
+
+### How not to launch a product
 [How the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html)
 
-## Step one: UX research, Analysis & business goals
+### Step 1: UX research, Analysis & business goals
 Step one will be refining the MVP down, creating some user flows and making everything based on assumptions. Do as much research as I can to get a MVP into peoples hands.
-[link coming soon]()
+[Step 1](/ux/2017/03/20/step1-how-to-launch-a-product.html)
 
-## Step two: UX design
+### Step 2: UX design
 UX design user flows and wireframes.
 [link coming soon]()
 
-## Step three: UI design
+### Step 3: UI design
 Build out the MVP statically and manage it myself.
 [link coming soon]()
 
-## Step four: Build a MVP
+### Step 4: Build a MVP
 Build out the MVP statically and manage it myself.
 [link coming soon]()
 
-## Step five: User research on the MVP
+### Step 5: User research on the MVP
 Gather sheds loads of user data. Google analytics, surveys, hotjar, usability testing etc.
 [link coming soon]()
 
-## Step six: Analysis the data
+### Step 6: Analysis the data
 Analysis data and create usability maps of real data.
 [link coming soon]()
 
-## Step five
-Revisit UX design and adjust.
-
-## Step five: Revisit the UX and business goals
+### Step 7: Revisit the UX and business goals
 Revisit UX design and adjust.
 [link coming soon]()
