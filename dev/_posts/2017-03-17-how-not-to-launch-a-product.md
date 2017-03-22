@@ -5,7 +5,7 @@ published: true
 comments: false
 category: ux
 description: |
- The story of "Name to come" its beginnings and how its began and how I approach the agile product launch and lean UX
+ The story of (Name to come) its beginnings, how I approached the agile development and lean UX.
 ---
 It began when I was selling an expensive item on Ebay. What I thought was expensive, an ipad air 2. I decided I didn't need it anymore and could do with the cash to buy a shed, (Ohh how things have changed). I listed it and got some bids, it sold for about the average price expected.
 
@@ -38,7 +38,7 @@ I read a book by [UX Strategy](http://userexperiencestrategy.com/) that inspired
 ### The things I took out of these amazing books.
 
 1. User test early and often.
-2. Get it in peoples hands as early as possible.
+2. Get it in people's hands as early as possible.
 3. Amazon, Uber, google etc all started out doing one thing and doing it well and adding features later. (The example given in Jamie's book was of a product that similar to mine had no users, was feature bloated and the development time was holding up the release and testing).
 4. Create something simple even if you have to manage it yourself without powerful back ends and messaging systems, and process one product and transaction at a time.
 5. Create a buzz make it exclusive.
@@ -66,7 +66,7 @@ I read a book by [UX Strategy](http://userexperiencestrategy.com/) that inspired
 # Follow the journey
 
 ## Step one
-Step one will be refining the MVP down creating some user flows and making everything based on assumptions. Do as much research as I can to get a MVP into peoples hands.
+Step one will be refining the MVP down creating some user flows and making everything based on assumptions. Do as much research as I can to get a MVP into people's hands.
 [link coming soon]()
 
 ## Step two
@@ -82,5 +82,5 @@ Analysis data and create usability maps of real data.
 [link coming soon]()
 
 ## Step five
-Revist UX design and adjust.
+Revisit UX design and adjust.
 [link coming soon]()
