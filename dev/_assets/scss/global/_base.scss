@@ -5,7 +5,7 @@
 html{
     color: $color__blue;
     height: 100%;
-    background-size: cover;
+    background: $color__gray--light;
 }
 
 html,
@@ -16,12 +16,19 @@ body{
     max-width: 80em;
     position: relative;
 }
+body {
+  background: #ffffff;
+  @extend .clearfix;
+  height: 100%;
+}
 
 %wrapper{
     max-width: map-get($breakpoints, medium);
     width: 100%;
     margin: auto;
     padding: 0 $ratio#{em};
+    background: #ffffff;
+    @extend .clearfix;
 }
 
 .wrapper{
@@ -45,5 +52,6 @@ ol {
   padding-top: 0em;
   @include breakpoint(small){
     padding-top: 10em;
+    
   }
 }
