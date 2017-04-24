@@ -46,12 +46,16 @@ ol {
   }
 }
 
+.latest-blog {
+    padding-bottom: 5em;
+}
+
 .main-home {
   @extend .clearfix;
-  background: url(../imgs/backgrounds/divider-01.svg) top no-repeat;
+  background: #ffffff url(../imgs/backgrounds/divider-01.svg) top no-repeat;
   padding-top: 0em;
   @include breakpoint(small){
     padding-top: 10em;
-    
+
   }
 }
