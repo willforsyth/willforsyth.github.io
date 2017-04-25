@@ -5,6 +5,7 @@
 
 .posts__main {
     @extend .clearfix;
+    background: #ffffff;
     margin-bottom: 8 + $ratio#{em};
     animation: slideUpfade 0.4s normal ease-in-out;
 }
