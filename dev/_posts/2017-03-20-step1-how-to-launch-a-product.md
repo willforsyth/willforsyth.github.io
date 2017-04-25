@@ -7,7 +7,7 @@ category: ux
 description: |
  Step 1 in the journey. UX research to get a MVP up as early as possible.
 ---
-If your not up to speed read this [how the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html) first. This is step one in creating a MVP and getting some real data.
+If your not up to speed read this [how the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html) first. This is step 1 in my process of creating a MVP with the only objective to test the market, get some genuine user data. To allow the idea to go full steam ahead, pivot or ditch.
 
 This step is about basing most of my decisions on assumptions. I can then get a MVP out there ASAP to test. Ideally I would carry out usability testing on a story board or click through prototype at the end of this research phase.
 
@@ -53,7 +53,8 @@ I picked some direct and indirect competitors to document and study. [View the d
 
 
 ### User stories
-Coming soon
+I have two user types at the moment, the buyer and the seller. I will cut down the stories to the reworked MVP model. So no categories and search, however there will be additional stories specifically for this version. <a href="https://docs.google.com/a/willforsyth.co.uk/document/d/1LVnqsOUnnbs-u5wwM3TfdB9EftUlVzhZ8cQ3ojk0ZRQ/edit?usp=sharing" title="Link to google docs of user stories">Full list</a>
+<img src="/imgs/posts/user-stories-rarre.jpg" title="Image showing a the user stories hand written">
 
 ### Personas
 Coming soon
@@ -68,41 +69,10 @@ Coming soon
 ### Themes
 Coming soon
 
-### Resources
+### Define resources
 Coming soon
 
 
 ---
 
-## Follow the journey
-
-### How not to launch a product
-[How the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html)
-
-### Step 1: UX research, Analysis & business goals
-Step one will be refining the MVP down, creating some user flows and making everything based on assumptions. Do as much research as I can to get a MVP into peoples hands.
-[Step 1](/ux/2017/03/20/step1-how-to-launch-a-product.html)
-
-### Step 2: UX design
-UX design user flows and wireframes.
-[link coming soon]()
-
-### Step 3: UI design
-Build out the MVP statically and manage it myself.
-[link coming soon]()
-
-### Step 4: Build an MVP
-Build out the MVP statically and manage it myself.
-[link coming soon]()
-
-### Step 5: User research on the MVP
-Gather sheds loads of user data. Google analytics, surveys, hotjar, usability testing etc.
-[link coming soon]()
-
-### Step 6: Analysis the data
-Analysis data and create usability maps of real data.
-[link coming soon]()
-
-### Step 7: Revisit the UX and business goals
-Revisit UX design and adjust.
-[link coming soon]()
+{% include sub-nav.html %}

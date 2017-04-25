@@ -5,22 +5,22 @@ published: true
 comments: false
 category: ux
 description: |
- The story of (Name to come) its beginnings, how I approached the agile development and lean UX.
+ The journey starts with the wrong way to approach a product launch to a quick smaller delivery that we can test the market on. Using this method you could churn out a new idea every few months until something sticks.
 ---
-It began when I was selling an expensive item on Ebay. What I thought was expensive, an ipad air 2. I decided I didn't need it anymore and could do with the cash to buy a shed, (Ohh how things have changed). I listed it and got some bids, it sold for about the average price expected.
+It all began when I was selling an item on Ebay, my ipad air 2. I decided I didn't need it anymore and could do with the cash to buy a shed, (Ohh how things have changed). I listed it and got some bids, it sold for about the average price.
 
 > I have lots of other items I want to sell but don't want to give some American giant all my money
 
-Then the charges began, £12 to PayPal, £27 to Ebay, the item that sold £270 resulted in £230 in my pocket. You have got to expect charges and everyone wants their cut but this seemed a bit excessive. I have lots of other items I want to sell but don't want to give some American giant all my money.
+Then the charges began, £12 to PayPal, £27 to Ebay, the item that sold £270 resulted in £230 in my pocket. You have got to expect charges and everyone wants their cut but this seemed a bit excessive. I have lots of other items I want to sell but don't want to give some American giant all my money. What if you were selling a item for a few thousand? I could see how the charges can huge. So...
 
 ---
 
 ### The idea
-Only sell authentic items. No charges except for the payment except to pay pal. Photography of item has to be on point. High personal customer service.
+Sell items with no charges except for the payment to pay pal. Only sell authentic higher end items. Photography of item has to be on point. High personal customer service. Now as I found out this is not a hugely original idea but I would find a USP later.
 
 So what to do about it? I can write front end code that can now power the front and back end. I am a UX designer, so can plan, research and design the user experience. I can also do a bit of UI design so why not give this problem some thought.
 
-I decided to create a beast of an app that has a massive list of features and functionality. So began the journey.
+I decided to create a all singing and dancing app that has a massive list of features and functionality. So began the journey.
 
 ### Feature list
 I started out thinking of every possible feature that the user could want. Login, search products, product categories, post products, receive messages from users, take payment, authenticate users and their products. I don't even think this was the end of the list.
@@ -73,37 +73,4 @@ I read a book called [UX Strategy](http://userexperiencestrategy.com/) by Jamie 
 
 ---
 
-## Follow the journey
-Follow the journey from how-to-not-to-launch-a-product to fingers crossed something we can have enough users to start getting some real data.
-
-
-### How not to launch a product
-[How the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html)
-
-### Step 1: UX research, Analysis & business goals
-Step one will be refining the MVP down, creating some user flows and making everything based on assumptions. Do as much research as I can to get a MVP into peoples hands.
-[Step 1](/ux/2017/03/20/step1-how-to-launch-a-product.html)
-
-### Step 2: UX design
-UX design user flows and wireframes.
-[link coming soon]()
-
-### Step 3: UI design
-Build out the MVP statically and manage it myself.
-[link coming soon]()
-
-### Step 4: Build a MVP
-Build out the MVP statically and manage it myself.
-[link coming soon]()
-
-### Step 5: User research on the MVP
-Gather sheds loads of user data. Google analytics, surveys, hotjar, usability testing etc.
-[link coming soon]()
-
-### Step 6: Analysis the data
-Analysis data and create usability maps of real data.
-[link coming soon]()
-
-### Step 7: Revisit the UX and business goals
-Revisit UX design and adjust.
-[link coming soon]()
+{% include sub-nav.html %}
