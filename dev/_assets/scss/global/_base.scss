@@ -11,10 +11,12 @@ html{
 html,
 body{
     margin: auto;
-    height: 100%;
+    position: relative;
+    height: auto;
     min-height: 1100px;
     max-width: 80em;
     position: relative;
+    @extend .clearfix;
 }
 body {
   background: #ffffff;

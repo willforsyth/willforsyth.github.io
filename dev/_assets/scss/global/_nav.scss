@@ -22,6 +22,7 @@ nav li{
     margin-right: auto;
     @include breakpoint(small){
         float: left;
+        margin-left: 2em;
     }
     a{
       display: block;

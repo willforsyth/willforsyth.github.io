@@ -75,10 +75,11 @@
 
 .hdr--cont {
   position: relative;
-  height: 85%;
+  height: auto;
   margin-top: 0;
   @include breakpoint(small){
     margin-top: 4em;
+    height: 700px;
   }
 }
 
