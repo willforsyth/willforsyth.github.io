@@ -377,3 +377,16 @@ hr {
 	height: 15em;
 	width: 100%;
 }
+
+.case-study--first {
+	background: url(../imgs/research.png) top center;
+}
+
+.content--divide-flex{
+	display: flex;
+}
+
+.case-study--text {
+	background: $color__gray--light;
+	padding: 3em;
+}
