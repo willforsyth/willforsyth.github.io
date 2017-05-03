@@ -372,7 +372,7 @@ hr {
 }
 
 .case-study-background{
-	background: url(../imgs/screen-shot.png) top center;
+	background: url(../imgs/screen-shot.png) top center no-repeat;
 	background-size: cover;
 	height: 15em;
 	width: 100%;
@@ -382,6 +382,31 @@ hr {
 	background: url(../imgs/research.png) top center;
 }
 
+.case-study--second {
+	background: url(../imgs/research.png) top center;
+}
+
+.case-study--third {
+	background: url(../imgs/wireframes-new.png) top center;
+}
+
+.case-study--forth {
+	background: url(../imgs/prototype2.gif) top center;
+}
+
+.case-study--fifth {
+	background: url(../imgs/page-designs.png) top center;
+}
+
+.case-study--six {
+	background: url(../imgs/user-testing.png) top center;
+}
+
+
+.case-study--seventh {
+	background: url(../imgs/user-testing.png) top center;
+}
+
 .content--divide-flex{
 	display: flex;
 }
@@ -389,4 +414,52 @@ hr {
 .case-study--text {
 	background: $color__gray--light;
 	padding: 3em;
+}
+
+.step {
+	position: relative;
+	margin-top: 5em;
+	h3 {
+	 margin-bottom: 0.5em;
+	}
+}
+
+.step--header {
+	// position: absolute;
+	// width: 90%;
+	// background: white;
+	// top: -1em;
+  // right: 0;
+  // left: 0;
+	// margin-left: auto;
+  // margin-right: auto;
+	li{
+		list-style-type:none;
+		display: inline-block;
+		color: #c1c1c1;
+	}
+	li:before{
+		content:'\00b7';
+		font-size:200px;
+		line-height:24px;
+		vertical-align:middle;
+	}
+}
+
+
+.active--blue {
+	color: #fdcd82;
+}
+
+.grey--bk {
+	background: #f0f0f0;
+	color: #2c4870;
+}
+.active--green {
+	color: #246d5e;
+}
+
+.active--green-bk {
+	background-color: #246d5e;
+	color: #fff;
 }
