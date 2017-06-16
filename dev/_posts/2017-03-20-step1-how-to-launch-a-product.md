@@ -57,9 +57,8 @@ I have two user types at the moment, the buyer and the seller. I will cut down t
 <img src="/imgs/posts/user-stories-rarre.jpg" title="Image showing a the user stories hand written">
 
 ### Personas
-Coming soon
-
----
+I selected a few key users and completed several personas. This helped me to put myself into their shoes and to find out some key traits.
+<img src="/imgs/posts/Rarre-persona1.png" title="User persona">
 
 ## Analysis
 
