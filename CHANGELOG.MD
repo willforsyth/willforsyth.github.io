@@ -3,3 +3,7 @@ See [this guide](http://keepachangelog.com/) for tips on adding to this changelo
 
 
 ### Add in twitter and facebook graph Ql
+
+### Blog articles
+
+## Shneiderman’s Eight Golden Rules
