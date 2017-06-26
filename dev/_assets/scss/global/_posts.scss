@@ -54,6 +54,13 @@
     margin-bottom:1 + $ratio#{em};
     @extend .clearfix;
     animation: slideUpfade 0.4s normal ease-in-out;
+    ul {
+      margin-bottom: 1em;
+      margin-left: 1em;
+    }
+    li {
+      list-style-type: circle;
+    }
     .highlight {
         padding: $ratio#{em};
         background: $color__black;
