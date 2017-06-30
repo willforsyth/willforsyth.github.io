@@ -13,13 +13,12 @@ This step is about basing most of my decisions on assumptions. I can then get a 
 
 ---
 
-## The research
-At this stage I can't do any usability testing, or any testing on users. I will revisit this research phase once I have a MVP.
+## The research / empathise stage
+At this stage I can't do any usability testing, or any testing on users. I will revisit this research phase once I have a MVP. I want to empathise with my users at this stage and cover as much initial research as possible.
 
 > ### Research I am leaving till I have a MVP
 > * Contextual Enquiry
 > * Surveys
-> * User Interviews
 > * Usability test
 > * Customer feedback
 
@@ -36,7 +35,7 @@ This would be the time to hold workshops and create a engagement with the produc
 **A:** Getting users and creating a trusted community.
 
 **Q:** What are the potential pitfalls (i.e. what keeps you up at night about this project)? <br/>
-**A:** No uses it and payment security.
+**A:** No one uses it and payment security.
 
 [Full interview](https://docs.google.com/document/d/1Ptn8CwpO9n9L3lyCTGwx7gNtxr5kOw2PefGKet-21Ow/edit?usp=sharing)
 
@@ -51,25 +50,33 @@ This would be the time to hold workshops and create a engagement with the produc
 I picked some direct and indirect competitors to document and study. [View the document](https://docs.google.com/spreadsheets/d/11fK2-9nBzn0oN0x-hrgNJjYc7ql1Bc1Vk4xFQHcay98/edit?usp=sharing)
 <img src="/imgs/posts/compet.jpg" title="Image showing a screenshot of the google doc">
 
+### Interviewing potential users
+
+I have a clothing store close to my house that has a wide selection of trainers and limited edition releases. They have large queues when a new release is due and people camping out. This is a audience that can't escape and they are potential users who buy and sell rare trainers, either for themselves or to sell on.
+<img src="/imgs/posts/user-interviews.jpg" title="Image showing end clothing and interview questions">
+
+---
+
+
+## Analysis
+
+After my brief initial research and phase where I have tried to empathise as much as possible with my users its time to start collecting all my findings then defining what these users may need and creating a problem statement, user stories and personas.
+
+### Affinity Diagramming & Card Sorting
+
+Coming soon
 
 ### User stories
+
 I have two user types at the moment, the buyer and the seller. I will cut down the stories to the reworked MVP model. So no categories and search, however there will be additional stories specifically for this version. <a href="https://docs.google.com/a/willforsyth.co.uk/document/d/1LVnqsOUnnbs-u5wwM3TfdB9EftUlVzhZ8cQ3ojk0ZRQ/edit?usp=sharing" title="Link to google docs of user stories">Full list</a>
 <img src="/imgs/posts/user-stories-rarre.jpg" title="Image showing a the user stories hand written">
 
 ### Personas
+
 I selected a few key users and completed several personas. T to try and put myself into their shoes to find out some key traits.
 <img src="/imgs/posts/Rarre-persona1.png" title="User persona">
 
-## Analysis
-
-### Affinity Diagramming & Card Sorting
-Coming soon
-
-### Themes
-Coming soon
-
-### Define resources
-Coming soon
+### Problem statement
 
 
 ---

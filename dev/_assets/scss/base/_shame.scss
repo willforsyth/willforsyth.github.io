@@ -352,8 +352,14 @@
 }
 
 .intro {
-	p {
+	h2 {
 		margin-top: 7em;
+		padding-left: 0;
+		@include breakpoint(small){
+				padding-left: 3.05em;
+		}
+	}
+	p {
 		padding-left: 0;
 		@include breakpoint(small){
 				padding-left: 5em;
