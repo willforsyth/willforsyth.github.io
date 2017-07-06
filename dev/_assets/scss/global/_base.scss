@@ -14,7 +14,7 @@ body{
     position: relative;
     height: auto;
     min-height: 1100px;
-    max-width: 80em;
+    max-width: 100em;
     position: relative;
     @extend .clearfix;
 }
@@ -60,4 +60,8 @@ ol {
     padding-top: 10em;
 
   }
+}
+
+.blue {
+  color: $color__blue;
 }

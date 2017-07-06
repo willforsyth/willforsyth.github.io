@@ -20,7 +20,7 @@ h1{
 }
 h2{
     @extend %hn;
-    font-size: $ratio#{em};
+    font-size: 1.6em;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h4, h5{
     @extend %hn;
     font-family: $body-font;
     // margin-top: 1 + $ratio#{em};
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .post--title {

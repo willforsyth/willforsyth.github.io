@@ -3,6 +3,10 @@ blockquote {
   padding-left: 30px;
   margin: 3.6em 0;
   display: block;
+  p {
+      font-size: 1 + $ratio--inv#{em};
+  }
+
 }
 
 .grey--bk blockquote {

@@ -369,11 +369,18 @@
 }
 
 .intro-second {
+	svg {
+		margin-top: 7em;
+		@include breakpoint(small){
+				margin-top: 3em;
+		}
+	}
 	h2 {
-		margin-top: 3em;
+		margin-top: 7em;
 		padding-left: 0;
 		@include breakpoint(small){
 				padding-left: 3.05em;
+				margin-top: 3em;
 		}
 	}
 	p {
@@ -389,7 +396,7 @@ hr {
 	display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $color__gray--light;
+  border-top: 1px solid $color__gray;
   margin: 2em 0;
   padding: 0;
 }

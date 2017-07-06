@@ -23,6 +23,13 @@
     a {
       text-decoration: underline;
     }
+    h1 {
+      font-size: 50px;
+    }
+    h2{
+      font-size: 1.2em;
+
+    }
 }
 
 .posts {
@@ -50,7 +57,7 @@
 }
 
 .post__content {
-    padding: 0 !important;
+    p:first-of-type { font-size:1.1em }
     margin-bottom:1 + $ratio#{em};
     @extend .clearfix;
     animation: slideUpfade 0.4s normal ease-in-out;
@@ -67,6 +74,9 @@
         color: $color__white;
         margin-top: $ratio__inv#{em};
         clear: both;
+    }
+    img {
+      padding-top: 0.5em;
     }
 }
 .posts__inner {
