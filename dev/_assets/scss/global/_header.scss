@@ -16,30 +16,41 @@
 
 .hdr {
   @extend .clearfix;
-  position: relative;
-  color: $color__white;
-  padding-bottom: 3em;
-  overflow: hidden;
+  margin-bottom: 0;
+  @include breakpoint(small){
+    margin-bottom: 2em;
+  }
   h1 {
     margin-top: 1em;
     margin-bottom: 0;
     @include breakpoint(small){
-      margin-top: 2em;
+      margin: 7em 0 1em 0;
     }
-    text-align: center;
     animation: slideUpfade 0.25s normal ease-in-out;
   }
-  a {
-    color: $color__blue;
-    font-weight: 300;
-  }
+
   p {
-    text-align: center;
     animation: slideUpfade 0.7s normal ease-in-out;
   }
-  // @include breakpoint(small){
-  //     height: 30%;
-  // }
+}
+
+.hdr--inner {
+  margin-bottom: 0;
+  @include breakpoint(small){
+    margin-bottom: 4em;
+  }
+  ul {
+    margin-left: -1em;
+    @include breakpoint(small){
+      margin-left: none;
+    }
+  }
+  li {
+    display: inline-block;
+    @include breakpoint(small){
+      display: block;
+    }
+  }
 }
 
 .hdr--posts {
@@ -47,40 +58,30 @@
   max-height: 700px;
 }
 
-.home {
-  height: auto;
-  @include breakpoint(small){
-    height: 65%;
+.section--split {
+  @extend .clearfix;
+  padding: 2em 0;
+  border-bottom: 2px dashed $color__gray;
+}
+
+.quote {
+
+  h1 {
+    background: #fff;
+    color: #525d7d;
+    max-width: 500px;
+    text-align: left;
+    float: right;
+    margin-top: 1.5em;
   }
-    h1 {
-      margin-top: 2em;
-      background: $color__white;
-      color: $color__blue;
-      max-width: 500px;
-      text-align: left;
-      float: right;
-      @include breakpoint(small){
-        margin-top: 4em;
-      }
-    }
     .hdr--cont {
       background: none;
-      background-size: contain;
+      background-size: cover;
+      height: 400px;
       @include breakpoint(small){
         background: url("../imgs/backgrounds/bulb.svg") center center no-repeat;
       }
     }
-}
-
-
-.hdr--cont {
-  position: relative;
-  height: auto;
-  margin-top: 0;
-  @include breakpoint(small){
-    margin-top: 7em;
-    height: 700px;
-  }
 }
 
   #content {

@@ -16,10 +16,8 @@ nav li{
    text-decoration: line-through;
 }
 
+
 .logo{
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
     @include breakpoint(small){
         float: left;
         margin-left: 2em;

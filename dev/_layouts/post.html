@@ -20,10 +20,10 @@
   <header class="hdr hdr--post">
     {% include nav.html %}
   </header>
-    <div class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
+    <aside class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
       <a class="back" href="/posts.html" title="back">Back</a>
-    </div>
-    <main class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__6-of-12--large">
+    </aside>
+    <section class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__6-of-12--large">
       <article class="post__main" role="main">
         <h1 class="">{{ page.title }}</h1>
           <section class="post__content">
@@ -39,7 +39,7 @@
             {% endif %}
           </footer>
         </article>
-    </main>
+    </section>
     {% include footer.html %}
 
 

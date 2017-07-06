@@ -1,20 +1,20 @@
 %hn{
    font-family: $heading-font;
-   font-weight: 400;
-   line-height: 1.3em;
+   font-weight: 700;
+   line-height: 1em;
    margin: $ratio--inv#{em} 0 $ratio--inv#{em};
    -webkit-font-smoothing: antialiased;
    letter-spacing: 0.12em;
 }
 h1{
     @extend %hn;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 0;
     color: $color__blue;
 }
 .posts__main h2 {
   @extend %hn;
-  font-size: 2.1em;
+  font-size: 1.8em;
   border-bottom: none;
   margin-bottom: 0em;
 }
@@ -27,7 +27,7 @@ h3 {
   @extend %hn;
   margin-bottom: 0em;
   margin-top: 2em;
-  font-size: 1 + ($ratio--inv / 2)#{em};
+  font-size: 1.2em;
 }
 h4, h5{
     @extend %hn;
@@ -35,7 +35,6 @@ h4, h5{
     // margin-top: 1 + $ratio#{em};
     font-size: 1.2em;
 }
-
 .post--title {
   margin: 0;
 }

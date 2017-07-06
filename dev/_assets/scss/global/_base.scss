@@ -13,6 +13,7 @@ body{
     margin: auto;
     position: relative;
     height: auto;
+    font-weight: 300;
     min-height: 1100px;
     max-width: 100em;
     position: relative;
@@ -49,7 +50,11 @@ ol {
 }
 
 .latest-blog {
+    clear: both;
     padding-bottom: 5em;
+    .posts__link {
+      text-decoration: underline;
+    }
 }
 
 .main-home {
@@ -64,4 +69,8 @@ ol {
 
 .blue {
   color: $color__blue;
+}
+
+.right {
+  float: right;
 }

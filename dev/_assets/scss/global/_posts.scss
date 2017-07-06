@@ -6,7 +6,10 @@
 .posts__main {
     @extend .clearfix;
     background: #ffffff;
-    margin-bottom: 8 + $ratio#{em};
+    margin: auto;
+    @include breakpoint(medium){
+      margin: 4 + $ratio#{em} auto;
+    }
     animation: slideUpfade 0.4s normal ease-in-out;
 }
 
@@ -49,7 +52,10 @@
 .posts__link {
     display: block;
     z-index: 0;
-    text-decoration: none;
+    text-decoration:none;
+    h2 {
+      font-weight: 300;
+    }
 }
 
 .post__title {
@@ -79,9 +85,17 @@
       padding-top: 0.5em;
     }
 }
+
+
 .posts__inner {
-    color: $color__blue;
-    @extend .clearfix;
+  color: $color__blue;
+    .post--cat{
+      color: $color__blue;
+      @extend .clearfix;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
 }
 .time {
     font-style: italic;

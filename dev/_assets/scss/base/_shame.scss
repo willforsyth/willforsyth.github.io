@@ -236,8 +236,8 @@
 }
 
 .content--divide {
-	padding-bottom: 3em;
-	border-bottom: 1px solid;
+	padding: 3em 0;
+	border-bottom: 1px dashed solid;
 	@extend .clearfix;
 
 	img {
@@ -253,11 +253,14 @@
 	padding-top: 2em;
 	clear: both;
   margin: auto;
-	text-align: center;
 	@include breakpoint(small){
 			float: right;
 			margin-right: 2em;
 			clear: none;
+	}
+	a {
+		  color: $color__blue;
+		  font-weight: 300;
 	}
 }
 
@@ -352,43 +355,23 @@
 }
 
 .intro {
-	h2 {
-		margin-top: 7em;
-		padding-left: 0;
-		@include breakpoint(small){
-				padding-left: 3.05em;
-		}
-	}
-	p {
-		padding-left: 0;
-		@include breakpoint(small){
-				padding-left: 5em;
-		}
-		max-width: 780px;
-	}
 }
 
 .intro-second {
-	svg {
-		margin-top: 7em;
+	div {
+		margin-bottom: 0;
 		@include breakpoint(small){
-				margin-top: 3em;
+				margin-bottom: 3em;
 		}
 	}
 	h2 {
-		margin-top: 7em;
-		padding-left: 0;
+		margin-top: 0;
 		@include breakpoint(small){
-				padding-left: 3.05em;
 				margin-top: 3em;
 		}
 	}
 	p {
 		padding-left: 0;
-		@include breakpoint(small){
-				padding-left: 5em;
-		}
-		max-width: 780px;
 	}
 }
 
@@ -497,5 +480,11 @@ hr {
 cite {
 	clear:both;
 	font-size: 0.7em;
+	display: block;
+}
+
+.view--more {
+	margin-top: 1em;
+	font-size: 12px;
 	display: block;
 }

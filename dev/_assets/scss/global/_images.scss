@@ -4,3 +4,7 @@ img{
 
     @media \0screen {img { width: auto }} /* Prevent height distortion in IE8. */
 }
+
+.featured--img {
+  width: 100%;
+}
