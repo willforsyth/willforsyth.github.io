@@ -487,4 +487,7 @@ cite {
 	margin-top: 1em;
 	font-size: 12px;
 	display: block;
+	@include breakpoint(small){
+			font-size: 18px;
+	}
 }
