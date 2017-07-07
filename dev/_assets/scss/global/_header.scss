@@ -45,12 +45,6 @@
       margin-left: none;
     }
   }
-  li {
-    display: inline-block;
-    @include breakpoint(small){
-      display: block;
-    }
-  }
 }
 
 .hdr--posts {
@@ -75,12 +69,9 @@
     margin-top: 1.5em;
   }
     .hdr--cont {
-      background: none;
       background-size: cover;
+      background: url("../imgs/backgrounds/bulb.svg") center center no-repeat;
       height: 400px;
-      @include breakpoint(small){
-        background: url("../imgs/backgrounds/bulb.svg") center center no-repeat;
-      }
     }
 }
 

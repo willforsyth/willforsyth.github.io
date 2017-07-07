@@ -11,21 +11,20 @@ description: |
 <header class="hdr">
   {% include nav.html %}
     <div class="column column__center column__12-of-12 column__11-of-12--small column__9-of-12--medium hdr">
-        <h1>UX designer &amp; front end dev</h1>
+        <h1>UX designer &amp; front-end dev</h1>
         <div class="grid column column__12-of-12 column__8-of-12--small column__8-of-12--medium hdr--inner">
-            <p>I empathise with users, define and iterate solutions and develop prototypes, MVPs or full front end builds. Currently head of UX at <a href="http://drummondcentral.co.uk" title="">Drummond Central</a></p>
+            <p>I empathise with users, define and iterate solutions and develop prototypes, MVPs or full front end builds. Currently head of UX at <a href="http://drummondcentral.co.uk" title="">Drummond Central</a>.</p>
         </div>
-        <div class="column column__12-of-12 column__4-of-12--small column__3-of-12--medium hdr--inner right">
-          <ul>
-            <li><a href="/about.html" title="More about me" title="">About me</a></li>
-            <li><a href="/ux/2017/03/17/how-not-to-launch-a-product.html" title="">Case study</a></li>
-            <li><a href="https://www.behance.net/willf" title="">Behance</a></li>
-          </ul>
-        </div>
+        {% include intro-nav.html %}
   </div>
+
 </header>
 
-<img class="featured--img" src="imgs/backgrounds/me.jpg"/>
+<figure>
+        <img class="featured--img" src="imgs/backgrounds/me.jpg"/>
+        <figcaption>Man and his dog</figcaption>
+</figure>
+
 <section class="section--split">
   <div class="column column__center column__12-of-12 column__11-of-12--small column__10-of-12--medium intro-second">
     <h2>
@@ -51,7 +50,7 @@ description: |
       </svg>
     </h2>
     <div class="column column__12-of-12 column__7-of-12--small column__6-of-12--medium">
-      <p>If you have time or fancy a read, I write down things I am working on, things for my referance and anything I find interesting.</p>
+      <p>If you have the time or fancy a read, I write down things I am working on, things for my reference and anything I find interesting.</p>
   </div>
   <div class="column column__12-of-12 column__5-of-12--small column__6-of-12--medium">
       <ul>
@@ -62,7 +61,7 @@ description: |
                 </a>
             </li>
         {% endfor %}
-        <a class="view--more" href="/posts.html" title="">View blog</a>
+        <a class="view--more" href="/posts.html" title="">More</a>
       </ul>
   </div>
 </section>

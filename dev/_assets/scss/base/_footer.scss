@@ -3,7 +3,7 @@
 	clear: both;
 	background: $color__blue;
 	background-size: cover;
-	padding: 0 0 0 2em 0;
+	padding: 0 0 2em 0;
 	@include breakpoint(small){
 			padding: 5 + $ratio#{em} 0;
 	}
