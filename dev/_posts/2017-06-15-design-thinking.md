@@ -5,7 +5,7 @@ published: true
 comments: false
 category: ux
 description: |
- Design thinking is a process recently
+ Design thinking is used to great innovative and new solutions to problems.
 ---
 
 Design thinking has been around since the 1940s when engineers, architects and businesses struggled to keep up with the ever changing technology and the way people interacted with new innovations. Over the next 80 years it has helped lots of different industries overcome "wicked problems" (a term created by Horst Rittel to describe complex problems that could have different solutions).

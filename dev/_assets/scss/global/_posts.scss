@@ -68,12 +68,37 @@
     @extend .clearfix;
     animation: slideUpfade 0.4s normal ease-in-out;
     ul {
-      margin-bottom: 1em;
-      margin-left: 1em;
+      margin: 1em 0;
+      margin-left: 0em;
+      li {
+        padding-right: 0.5em;
+        margin: 0.5em 0;
+        list-style-type: none;
+          &:before {
+            font-size: 1.2em;
+            padding-right: 0.4em;
+            content: '\2022';
+            color: $color__orange;
+        }
+      }
     }
-    li {
-      list-style-type: circle;
+    ol {
+      list-style: none;
+      margin: 1em 0;
+      margin-left: -0.5em;
+      li {
+        counter-increment: item;
+        margin: 0.5em 0;
+      }
+      li:before {
+        content: counter(item);
+        color: $color__orange;
+        width: 2em;
+        text-align: center;
+        display: inline-block;
+      }
     }
+
     .highlight {
         padding: $ratio#{em};
         background: $color__black;
