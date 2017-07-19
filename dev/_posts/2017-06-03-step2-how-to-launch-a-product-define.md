@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to launch a product - Define
-published: true
+published: false
 comments: false
 category: ux
 image: /imgs/twitter-cards/how-not.png
@@ -44,12 +44,13 @@ I gathered all of our research and mapped out stories to show how the buyer and 
 
 ### How might we
 
-Some key how might we discussion points. These are the ones that will be take a bit more planning to fulfill.
+Some key how might we discussion points. These are some possible questions that we need to solve.
 
 - How might we ensure genuine products
 - How might we create a community
 - How might we ensure all transactions are safe and secure
 - How might we make it exclusive
+- How might we stop the need for queuing
 
 
 > ### Methods I will revisit after I have a MVP to test
