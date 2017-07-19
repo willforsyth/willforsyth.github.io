@@ -3,6 +3,7 @@ layout: post
 title: How not to launch a product
 published: true
 comments: false
+image: /imgs/twitter-cards/how-not.png
 category: ux
 description: |
  The journey starts with the wrong way to approach a product launch to a quick smaller delivery that we can test the market on. Using this method you could churn out a new idea every few months until something sticks.

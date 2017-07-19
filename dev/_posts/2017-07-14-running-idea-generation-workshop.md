@@ -3,7 +3,7 @@ layout: post
 title: Idea generation workshop
 published: true
 comments: false
-image: /imgs/designThinking.png
+image: /imgs/twitter-cards/big-idea.png
 category: ux
 description: |
  This is a step in the iterate phase in the design thinking process. It involves, brain storming, brain dumps, brain writing and walking. Using this method we can come up with new and interesting solutions to problems.

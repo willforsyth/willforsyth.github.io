@@ -4,6 +4,7 @@ title: How to launch a product - Empathise
 published: true
 comments: false
 category: ux
+image: /imgs/twitter-cards/how-not.png
 description: |
  Step 1 in the journey. Putting myself in the users shoes and empathising with them, researching as much as I can into the problems they have and how I can help to overcome them. My goal at this stage is to define a MVP as early as possible to test.
 

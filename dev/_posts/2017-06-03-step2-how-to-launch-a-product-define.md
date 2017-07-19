@@ -4,8 +4,9 @@ title: How to launch a product - Define
 published: true
 comments: false
 category: ux
+image: /imgs/twitter-cards/how-not.png
 description: |
- Step 2 in the journey. This is where we collect all our findings and define features.
+ Step 2 in the journey. This is where we collect all our findings and define our POV and how might we statements.
 
 ---
 
@@ -33,7 +34,7 @@ Using the interviews and key personas I then completed several empath diagrams t
 
 ### Affinity Diagramming &amp; Card Sorting
 
-This style of affinity diagram takes on the more of the Design thinking style, where we add everything I have found so far, quotes from users, sketches I have made any key user stories and ideas. It helps us to start to define what is required.
+This style of affinity diagram takes on the more of the Design thinking style, where we add everything I have found so far, quotes from users, sketches I have made any key user stories and ideas.
 <img src="/imgs/posts/affinity.jpg" title="Image showing a the user stories hand written">
 
 ### User story mapping
