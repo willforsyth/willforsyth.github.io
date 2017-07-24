@@ -1,4 +1,79 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="description" content=""><meta name="viewport" content="initial-scale=1"><meta name="keywords" content=""><title>Form Radio</title><link rel="stylesheet" media="all" href="/css/screen.css"><link rel="stylesheet" media="all" href="/css/patterns.css"><link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,400italic,600italic,700italic" rel="stylesheet" type="text/css"><script src="/assets/scripts/vendor/modernizr.js"></script></head><body><div class="toolbar"><div class="toolbar__inner"><a class="toolbar__home" href="/" title=""><svg viewBox="0 0 100 100" class="icon icon__home"><use xlink:href="/imgs/sprite/icon-sprite.svg#icon__home"></use></svg></a><ul><li data-width="20em">small</li><li data-width="32em">medium</li><li data-width="48em">large</li><li data-width="100%">100%</li></ul></div><a class="toolbar__show" href="" title="">toolbar</a></div><div class="pattern__wrapper"><div role="main"><div class="wrapper"><header class="pattern__component__header"><h1>Form Radio</h1><p>Here are some options.</p><p>This uses a svg to replace the default checkbox styles.</p><p><strong>.radio</strong> Add class of radio to the input</p></header><section class="pattern__component__example"><form action="#" autocomplete="off"><ul class="radios"><li><input type="radio" class="radio" name="radio--01" id="radio--01-01"> <span></span><label for="radio--01-01">Option 1</label></li><li><input type="radio" class="radio" name="radio--01" id="radio--01-02"> <span></span><label for="radio--01-02">Option 2</label></li><li><input type="radio" class="radio" name="radio--01" id="radio--01-03"> <span></span><label for="radio--01-03">Option 3</label></li><li><input type="radio" class="radio" name="radio--01" id="radio--01-04"> <span></span><label for="radio--01-04">Option 4</label></li></ul></form></section></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="keywords" content="">
+
+    <title>Form Radio</title>
+
+    <link rel="stylesheet" media="all" href="/css/screen.css">
+    <link rel="stylesheet" media="all" href="/css/patterns.css">
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+    <script src="/assets/scripts/vendor/modernizr.js"></script>
+</head>
+<body>
+    <div class="toolbar">
+	<div class="toolbar__inner">
+		<a class="toolbar__home" href="/" title="">
+			<svg viewBox="0 0 100 100" class="icon icon__home">
+			    <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__home"></use>
+			</svg>
+		</a>
+		<ul>
+		    <li data-width="20em">small</li>
+		    <li data-width="32em">medium</li>
+		    <li data-width="48em">large</li>
+		    <li data-width="100%">100%</li>
+		</ul>
+	</div>
+	<a class="toolbar__show" href="" title="">
+		toolbar
+	</a>
+</div>
+
+    <div class="pattern__wrapper">
+        <div role="main">
+    <div class="wrapper">
+		<header class="pattern__component__header">
+        	<h1>Form Radio</h1>
+        	<p>Here are some options.</p>
+
+<p>This uses a svg to replace the default checkbox styles.</p>
+
+<p><strong>.radio</strong> Add class of radio to the input</p>
+
+		</header>
+        <section class="pattern__component__example"><form action="#" autocomplete="off">
+    <ul class="radios">
+        <li>
+            <input type="radio" class="radio" name="radio--01" id="radio--01-01">
+            <span></span>
+            <label for="radio--01-01">Option 1</label>
+        </li>
+        <li>
+            <input type="radio" class="radio" name="radio--01" id="radio--01-02">
+            <span></span>
+            <label for="radio--01-02">Option 2</label>
+        </li>
+        <li>
+            <input type="radio" class="radio" name="radio--01" id="radio--01-03">
+            <span></span>
+            <label for="radio--01-03">Option 3</label>
+        </li>
+        <li>
+            <input type="radio" class="radio" name="radio--01" id="radio--01-04">
+            <span></span>
+            <label for="radio--01-04">Option 4</label>
+        </li>
+    </ul>
+</form></section>
+    </div>
+
+    
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"radios"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;li&gt;</span>
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio--01"</span> <span class="na">id=</span><span class="s">"radio--01-01"</span><span class="nt">&gt;</span>
@@ -21,4 +96,12 @@
             <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio--01-04"</span><span class="nt">&gt;</span>Option 4<span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></figure></div></div><script src="/scripts/common.js"></script><script src="/scripts/pattern.js"></script><script src="/assets/scripts/vendor/svg4everybody.js"></script></body></html>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+</div>
+    </div>
+    <script src="/scripts/common.js"></script>
+    <script src="/scripts/pattern.js"></script>
+    <script src="/assets/scripts/vendor/svg4everybody.js"></script>
+</body>
+</html>
