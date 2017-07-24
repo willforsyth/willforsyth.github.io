@@ -8,6 +8,7 @@ category: ux
 description: |
  The journey starts with the wrong way to approach a product launch to a quick smaller delivery that we can test the market on. Using this method you could churn out a new idea every few months until something sticks.
 ---
+
 It all began when I was selling an item on Ebay, my ipad air 2. I decided I didn't need it anymore and could do with the cash to buy a shed, (Ohh how things have changed). I listed it and got some bids, it sold for about the average price.
 
 > I have lots of other items I want to sell but don't want to give some American giant all my money

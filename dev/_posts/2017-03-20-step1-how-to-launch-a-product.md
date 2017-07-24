@@ -7,8 +7,8 @@ category: ux
 image: /imgs/twitter-cards/how-not.png
 description: |
  Step 1 in the journey. Putting myself in the users shoes and empathising with them, researching as much as I can into the problems they have and how I can help to overcome them. My goal at this stage is to define a MVP as early as possible to test.
-
 ---
+
 If your not up to speed read this [how the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html) first. This is step 1 in my process of creating a MVP with the only objective to test the market, and get some genuine user data.
 
 This step is about basing most of my decisions on assumptions and research. Empathising with the users, defining and iterating then I can then get an MVP out to test.

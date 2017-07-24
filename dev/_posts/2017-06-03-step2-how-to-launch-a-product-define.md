@@ -1,13 +1,12 @@
 ---
 layout: post
 title: How to launch a product - Define
-published: false
+published: true
 comments: false
 category: ux
 image: /imgs/twitter-cards/how-not.png
 description: |
  Step 2 in the journey. This is where we collect all our findings and define our POV and how might we statements.
-
 ---
 
 If your not up to speed read this [how the journey started](/ux/2017/03/17/how-not-to-launch-a-product.html) first. This is step 2 in my process of creating a MVP with the objective to test the market, and get some genuine user data.
@@ -51,6 +50,7 @@ Some key how might we discussion points. These are some possible questions that 
 - How might we ensure all transactions are safe and secure
 - How might we make it exclusive
 - How might we stop the need for queuing
+- How might we get good photography
 
 
 > ### Methods I will revisit after I have a MVP to test

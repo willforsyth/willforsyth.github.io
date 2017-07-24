@@ -19,7 +19,7 @@ build:
  - 'modernizr'
  - 'copy:dist'
  - 'processhtml'
- - 'htmlmin'
+ # - 'htmlmin'
  - 'gh-pages'
 
 regenerate:
