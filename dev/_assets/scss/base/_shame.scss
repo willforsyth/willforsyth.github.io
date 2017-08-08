@@ -391,6 +391,13 @@ hr {
 	width: 100%;
 }
 
+.case-study-background-wcfmc{
+	background: url(../imgs/screen-shot-wcfmc.png) top center no-repeat;
+	background-size: cover;
+	height: 25em;
+	width: 100%;
+}
+
 .case-study--first {
 	background: url(../imgs/research.png) top center;
 }
@@ -490,4 +497,9 @@ cite {
 	@include breakpoint(small){
 			font-size: 18px;
 	}
+}
+
+iframe {
+	margin: auto;
+display: block;
 }
