@@ -1,0 +1,132 @@
+---
+layout: base
+title: Will forsyth
+image: /imgs/twitter-cards/big-idea.png
+class: home
+---
+{% assign posts = site.posts | sort: 'group' %}
+
+
+<header class="hdr hdr--posts">
+    {% include nav.html %}
+</header>
+<div class="case-study-background-wcfmc"></div>
+
+<main class="posts__main">
+  <div class="grey--bk">
+  <div class="column column__center column__12-of-12 column__7-of-12--medium info--block--content">
+    <h3>WhoCanFixMyCar | Our assumptions are as follows:</h3>
+    <p>
+      <ul>
+        <li>1) User needs work done and has found us.</li>
+        <li>2) User finds the garage profile.</li>
+        <li>3) User doesn't want to, or doesn't know they can post a job but do like the look of the garage.  There are no contact details available - so they exit, google the garage details and book direct.”</li>
+      </ul>
+</p>
+  </div>
+</div>
+  <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
+        <section class="step">
+          <header>
+            <h3>Ways to tackle the issue</h3>
+          </header>
+            <ul>
+              <li>Google analytic monitoring and study.</li>
+              <li>Run some online usability tests and give them a basic task to contact / organise an appointment with the garage.</li>
+              <li>Add in a form to ask the user if they have found what they want / what they are looking for on this page.</li>
+              <li>Carry out some interviews with customers to find out some key information.
+                  <ul>
+                    <li>How do they normally book an appointment with a garage</li>
+                    <li>Do they know what they want when they contact a garage?</li>
+                    <li>Do they know what the issue is with their car when they contact a garage. IE is it a unknow issue or do they need a service or MOT. If it’s a unknow issue would they want to diagnose the issue to get a rough idea of cost or would they be happy to book a time for a diagnosis?</li>
+                    <li>Do they feel more comfortable speaking to a mechanic or the garage to discuss the issue?</li>
+                  </ul>
+              </li>
+            </ul>
+            <p>From this we could get a better understanding of the reason for people visiting this page and how we can improve the whole garage experience. If they are visiting this page so they can find out more about the garage get some reviews and then find contact details to talk to someone how can we give them a better experience.</p>
+          </section>
+          <section class="step">
+            <header>
+
+            </header>
+              <blockquote>
+                <h3>Assumed problem statement</h3>
+                “As a driver I would like to book an appointment with the garage easily and quickly."</blockquote>
+          </section>
+
+          <section class="step">
+            <header>
+              <h3>User goals</h3>
+            </header>
+              <ul>
+                <li>As a driver I want to book my car in for an MOT / Service.</li>
+                <li>As a driver I have an unknown issue with my car I want to get it fixed as conveniently as possible.</li>
+                <li>As a driver I want to book an appointment for a garage near my home.</li>
+                <li>As a driver I want to find the details of a garage.</li>
+              </ul>
+            </section>
+
+            <section class="step">
+              <header>
+                <h3>Sketches</h3>
+                <p>I started of sketching out some user flows and rough ideas. Trying to work out any potential orders or issues the user will have. Doing some research online looking into different processes.</p>
+              </header>
+                <img src="/imgs/sketch-images.jpg" title="">
+              </section>
+
+          <section class="step">
+            <header>
+              <h3>Interaction flow</h3>
+              <p>Once I had a solid idea I started to plan out in more detail how the user will input data and complete the booking.</p>
+              <blockquote>"I tried to stick to the core user journeys, time permitting I would investigate these further."</blockquote>
+            </header>
+          </section>
+        </div>
+        <img src="/imgs/flow.png" title="">
+
+        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
+          <section class="step">
+            <header>
+              <h3>Wireframes</h3>
+              <p>Next I looked at wireframes to show the user flows in more detail including how the interactions would work. Ideally I would go into more detail with the labeling and documentation. The click through prototype only takes in one flow ideally I would expand this to make a full prototype to test.</p>
+              <ul>Key features of new structure
+                <li>Tap bar to access elements of form.</li>
+                <li>Estimate cost for selected services.</li>
+              </ul>
+              <blockquote>"If the garage has no way to show available times then the user could select any time and the garage would confirm the appointment."</blockquote>
+            </header>
+          </section>
+        </div>
+        <img src="/imgs/wireframes.png" title="">
+        <iframe width="438" height="930" src="//invis.io/ZCCX2S4BU" frameborder="0" allowfullscreen></iframe>
+
+  <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
+        <section class="step">
+          <header>
+            <h3>Design</h3>
+            <p>I then added some design styles to the wireframes and started to build up the steps in a little more detail. I have changed some of the colours slightly to modernise the colour pallette. Providing a gif helps to demonstrate how the interactions could work.</p>
+            <ul>Key features of new design
+              <li>Refresh of colour and styles used.</li>
+              <li>Introduction of illustrations.</li>
+            </ul>
+            <blockquote>“If you were looking for a brand refresh in the future you may want to have bespoke illustrations created depending on the direction of new brand styles.”</blockquote>
+            <img src="/imgs/wcfmc/design3.png" title="Screen showing three designs">
+            <img src="/imgs/wcfmc/All-designs.png" title="Home page design">
+            <img class="center-item" src="/imgs/animation2.gif" title="animation">
+          </header>
+              <h3>Next steps</h3>
+              <ul>
+                <li>More research into the user goals and a problem statements to decide on any extra flows.</li>
+                <li>Validation and error handling</li>
+                <li>Test <b>This week</b> and <b>Next week</b> do we need to add in more options?</li>
+                <li><b>a/b test</b> the order of the start of the form."</li>
+                <li>Usability tests</li>
+              </ul>
+          </section>
+  </div>
+</main>
+
+
+
+
+{% include footer.html %}

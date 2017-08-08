@@ -5,38 +5,40 @@
     <meta name="viewport" content="initial-scale=1">
     <link rel="prefetch" href="/imgs/backgrounds/sky.jpg">
     <!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Closures in javascript - Willforsyth</title>
-<meta property="og:title" content="Closures in javascript" />
-<meta name="description" content="Javascript closures" />
-<meta property="og:description" content="Javascript closures" />
-<link rel="canonical" href="willforsyth.co.uk/javascript/2016/06/22/javascript-closures.html" />
-<meta property="og:url" content="willforsyth.co.uk/javascript/2016/06/22/javascript-closures.html" />
+<title>Interface design guidelines - Willforsyth</title>
+<meta property="og:title" content="Interface design guidelines" />
+<meta name="description" content="A collection of guidelines for designing usable interfaces." />
+<meta property="og:description" content="A collection of guidelines for designing usable interfaces." />
+<link rel="canonical" href="willforsyth.co.uk/ux/2017/07/30/interface-guidelines.html" />
+<meta property="og:url" content="willforsyth.co.uk/ux/2017/07/30/interface-guidelines.html" />
 <meta property="og:site_name" content="Willforsyth" />
+<meta property="og:image" content="willforsyth.co.uk/imgs/twitter-cards/big-idea.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-06-22T00:00:00+01:00" />
-<meta name="twitter:card" content="summary" />
+<meta property="article:published_time" content="2017-07-30T00:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@willforsyth" />
 <meta name="twitter:creator" content="@Will Forsyth" />
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "Closures in javascript",
-    "datePublished": "2016-06-22T00:00:00+01:00",
-    "description": "Javascript closures",
-    "url": "willforsyth.co.uk/javascript/2016/06/22/javascript-closures.html"
+    "headline": "Interface design guidelines",
+    "image": "willforsyth.co.uk/imgs/twitter-cards/big-idea.png",
+    "datePublished": "2017-07-30T00:00:00+01:00",
+    "description": "A collection of guidelines for designing usable interfaces.",
+    "url": "willforsyth.co.uk/ux/2017/07/30/interface-guidelines.html"
   }
 </script>
 <!-- End Jekyll SEO tag -->
-    <title>Closures in javascript</title>
+    <title>Interface design guidelines</title>
     <link rel="stylesheet" media="all" href="/css/screen.css">
     <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@willforsyth">
-    <meta name="twitter:title" content="Closures in javascript">
-    <meta name="twitter:description" content="Javascript closures
+    <meta name="twitter:title" content="Interface design guidelines">
+    <meta name="twitter:description" content="A collection of guidelines for designing usable interfaces.
 ">
-    <meta name="twitter:image" content="http://willforsyth.co.uk">
+    <meta name="twitter:image" content="http://willforsyth.co.uk/imgs/twitter-cards/big-idea.png">
     <meta name="theme-color" content="#fbc680">
 </head>
 
@@ -90,52 +92,74 @@
     </aside>
     <section class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__6-of-12--large">
       <article class="post__main" role="main">
-        <h1 class="">Closures in javascript</h1>
+        <h1 class="">Interface design guidelines</h1>
           <section class="post__content">
-              <h3>Working with closures</h3>
+              <h3>Nielsen and Molich’s 10 User Interface Design Heuristics</h3>
 
-<p>A closure returns a function from within a function. The inner function retains access to the scope. It has reference to a variable from its parents environment. The best thing about a closures is that it allows us to access functions from within other functions by exposing the content we need.</p>
+<ul>
+  <li>Visibility of system status</li>
+  <li>Match between system and the real world</li>
+  <li>User control and freedom</li>
+  <li>Consistency and standards</li>
+  <li>Error prevention</li>
+  <li>Recognition rather than recall</li>
+  <li>Aesthetic and minimalist design</li>
+  <li>Help users recognize, diagnose and recover from errors</li>
+  <li>Help and documentation</li>
+</ul>
+
+<h3>ISO 25010</h3>
+
+<ul>
+  <li>Appropriateness</li>
+  <li>Recognisability</li>
+  <li>Learnability</li>
+  <li>Operability (degree to which a product or system has attributes that make it easy to operate and control - emphasis added)</li>
+  <li>User error protection</li>
+  <li>User interface aesthetics</li>
+  <li>Accessibility</li>
+</ul>
 
 <blockquote>
-  <p>Closures create private functions that we can make accessible or not its up to you</p>
+  <h3>Match between system and the real world</h3>
+  <p>The system should speak the users’ language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.</p>
 </blockquote>
 
-<h4>Simple example</h4>
+<h3>ISO 9241-11’s</h3>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="kd">var</span> <span class="nx">closureExample</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-      <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">++</span><span class="nx">num</span><span class="p">);</span>
-    <span class="p">};</span>
-    <span class="k">return</span> <span class="nx">result</span>
-  <span class="p">}</span>
+<ul>
+  <li>Effectiveness</li>
+  <li>Efficiency</li>
+  <li>Satisfaction</li>
+  <li>Freedom from risk</li>
+  <li>Context coverage</li>
+</ul>
 
-  <span class="c1">// store the function in a variable to access it later. This allows it to retain its lexical scope.</span>
-  <span class="kd">var</span> <span class="nx">thisIsTheClosure</span> <span class="o">=</span> <span class="nx">closureExample</span><span class="p">();</span>
+<h3>Ben Shneiderman 8 Golden Rules of Interface Design</h3>
 
-  <span class="c1">// invoke the function using its variable name and brackets</span>
-  <span class="nx">thisIsTheClosure</span><span class="p">()</span></code></pre></figure>
+<ul>
+  <li>Strive for consistency</li>
+  <li>Enable frequent users to use shortcuts</li>
+  <li>Offer informative feedback</li>
+  <li>Design dialogue to yield closure</li>
+  <li>Offer simple error handling</li>
+  <li>Permit easy reversal of actions</li>
+  <li>Support internal locus of control</li>
+  <li>Reduce short-term memory load</li>
+</ul>
 
-<p>Each time the “thisIsTheClosure()” is invoked the function will run and it will remember each iteration. So the console will log, 1 then 2, then 3 etc. Where as if we did not create a closure and just called for closureExample() it would always log the value 1. This is because it creates a new instance each time and can’t “remember” past calls. Each time you run “thisIsTheClosure()” its running “return result” each time so this allows you to update “var num” each time.</p>
+<h3>Gestalt Principles</h3>
 
-<h4>Multiple functions within one closure using methods</h4>
+<ul>
+  <li>Law of Pragnanz</li>
+  <li>Law of Similarity</li>
+  <li>Law of Proximity</li>
+  <li>Law of Common Fate</li>
+  <li>Law of Familiarity or Meaningfulness</li>
+  <li>Law of Good Continuation or Continuity</li>
+</ul>
 
-<p>This closure allows us to contain multiple function and call them separately. To do this we store the functions in an object so they become methods. Then we can call them individually.</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  <span class="kd">function</span> <span class="nx">counter</span><span class="p">(){</span>
-    <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">return</span> <span class="p">{</span>
-      <span class="na">count</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="o">++</span><span class="nx">n</span><span class="p">;},</span>
-      <span class="na">reset</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
-    <span class="p">};</span>
-  <span class="p">};</span>
-
-  <span class="kd">var</span> <span class="nx">myCounter</span> <span class="o">=</span> <span class="nx">counter</span><span class="p">();</span>
-
-  <span class="c1">// How to access the functions within the closure</span>
-  <span class="nx">myCounter</span><span class="p">.</span><span class="nx">count</span><span class="p">();</span>
-  <span class="nx">myCounter</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span></code></pre></figure>
-
+<hr />
 
               <div id="disqus_thread"></div>
 <script>
@@ -152,10 +176,8 @@ s.setAttribute('data-timestamp', +new Date());
           </section>
           <footer>
             
-              <a class="post-prev" href="/javascript/2016/06/13/kata-countdown.html">&laquo; Kata Countdown word game</a>
+              <a class="post-prev" href="/ux/2017/07/14/running-idea-generation-workshop.html">&laquo; Idea generation workshop</a>
             
-            
-              <a class="post-next" href="/javascript/2016/06/22/javascript-prototypes-and-constructors.html">Prototypes and constructors functions in javascript &raquo;</a>
             
           </footer>
         </article>
