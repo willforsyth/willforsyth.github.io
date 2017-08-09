@@ -151,3 +151,5 @@ Stanford d.school crash course [https://dschool.stanford.edu/resources-collectio
 Interaction design foundation [https://www.interaction-design.org](https://www.interaction-design.org)
 
 Design thinking movie [http://designthinkingmovie.com/](http://designthinkingmovie.com/)
+
+Invison and [designbetter.co](https://www.designbetter.co/design-thinking) overview
