@@ -13,7 +13,7 @@ module.exports = {
             dot: true,
             cwd: 'dev/_assets/',
             dest: '.tmp',
-            src: 'imgs/{,*/}*.{png,jpg,jpeg,gif,svg}'
+            src: 'imgs/{,*/}*.{png,jpg,jpeg,gif,svg,pdf}'
         }]
     },
     fonts: {
@@ -40,7 +40,7 @@ module.exports = {
             dot: true,
             cwd: 'dev/_assets/',
             dest: 'web',
-            src: ['imgs/{,*/}*.{png,jpg,jpeg,gif,svg}']
+            src: ['imgs/{,*/}*.{png,jpg,jpeg,gif,svg,pdf}']
         },{
             expand: true,
             dot: true,
