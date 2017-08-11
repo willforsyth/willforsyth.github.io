@@ -9,9 +9,9 @@ description: |
  This is a step in the iterate phase in the design thinking process. It involves, brain storming, brain dumps, brain writing and walking. Using this method we can come up with new and interesting solutions to problems.
 ---
 
-Running a workshop to generate ideas is a fantastic way to come up with innovative and new solutions to a problem / new addition to a product or a whole new product itself. These are not new or ground braking ways to generate ideas however they are very effective. The benefits to this is it takes place after we fully understand our users and also what our problem is.
+Running a workshop to generate ideas is a fantastic way to come up with innovative and new solutions to a problem / new addition to a product or a whole new product itself. These are not new or ground breaking ways to generate ideas however they are very effective. The benefits to this is it takes place after we fully understand our users and also what our problem is.
 
-It gets the clients and stakeholders involved in the idea generation and gets them involved and on board early. Everyone will have a input and come up with ideas which creates ownership. No need to go away for weeks and then present findings, its starting a collaborative and fruitful relationship.
+It gets the clients and stakeholders involved in the idea generation and gets them involved and on board early. Everyone will have an input and come up with ideas which creates ownership. No need to go away for weeks and then present findings, its starting a collaborative and fruitful relationship.
 
 ### What we need
 
@@ -95,7 +95,7 @@ Add it to the mood board of ideas.
 
 ### Brain dump
 
-We can mix this in with the brain storming session as you see fit or ff ideas are not for coming or they dry up.  
+We can mix this in with the brain storming session as you see fit or if ideas are not for coming or they dry up.  
 
 #### Rules
 
