@@ -64,14 +64,6 @@
       </a>
     </li>
     <li>
-      <a href="/ux-process.html" title="View my UX process"  tabindex="3" data-type="page-transition">
-        <svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__ux">
-            <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__ux"></use>
-            <span tabindex="4">UX process</span>
-        </svg>
-      </a>
-    </li>
-    <li>
       <a href="/about.html" title="A weee bit about me"  tabindex="5" data-type="page-transition">
         <svg viewBox="0 0 100 100" class="icon icon--inline icon--center icon__about">
             <use xlink:href="/imgs/sprite/icon-sprite.svg#icon__about"></use>
@@ -103,34 +95,37 @@
 <main class="posts__main">
   <div class="column column__center column__12-of-12 column__7-of-12--medium info--block--content post__content">
     <h1>Instant quotes</h1>
-    <h4>Objective:<span> “Give drivers an instant and accurate quote”</span></h4>
-    <p>Provide instant accurate prices to driveres, allowing garages to view and edit these at any time and also confirm and save these quotes.</p>
+    <h4>Problem statement:<span> “Give drivers an instant and accurate quote”</span></h4>
+    <p>Provide instant accurate prices to drivers, allowing garages to view and edit their quotes at any time.</p>
     <h4>My Role:<span> Lead Product Designer</span></h4>
     <ul>
       <li>User research</li>
       <li>UX design</li>
       <li>UI design</li>
-      <li>Interaction design </li>
-      <li>Monitoring and testing</li>
+      <li>Interaction design</li>
     </ul>
 </div>
 <hr>
   <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h2>Our user stories</h2>
-              <p>Two epic user stories that we need to solve.</p>
+              <h2>The task</h2>
             </header>
               <blockquote>
-                <h3>Driver user story</h3>
+                <h3>Driver feedback</h3>
                 “What happens now? Do I need to wait on a quote?”
               </blockquote>
               <blockquote>
-                <h3>Garage user story</h3>
-                “I dont have time to quote on the jobs”
+                <h3>Garage feedback</h3>
+                “I don't have time to quote on the jobs”
               </blockquote>
+              <header>
+                <h3>Business goal</h3>
+              </header>
+              <p>We need to give the drivers instant prices to increase the acceptance rate and leakage. Give 86% of jobs posted 5+ instant accurate price (Currently 35%) and to increase acceptance rate to 20%</p>
+              <img src="/imgs/wcfmc/accepts.png" title="">
           </section>
-<hr>
+<!-- <hr>
           <section class="step">
             <header>
               <h2>Processes and the approach</h2>
@@ -141,146 +136,111 @@
                 <li>Ai/machine learning</li>
               </ul>
             </p>
-</section>
-<hr>
-            <section class="step">
-              <header>
-                <h3>Garage visits</h3>
-                <p>We went on the road to gather research into how garages currently book drivers in once they have had a job accepted. We visited 4 garages and spoke to the mechanics and office admin who used the system to talk to drivers and book them in.</p>
-              </header>
-            </section>
-
-              <section class="step">
-                <header>
-                  <h3>Surveys</h3>
-                    <p>We have access to all active user of the system through our dashboard, so we can quickly run surveys to gather feedback.</p>
-                </header>
-                  <img src="/imgs/wcfmc/survey.png" title="">
-                </section>
-
-          <section class="step">
-            <header>
-              <h3>Results</h3>
-              <p>We gathered all the results and held a session on the best way to approach the problem:</p>
-              <p>
-                <ul>
-                  <li>Garages use multiple systems to manage bookings</li>
-                  <li>Some use pen and paper</li>
-                  <li>Most will not turn away bookings</li>
-                  <li>They accept a specific number of jobs per day, this could change depending on the type of job</li>
-                  <li>Some have visited and some have drop-offs</li>
-                </ul>
-              </p>
-              <img src="/imgs/wcfmc/bookings.png" title="">
-              <p>We decided a MVP would be the best option to meet our objectives and be used gather feedback on then iterate. This was based on business objectives and also on the drivers and a prioritisation matrix.</p>
-              <p>
-                <ul>
-                  <li>Allow morning or afternoon drop-offs.</li>
-                  <li>Allow the garage to set the number of drop-offs they will take per day.</li>
-                  <li>Allow for overbookings (Business objective).</li>
-                </ul>
-              </p>
-            </header>
-          </section>
-        </div>
+</section> -->
+  <hr>
+</div>
 
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h2>Design</h2>
-              <p>I then set out designing the flows, wireframes, interaction designs and prototypes.</p>
-              <blockquote>
-                <h3>Keep the personas in mind!!</h3>
-                <img src="/imgs/wcfmc/personas.png" title="">
-              </blockquote>
+              <h2>Empathise</h2>
+              <p>Our users expect to see an instant accurate price, and we also have feedback from mechanics who would like to be able to quote quicker. To start will I needed to delve deeper into these needs so I could fully understand the problem.</p>
             </header>
+            <h3>User journey map</h3>
+            <img src="/imgs/wcfmc/user-flow.png" title="">
           </section>
           <section class="step">
             <header>
-              <h3>Sketch</h3>
-                <p>I always start out with sketches and rough out flows and wireframes as I work out the possible routes.</p>
+              <h3>Garage interviews</h3>
+              <p>I interviewed around 20 garages and mechanics.</p>
+              <img src="/imgs/wcfmc/garage-feedback-instant.png" title="">
             </header>
-              <img src="/imgs/wcfmc/sketch-2.png" title="">
+              <h3>Findings</h3>
+              <p><b>Feelings:</b> Concerned that we provide the wrong price, worried about bad experiences with drivers around pricing.</p>
+              <p><b>Thoughts:</b> looking forward to saving time with quoting but hoping their is not more customer management.</p>
+              <p>The main concerns for the garages are around price and making sure these are accurate.</p>
             </section>
-            <section class="step">
-              <header>
-                <h3>Defined MVP items</h3>
-                <p>
-                  <ul>
-                    <li>Onboarding</li>
-                    <li>Driver flow</li>
-                    <li>Garage maangement</li>
-                  </ul>
-                </p>
-              </header>
-              </section>
               <section class="step">
                 <header>
-                  <h3>Driver flow</h3>
+                  <h3>Driver</h3>
+                  <p>Do drivers expect the price to be final?</p>
+                  <img src="/imgs/wcfmc/user-testing-instant1.png" title="">
                 </header>
+                  <h3>Findings</h3>
+                  <p>Drivers expect the quotes to change when they get to the garage depending on whether more more is required, or parts prices etc.</p>
                 </section>
+              <!-- <section class="step">
+                <header>
+                  <h3>Further research</h3>
+                </header>
+                <p>Introduce a parts plus labour calculator into the page where mechanics apply for jobs to gather more findings and allow them to see prices calculated by us.</p>
+                </section> -->
+                <section class="step">
+                  <header>
+                    <h3>Considerations at this point.</h3>
+                  </header>
+                  <h4>Will mechanics be happy with us quoting on their behalf?</h4>
+                  <p>This is a business goal so will be happening we need to ensure that the data is accurate so they are happy with the quotes.</p>
+                  <h4>Will Drivers accept a “Smart quote” or fully understand what it is.</h4>
+                  <p>This will be a research piece, for the usability research team.</p>
+                </section>
+                <!-- <section class="step">
+                  <header>
+                    <h3>Technical constraints</h3>
+                  </header>
+                  <p>
+                    <ul>
+                      <li><b>Parts plus labour:</b>
+                        This takes the parts prices, then the labour hrs and rates and adds in a mark up to calculate the price.
+                        </li>
+                        <li><b>Ai or machine learning:</b>Using all the data thats available machine learning can be used to calculate the price a garage would quote based on past quoting behaviour, location and garages within their proximity.</li>
+                    </ul>
+                  </p>
+                  </section> -->
         </div>
-        <img src="/imgs/wcfmc/driver-accept-form.png" title="">
+
+<!--
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <img src="/imgs/wcfmc/accept-form.png" title="">
             <img src="/imgs/wcfmc/driveracceptform.png" title="">
           </section>
-        </div>
+        </div> -->
 
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h2>Driver</h2>
-              <p>The first area I looked into was the driver area. We had recently released a new choose garage page, after extensive A/B testing so the calendar would sit on this page to start with.</p>
-              <blockquote>
-                <img src="/imgs/wcfmc/bookings-wireframe.png" title="">
-                <img src="/imgs/wcfmc/bookings-new.png" title="">
-                <img src="/imgs/wcfmc/full-bookings.png" title="">
-                <img src="/imgs/wcfmc/desktop-bookings.png" title="">
-              </blockquote>
-            </header>
-          </section>
-        </div>
-
-        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
-          <section class="step">
-            <header>
-              <h2>Garage On-boarding</h2>
-              <p>On-boarding of the user is of big importance when releasing this feature. We have settings the requirement for garages to opt in to use the new functionality.</p>
-              <blockquote>
-                <img src="/imgs/wcfmc/wireframes-on-boarding.png" title="">
-                <img src="/imgs/wcfmc/on-boarding.png" title="">
-              </blockquote>
-            </header>
-          </section>
-        </div>
-
-        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
-          <section class="step">
-            <header>
-              <h2>Garage booking management</h2>
-              <p>The driver side is fairly simple, however the management from the garage side will be more complex.</p>
-              <h4>Problems to overcome</h4>
+              <h2>Define</h2>
+              <p>I gathered all the results and held a session consisting of affinity diagrams to group the results and decide on the best way to approach the problem:</p>
               <ul>
-                <li>Change the mindset of the garage that drivers will book in through the system.</li>
-                <li>Garages sometimes miss bookings so we need to make sure that we dont have drivers turning up for bookings that the garage is unaware of.</li>
-              </ul>
-              <blockquote>
-                <h3>Calendar</h3>
-                <img src="/imgs/wcfmc/calendar.png" title="">
-                <img src="/imgs/wcfmc/calender-ui.jpg" title="">
-              </blockquote>
-              <blockquote>
-                <h3>Notification types</h3>
-                <p>In ststem alerts, emails, text messages</p>
-                <img src="/imgs/wcfmc/notifications.jpg" title="">
-              </blockquote>
-              <blockquote>
-                <h3>Overbookings</h3>
-                <p>Overbookings are a controversial part of the system. It's a business requirement to not prevent accepts on the system. However, until we learn from the uptake and the way the garages use the system we need to not prevent drivers from accepting a quote. So allowing for overbookings which then have to be managed by the garage is a business move that does not sit well form the User perspective.</p>
-                <img src="/imgs/wcfmc/overbooking.jpg" title="">
-              </blockquote>
+                <li>Drivers expect prices to move, however we need to ensure they know its a quote</li>
+              <li>Garages want accurate prices:<br>
+                <li>The AI has a tolerance of plus and minus 10% so we need to give the the power to manage and update prices.</li>
+                <li>The parts plus labour calculations do not take into account the "Fudge factor".  For example a certain model ford focus may not need a part removed to get itn othe timing belt.</li>
+              </li>
+              <li>Garages need to update prices instantly and live.</li>
+              <li>Garages need a management tool to view there prices and to update if they feel they need to. (They will have upwards of 300,000 potential quotes)</li>
+            </ul>
+            </header>
+            <h3>Defined MVP for the AI solution</h3>
+            <p>Myself, the product manager and the data scientist then decided on a MVP to go live with. This was based on when we could have the first cut of data, how quickly we could test a prototype and how much management we want to give to the drivers on the release.</p>
+            <ul>
+              <li>Onboarding for the mechanics</li>
+              <li>New quote tiles, tooltips, more info sections as well as email coms</li>
+              <li>Management tool that allows the mechanic to view all prices and update</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
+          <section class="step">
+            <header>
+              <h2>Design / Ideate</h2>
+              <p>I then set out designing the flows, wireframes, interaction designs and prototypes, so we could test and iterate.</p>
+              <figure>
+                      <img src="/imgs/wcfmc/user-personnas-instant.png" title="">
+                      <figcaption>User personnas to guide the design.</figcaption>
+              </figure>
             </header>
           </section>
         </div>
@@ -288,42 +248,28 @@
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
+              <h3>Sketch and plan full end to end flow</h3>
+              <p>I always start out with sketches and rough flows and wireframes as I work out the possible routes. The flow touches the mechanics and driver in numurous places. So will need several flows ranging in detail and then several prototypes.</p>
               <blockquote>
-                I like to supply an example animation using <a href="http://principleformac.com/" title="">principle</a> to help demonstrate how the interactions could work. This makes the hand over easier to explain.
-              </blockquote>
+                  <img src="/imgs/wcfmc/user-flow-instant-1.png" title="">
+                  <img src="/imgs/wcfmc/user-flow-instant-3.png" title="">
+            </blockquote>
             </header>
-          </section>
         </div>
 
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h2>Usability tests with mechanics and drivers</h2>
-              <p>Once we had a working version to test the end to end flow, I approached several garages that had indicated that they would like to be involved in the process of developing a solution.</p>
-              <p><b>In person site visits:</b> I visited four garages and watched them use the system. Asked them questions and gathered feedback.</p>
-              <p><b>Remote sessions:</b> I carried out remote sessions with garages further away to gather feedback.</p>
-              <blockquote>
-                <p>Following the feedback we carried out a few small changes to the system. EG: Introduced text message notifications of bookings, validation with the onboarding flows.</p>
-              </blockquote>
+              <h3>Usability test</h3>
+              <p>This is the first point to gather some usability feedback on thoughts and perceptions of the branding and how this would work. I could not test the full flow at this point as emails and texts messages, updating tiles etc would take a lot of dev to test this was to gather as much as I could from static wireframe click throughs.</p>
+              <figure>
+                      <img src="/imgs/wcfmc/user-testing-instant2.png" title="">
+                      <figcaption>Remote usability testing with invision and wireframes.</figcaption>
+              </figure>
             </header>
-          </section>
         </div>
 
-        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
-          <section class="step">
-            <header>
-              <h2>Release</h2>
-              <p>A session with the product team was then held, to work out how we want to release the booking tech, how we are going to monitor, how we are going to gather data on the release.</p>
-              <p><b>Decisions:</b> Release nationwide as we have the onboarding to allow mechanics to authorise driver bookings. Run hot-jar, set up GA dashboard, Data team daily feedback reports.</p>
-              <p>Whilst the tech was in QA we decide to run a quick A/B test to change the main CTA on the comparison page. As we are introducing the new booking tech will changing the text have an adverse effect or a positive effect on conversion? We use googles <a href="https://optimize.google.com/" title="">https://optimize.google.com/</a> to run quick tests like this.</p>
-              <img src="/imgs/wcfmc/optimise.png" title="">
-              <blockquote>
-                <p>Next steps: Usability tests for driver side. Introduce availability into the main Job-post form. Add availability into the profile page for mechanics.</p>
-              </blockquote>
-            </header>
-          </section>
-        </div>
-
+        
 </main>
 
 
