@@ -5,15 +5,15 @@
     <meta name="viewport" content="initial-scale=1">
     <link rel="prefetch" href="/imgs/backgrounds/sky.jpg">
     <!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Implementing a design system language - Willforsyth</title>
-<meta property="og:title" content="Implementing a design system language" />
-<meta name="description" content="This is a test post of a post thats really nice and wonderful" />
-<meta property="og:description" content="This is a test post of a post thats really nice and wonderful" />
-<link rel="canonical" href="willforsyth.co.uk/ux/2020/03/01/design-system-language.html" />
-<meta property="og:url" content="willforsyth.co.uk/ux/2020/03/01/design-system-language.html" />
+<title>How to get results with A/B testing - Willforsyth</title>
+<meta property="og:title" content="How to get results with A/B testing" />
+<meta name="description" content="A/B testing is a powerful tool to use when you want to test different versions of a page or section safely. When you have KPI’s to hit and you can’t afford to have a dip in results whilst you test new elements it’s a very powerful method." />
+<meta property="og:description" content="A/B testing is a powerful tool to use when you want to test different versions of a page or section safely. When you have KPI’s to hit and you can’t afford to have a dip in results whilst you test new elements it’s a very powerful method." />
+<link rel="canonical" href="willforsyth.co.uk/ux/2020/03/20/a-b-testing-get-results.html" />
+<meta property="og:url" content="willforsyth.co.uk/ux/2020/03/20/a-b-testing-get-results.html" />
 <meta property="og:site_name" content="Willforsyth" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-01T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-03-20T00:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@willforsyth" />
 <meta name="twitter:creator" content="@Will Forsyth" />
@@ -21,20 +21,20 @@
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "Implementing a design system language",
-    "datePublished": "2020-03-01T00:00:00+00:00",
-    "description": "This is a test post of a post thats really nice and wonderful",
-    "url": "willforsyth.co.uk/ux/2020/03/01/design-system-language.html"
+    "headline": "How to get results with A/B testing",
+    "datePublished": "2020-03-20T00:00:00+00:00",
+    "description": "A/B testing is a powerful tool to use when you want to test different versions of a page or section safely. When you have KPI’s to hit and you can’t afford to have a dip in results whilst you test new elements it’s a very powerful method.",
+    "url": "willforsyth.co.uk/ux/2020/03/20/a-b-testing-get-results.html"
   }
 </script>
 <!-- End Jekyll SEO tag -->
-    <title>Implementing a design system language</title>
+    <title>How to get results with A/B testing</title>
     <link rel="stylesheet" media="all" href="/css/screen.css">
     <link data-require="leaflet@0.7.3" data-semver="0.7.3" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@willforsyth">
-    <meta name="twitter:title" content="Implementing a design system language">
-    <meta name="twitter:description" content="This is a test post of a post thats really nice and wonderful
+    <meta name="twitter:title" content="How to get results with A/B testing">
+    <meta name="twitter:description" content="A/B testing is a powerful tool to use when you want to test different versions of a page or section safely. When you have KPI’s to hit and you can’t afford to have a dip in results whilst you test new elements it's a very powerful method.
 ">
     <meta name="twitter:image" content="http://willforsyth.co.uk">
     <meta name="theme-color" content="#fbc680">
@@ -88,11 +88,60 @@
     <aside class="sidebar grid column column__12-of-12 column__4-of-12--small column__3-of-12--medium">
       <a class="back" href="/posts.html" title="back">Back</a>
     </aside>
-    <section class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__6-of-12--large">
+    <section class="column column__12-of-12 column__8-of-12--small column__9-of-12--medium column__7-of-12--large">
       <article class="post__main" role="main">
-        <h1 class="">Implementing a design system language</h1>
+        <h1 class="">How to get results with A/B testing</h1>
           <section class="post__content">
-              <h3>Coming soon</h3>
+              <p>A/B testing is a powerful tool to use when you want to test different versions of a page or section safely. When you have KPI’s to hit and you can’t afford to have a dip in results whilst you test new elements it’s a very powerful method. On any typical week I will have a round 10+ running on different sections of our main funnel at whocanfixmycar.com.</p>
+
+<blockquote>
+  <p>A/B testing is a powerful tool to use when you want to test different versions of a page or section safely.</p>
+</blockquote>
+
+<hr />
+
+<h3>How to decide what to test</h3>
+
+<p>This is the easy bit, I test everything that I go live with. This helps to keep releases smaller, makes you think about the impact and also makes releasing new things a lot safer and less stressful.</p>
+
+<blockquote>
+  <p>I am going to use one example throughout, this is what we call the “Comparison tile”.</p>
+</blockquote>
+
+<h4>Step one</h4>
+<p>Using feedback from drivers and the development of job specific funnels I made some additions to the comparison tile and introduced some new styles. This was the MOT funnel.</p>
+
+<p><img src="/imgs/wcfmc/comparison-tiles.png" title="" /></p>
+
+<h4>Step two</h4>
+<p>Decide to do a 50/50 split or a 30/80 split depending on the impact that bad results couple have on the full core funnel.</p>
+
+<h4>Step three</h4>
+<p>Lets do this, The developers to set up the tests or we use google’s optimizely.</p>
+
+<hr />
+
+<h3>How to monitor the test</h3>
+
+<p>I find the best way to monitor results is to have a live dashboard, which if you have a data team you can create. Or you can run the results every few days. It depends on the complexity of the test to decide on the best way to monitor.</p>
+
+<p>For example you may be working out the conversion on a form which may be easy to monitor with Google analytics funnel with users in the top and drop off. Or you may need to look in the database to find the actual conversion of a process (Purchase or choosing a job type.)</p>
+
+<p><img src="/imgs/wcfmc/results-board.jpg" title="" /></p>
+
+<hr />
+
+<h3>How to decide when to release</h3>
+
+<p>So it’s important to set targets to make sure you are improving on results. For example we have KPIs set for each of our funnels. To improve on these funnels we need to be constantly improving the flows and conversions. To decide on if you are going to release it or not, look for consistent improvements on conversion 2 weeks is ideal as i find sometimes results can look good or bad within the first few days and starts to level our over a longer period of time.</p>
+
+<blockquote>
+  <p>What if the results are tied? If its a draw, lets go for it.</p>
+</blockquote>
+
+<h4>What if its a draw</h4>
+
+<p>If it’s a draw I would normally extend the test or if I am feeling brave push it live as its not having a negative effect. This also means that the styles / layouts are consistent throughout the apps as opposed to some having the old and some the new.</p>
 
 <!--
 ![yakocat](willforsyth.co.uk/imgs/yaktocat.png) -->
