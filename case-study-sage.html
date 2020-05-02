@@ -221,6 +221,8 @@
                   </ul>
                 </li>
             </ul>
+            <blockquote><h3>Country specific users and funnels</h3>
+          “I am amking the assumption that each user from each country has the same user needs. (Could each contry have a different funnel with different user needs? Would each role have different user requirements?)"</blockquote>
           </section>
         </div>
 
@@ -234,7 +236,7 @@
             <blockquote>
               <h3>Create Affinity diagrams and host a workshop</h3>
               “Gather all research together into affinity diagrams and notice trends, include recruitment team in a workshop to review findings"</blockquote>
-              <h3>Card sort and rate importance of content</h3>
+                <blockquote><h3>Card sort and rate importance of content</h3>
               “List out all the features based on findings, rate and sort them."</blockquote>
               <h3>User stories</h3>
               <ul>
@@ -250,11 +252,21 @@
                 <li>As a candidate I want to see career progression.</li>
                 <li>As a candidate I want to see how many people have applied for the role.</li>
               </ul>
+              <hr>
+              <h3>Prioritisation matrix and MVPs</h3>
+              <p>There are a few different ways we could go with this project, there are also smaller quick wins (Content shuffle, text changes, input syles) and larger improvements that would involve larger dev
+                commitment (Sign up for updates, Save for later, account set ups etc) and without knowing how much dev resource timescales its hard to go into this in any more detail.</p>
+                <blockquote>
+                  <h3>Prioritisation matrix</h3>
+                    “This would be a good point to define quick wins, hotfixes and larger pieces based on dev time, UX impovement and design time"
+                </blockquote>
           </section>
+
+
           <section class="step">
             <header>
-              <h2>Design and prototype</h2>
-              <p>Now that I have a good understanding of the user needs and the problem statement I can then set out designing the flows, wireframes, interaction designs and prototypes, so we could test and iterate</p>
+              <h2>Design, prototype iterate</h2>
+              <p>Now that I have a good understanding of the user needs and the problem statement I can then set out designing the flows, wireframes, interaction designs and prototypes, so we could test and iterate.</p>
               <p>Keep our personas and problems in mind throughout the design process.</p>
             </header>
             <hr>
@@ -263,57 +275,79 @@
                 <img src="/imgs/case-study/sketch.jpg" title="">
             </section>
 
-          <section class="step">
-            <header>
-              <h3>Interaction flow</h3>
-              <p>Once decided on a process I started to plan out in more detail how the user will input data, complete the booking and move through the process.</p>
-              <blockquote>"I tried to stick to the core user journeys, time permitting I would investigate other journeys further."</blockquote>
-              <a href="/imgs/downloads/interactions.pdf" title="" download>Download high res interaction flow</a>
-            </header>
-          </section>
-        </div>
-        <img src="/imgs/flow.png" title="">
+            <section class="step">
+              <header>
+                <h3>User flow</h3>
+                <p>This is the basic user flow for this part of the users journey.</p>
+                <blockquote>"As this is only a snap shot of the fully journey i have tried to keep it as simple as possible."</blockquote>
+              </header>
+              <img src="/imgs/case-study/user-flow-apply-for-job.png" title="">
+            </section>
 
-        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
-          <section class="step">
-            <header>
-              <h3>Wireframes</h3>
-              <p>Next I looked at wireframing the different screen states. This shows the user flows in more detail including notes on how the interactions would work. Time permitting I would go into more detail with the labeling and documentation.</p>
-              <ul>Key features of new structure
-                <li>Tap bar to access elements of form.</li>
-                <li>Estimate cost for selected services.</li>
-              </ul>
-              <p>I then created a click through prototype using <a href="https://www.invisionapp.com/" title="">invision</a>. This iteration only takes in one flow, ideally I would expand this to make a full prototype to test.</p>
-              <blockquote>"If the garage has no way to show available times then the user could select any time and the garage would confirm the appointment."</blockquote>
-              <a href="/imgs/downloads/Wireframes.pdf" title="" download>Download high res wireframes</a>
-            </header>
-          </section>
-        </div>
-        <img src="/imgs/wireframes.png" title="">
-        <iframe width="438" height="930" src="//invis.io/ZCCX2S4BU" frameborder="0" allowfullscreen></iframe>
+            <section class="step">
+              <header>
+                <h3>Interaction flow</h3>
+                <p>Now that I have the basic flow planned out I move into planning out the states and page flows into more detail..</p>
+                <img src="/imgs/case-study/interaction-flow.png" title="">
+              </header>
+            </section>
+            <section class="step">
+              <header>
+                <h3>Wireframe flow</h3>
+                <p>This is the next stage building up some wireframes to understand the states and flows in more detail.</p>
+              </header>
+                <img src="/imgs/case-study/job-search-wireflow.png" title="">
+            </section>
+
+            <section class="step">
+              <header>
+                <h3>Wireframes</h3>
+                <p>After I am happy with how the flows will work and the different states of the pages I moved onto the more detailed wireframes.
+                  Showing the position of elements on the pages and allowing me to then create a click through prototype.
+                </p>
+                <ul>Changes to the navigation
+                  <li>Changeing the main navigation name to show the current page</li>
+                  <li>Breadcrumbs to allow you to move around</li>
+                  <li>Job search landing page is now the search inputs and results</li>
+                </ul>
+                <blockquote>"The Job search landing page is now the serch inputs and results page. Finding out about sage etc is now accesed through a more obvious menu."</blockquote>
+              </header>
+              <img src="/imgs/case-study/wireframes.png" title="">
+              <blockquote>"At this point I make a prototype in invison to make sure I am happy with the layout and flow. <a href="https://invis.io/29X4HMU7HC6" title="">Invsion click through</a>"</blockquote>
+              <iframe width="438" height="930" src="//invis.io/4XX4HMV3H9V" frameborder="0" allowfullscreen></iframe>
+              <blockquote>"Testing the wireframe at this point with real users would be adventagus if possible."</blockquote>
+            </section>
+
+            <section class="step">
+              <header>
+                <h3>UI design</h3>
+                <p>I would use compnents from the style-guide / pattern library to build up the designs for these sectiosn and its mainly changes based ont eh current designs.
+                  However the job details page is a new page. So I will create this based as closly as I can on the current styles.</p>
+              </header>
+                <iframe width="438" height="930" src="//invis.io/4XX4HMV3H9V" frameborder="0" allowfullscreen></iframe>
+            </section>
+          </div>
+
+
 
   <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
         <section class="step">
           <header>
-            <h3>Design</h3>
-            <p>I then added some design styles to the wireframes and started to build up the steps in a little more detail. I have changed some of the colours slightly to modernise the colour pallette. </p>
-            <p>I like to supply an example animation using <a href="http://principleformac.com/" title="">principle</a> to help demonstrate how the interactions could work. This makes the hand over easier to explain.</p>
-            <ul>Key features of new design
-              <li>Refresh of colour and styles used.</li>
-              <li>Introduction of illustrations.</li>
-            </ul>
-            <blockquote>“If you were looking for a brand refresh in the future you may want to have bespoke illustrations created depending on the direction of new brand styles.”</blockquote>
-            <img src="/imgs/wcfmc/design3.png" title="Screen showing three designs">
-            <img src="/imgs/wcfmc/All-designs.png" title="Home page design">
-            <img class="center-item" src="/imgs/animation2.gif" title="animation">
+            <h3>Release</h3>
+            <p>At this point I would split the task up with the product manager into several of smaller releases to monitor and
+              to gauge the increase in engagement based in improvment KPIs.</p>
           </header>
-              <h3>Next steps</h3>
               <ul>
-                <li>More research into the user goals and a problem statements to decide on  extra flows.</li>
-                <li>Validation and error handling.</li>
-                <li>Test <b>This week</b> and <b>Next week</b> do we need to add in more options?</li>
-                <li><b>A/B test</b> the order of the start of the form."</li>
-                <li>Usability tests.</li>
+                <li>Release per country and treat each one as a seperate funnel</li>
+                <li>Release this as a MVP with A/B of new and old on a country</li>
+                <li>Get reports from the data analyst team to montior results</li>
+                <li>Get further usability test ran (Remote)</li>
+              </ul>
+              <h3>Next steps:</h3>
+              <ul>
+                <li>As improvements are a sucess or failure release on the other funnels.</li>
+                <li>Work on V2 to experiment with featured jobs, featured quotes from employees on search page</li>
+                <li>Sign up for alerts</li>
               </ul>
           </section>
   </div>
