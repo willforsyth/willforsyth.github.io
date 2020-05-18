@@ -310,9 +310,7 @@ $('.back').on('click', function(){
 require('./components/particles');
 $('header').particles();
 
-
-
-console.log('testing')
+console.log('testing again')
 $('body').on('click', '[data-type="page-transition"]', function(event){
     event.preventDefault();
     //detect which page has been selected
@@ -338,6 +336,8 @@ function loadNewContent(url, bool){
   window.location.assign(url);
 }
 
+// $('a.gallery').colorbox();
+// $('a.gallery').colorbox({rel:'gal'});
 
 require('./components/map');
 $('header').map();
