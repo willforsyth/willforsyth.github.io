@@ -103,7 +103,7 @@
 
     <div class="column column__12-of-12 column__6-of-12--medium info--block--content intro post__content">
       <h1>AI and machine learning</h1>
-      <p>User findings showed us that drivers expect an instant price. Acceptance rates increase if a driver gets a price within the first minute, which increase revenue and met business goals..</p>
+      <p>Product design and data science worked seamlessly to meet user needs and hit KPIs. If a driver gets a price within the first minute they engage more, which increase revenue and increases KPIs.</p>
       <h4>My Role:<span> Lead Product Designer</span></h4>
       <h4>Team:<span> Data scientist, product manager, copy writer, marketing manager</span></h4>
       <!-- <ul>
@@ -129,14 +129,14 @@
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h2>Empathise</h2>
-              <p>Our users expect to see an instant accurate price, and we also have feedback from mechanics who would like to be able to quote quicker.</p>
+              <h2>Empathise with the users</h2>
+              <p>I start with empathising and researching into the user stories in more detail.</p>
               <blockquote>
-                <h3>Driver feedback</h3>
+                <h3>Driver comment</h3>
                 “What happens now? Do I need to wait on a quote?”
               </blockquote>
               <blockquote>
-                <h3>Garage feedback</h3>
+                <h3>Garage comment</h3>
                 “I don't have time to quote on the jobs”
               </blockquote>
             </header>
@@ -165,16 +165,20 @@
           </div>
 
           <div class="clearfix">
-              <h3>Garage Findings</h3>
-
-              <p><b>Feelings:</b> Concerned that we provide the wrong price, worried about bad experiences with drivers around pricing.</p>
+              <h3>The main feedback patterns</h3>
+              <blockquote>
+                <h4>Key comments from garages</h4>
+                “Concerned that the price is wrong, worried about bad experiences with drivers around pricing.”
+                <cite>Garage findings</cite>
+              </blockquote>
+              <!-- <p><b>Feelings:</b> Concerned that we provide the wrong price, worried about bad experiences with drivers around pricing.</p>
               <p><b>Thoughts:</b> looking forward to saving time with quoting but hoping their is not more customer management.</p>
               <p>The main concerns for the garages are around price and making sure these are accurate.</p>
                 <h3>Driver Findings</h3>
-              <p>Drivers expect the quotes to change when they get to the garage depending on whether more more is required, or parts prices etc.</p>
+              <p>Drivers expect the quotes to change when they get to the garage depending on whether more more is required, or parts prices etc.</p> -->
             <blockquote>
-              <h3>Key statement</h3>
-              “I dont expect the price to be final, i expect this to go up or down twhen they see the car”
+              <h4>Key comments from drivers</h4>
+              “I dont expect the price to be final, I expect this to go up or down when they see the car”
               <cite>Driver comment</cite>
             </blockquote>
           </div>
@@ -194,7 +198,7 @@
             <header>
               <h2>Define</h2>
               <p>I gathered all the results and held a session consisting of affinity diagram sessions to consolidate the results and define the start point.</p>
-              <ul>
+              <ul><h4>Some key patterns emerged</h4>
                 <li>Drivers expect prices to move, however we need to ensure they know its a quote</li>
               <li>Garages want accurate prices:<br>
                 <li>The AI has a tolerance of plus and minus 10% so we need to give the the power to manage and update prices.</li>
@@ -203,25 +207,37 @@
               <li>Garages need to update prices instantly and live.</li>
               <li>Garages need a management tool to view there prices and to update if they feel they need to. (They will have upwards of 300,000 potential quotes)</li>
             </ul>
+            </header>
 
-            <blockquote>
+            <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+              <div class="grey--bk">
+                <a class="gallery shadow" href="/imgs/wcfmc/user-flow.png">
+                  <img src="/imgs/wcfmc/user-flow-sm.png" title="">
+                </a>
+                <div class="column--case">
+                  <h3>Map out full user journey</h3>
+                  <p>Using our customer journey map, add in the instant pricing touch points for the garage and the drvier.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                <div class="grey--bk">
+                    <img src="/imgs/wcfmc/affinity-diagram.png" title="">
+                    <div class="column--case">
+                      <h3>Affinity diagrams</h3>
+                      <p>Group all the feedback and findings to notice larger pattersn and fuel conversation and planning within the team.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <blockquote class="clearfix">
               <h3>Problem statement</h3>
               <p>“Give drivers an instant and accurate quote, and allow garages to view and edit their quotes at any time.”</p>
             </blockquote>
 
 
-            <h3>User journey map</h3>
-              <a class="gallery smaller--img" href="/imgs/wcfmc/user-flow.png">
-              <img src="/imgs/wcfmc/user-flow.png" title="">
-            </a>
-            </header>
-            <h3>Defined MVP for the AI solution</h3>
-            <p>Myself, the product manager and the data scientist then decided on a MVP to go live with. This was based on when we could have the first cut of data, how quickly we could test a prototype and how much management we want to give to the drivers on the release.</p>
-            <ul>
-              <li>Onboarding for the mechanics</li>
-              <li>New quote tiles, tooltips, more info sections as well as email coms</li>
-              <li>Management tool that allows the mechanic to view all prices and update</li>
-            </ul>
           </section>
         </div>
 <hr>
@@ -229,11 +245,7 @@
           <section class="step">
             <header>
               <h2>Design / Ideate</h2>
-              <p>I then set out designing the flows, wireframes, interaction designs and prototypes, so we could test and iterate.</p>
-              <figure>
-                      <img src="/imgs/wcfmc/user-personnas-instant.png" title="">
-                      <figcaption>User personas to guide the design.</figcaption>
-              </figure>
+              <p>I then set out designing the flows, wireframes, interaction designs and prototypes, so we could test and iterate. Keeping our key user stories in mind.</p>
             </header>
           </section>
         </div>
@@ -241,43 +253,72 @@
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h3>Sketch and plan full end to end flow</h3>
+              <h3>Plan full end to end flow and wireframe</h3>
               <p>I always start out with sketches and rough flows and wireframes as I work out the possible routes. The flow touches the mechanics and driver in numerous places. So will need several flows ranging in detail and then several prototypes.</p>
-              <blockquote>
-                  <img src="/imgs/wcfmc/user-flow-instant-1.png" title="">
-                  <img src="/imgs/wcfmc/user-flow-instant-3.png" title="">
-            </blockquote>
+            </header>
+            <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+              <div class="grey--bk">
+                <a class="gallery shadow" href="/imgs/wcfmc/user-flow-instant-1.png">
+                  <img src="/imgs/wcfmc/user-flow-instant-1-sm.png" title="">
+                </a>
+                <div class="column--case">
+                  <h3>Map out user flow</h3>
+                  <p>I start with a simple user flow to start to map out touch points, interactions and get a feeling for the flows.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                <div class="grey--bk">
+                    <a class="gallery shadow" href="/imgs/wcfmc/user-flow-instant-3.png">
+                      <img src="/imgs/wcfmc/user-flow-instant-3-sm.png" title="">
+                    </a>
+                    <div class="column--case">
+                      <h3>Wireframes flow and wirefames</h3>
+                      <p>After I have the simple flow I build on this and more detailed wireframe flows, and prototypes with wireframes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
+          <section class="step">
+            <header>
+              <h3>Brain storm and feedback</h3>
+              <p>With all the user feedback, flows, wireframes and UI I arranged a brainstorming session to discuss findings and gather feedback from the team.</p>
+
+              <div class="grey--bk clearfix">
+                <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                    <img src="/imgs/wcfmc/brainstorm.png" title="">
+                </div>
+                <div class="content column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                  <h3>Feedback session</h3>
+                  <p>After gathering the feedback I arranged a brainstorming session to discuss findings with data science, product and stakeholders.</p>
+                </div>
+              </div>
             </header>
         </div>
 
         <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
           <section class="step">
             <header>
-              <h3>Brain storm session / affinity session</h3>
-              <p>After gathering the feedback I arranged a brainstorming session to discuss findings and sketch out changes.</p>
-              <figure>
-                      <img src="/imgs/wcfmc/brainstorm.png" title="">
-                      <figcaption>Stakeholder brainstorm and review.</figcaption>
-              </figure>
-            </header>
-            <h3>SmartQuote brand</h3>
-            <p>The quote generated by us needed to look different to the quote supplied by the garage. So we introduced a brand and we could then use tooltips and pop-ups to explain this to the driver.</p>
-            <img style="width: 25%" src="/imgs/wcfmc/Screenshot-2020-01-04.png" title="">
-        </div>
-
-        <div class="column column__center column__12-of-12 column__8-of-12--medium info--block--content post__content">
-          <section class="step">
-            <header>
-              <h3>Usability test SmartQuote brand</h3>
+              <h3>SmartQuote brand</h3>
+              <p>To differentiate quotes provided by us and quotes from garages we decided to introduce a brand called "Smartquotes"</p>
               <p>This is the first point to gather some usability feedback on thoughts and perceptions of the branding and how this would work. Static wireframe click throughs.</p>
-              <ul>
-                <li>Remote testing</li>
-                <li>Invision prototype</li>
-              </ul>
-              <figure>
-                      <img src="/imgs/wcfmc/user-testing-instant2.png" title="">
-                      <figcaption>Remote usability testing with invision and wireframes.</figcaption>
-              </figure>
+
+              <div class="grey--bk clearfix">
+                <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                    <img src="/imgs/wcfmc/user-testing-instant2.png" title="">
+                </div>
+                <div class="content column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                  <h3>Test the brand perception and if its noticed</h3>
+                  <ul>
+                    <li>Remote testing</li>
+                    <li>Invision prototype</li>
+                  </ul>
+                </div>
+              </div>
+
             </header>
           </section>
         </div>
@@ -288,10 +329,21 @@
             <header>
               <h3>Driver comparison page UI / interactions</h3>
               <p>Now that I have tested the wireframes and the brand, I then created the UI designs and created the prototype to then test and pass onto the devs.</p>
-              <figure>
-                      <img src="/imgs/wcfmc/ui-comparision-page.png" title="">
-                      <figcaption>Sketch Ui examples.</figcaption>
-              </figure>
+              <div class="grey--bk clearfix">
+                <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                  <a class="gallery shadow" href="/imgs/wcfmc/ui-comparision-page.png">
+                    <img src="/imgs/wcfmc/ui-comparision-page-sm.png" title="">
+                  </a>
+                </div>
+                <div class="content column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                  <h3>UI designs in sketch</h3>
+                  <ul>
+                    <li>Sketch</li>
+                    <li>Invision prototype</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
               <iframe width="438" height="930" src="//invis.io/T3SHQE8QSC7" frameborder="0" allowfullscreen></iframe>
             </header>
           </section>
@@ -303,10 +355,33 @@
               <h3>Garage SmartQuote management</h3>
               <p>The driver managment tool needs to be make it easy to access and update up to 300,000 prices.</p>
               <blockquote>
-                <img src="/imgs/wcfmc/wireframes-instant.png" title="">
-                <img src="/imgs/wcfmc/instant-management-ui.png" title="">
-                <img src="/imgs/wcfmc/interactions-instant.png" title="">
+                "How will a garage easily manage 300,000 prices"
               </blockquote>
+
+              <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                <div class="grey--bk">
+                  <a class="gallery shadow" href="/imgs/wcfmc/wireframes-instant.png">
+                    <img src="/imgs/wcfmc/wireframes-instant-sm.png" title="">
+                  </a>
+                  <div class="column--case">
+                    <h3>Management tool</h3>
+                    <p>The garages need to search, and manage all prices for each car and service type</p>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="column column__12-of-12 column__12-of-12--small column__6-of-12--medium">
+                  <div class="grey--bk">
+                      <a class="gallery shadow" href="/imgs/wcfmc/interactions-instant.png">
+                        <img src="/imgs/wcfmc/interactions-instant-sm.png" title="">
+                      </a>
+                      <div class="column--case">
+                        <h3>Interaction mapping</h3>
+                        <p>Working out the details of all interactions in the feature to provide as a deliverable to the devs.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
               <iframe width="442" height="935" src="//invis.io/G9UUWVISB62" frameborder="0" allowfullscreen></iframe>
             </header>
           </section>
@@ -316,10 +391,9 @@
           <section class="step">
             <header>
               <h3>On-boarding for new garages</h3>
-              <p>New garages that do not have any data for would not be able to have Smart Quotes. We base the quotes on their past quoting behaviour. So to get around this we would need to get them to quote on 24 pre defined car types, and job types to then use this date to cluster the results and allow us to create quotes on their behalf.</p>
-              <img src="/imgs/" title="">
-              <a href="https://invis.io/X2TTW1SF3BM">Prototype 1</a></br>
-                <a href="https://invis.io/YFU8CHE7R85">Prototype 1</a>
+              <p>New garages that do not have any data for would not be able to have Smart Quotes. We base the quotes on their past quoting behaviour. So to get around this we would need to get them to quote on 24 pre defined car types, and job types to then use this date to cluster the results and allow us to create quotes on their behalf. <a href="https://invis.io/X2TTW1SF3BM">Prototype 1</a> <a href="https://invis.io/YFU8CHE7R85">Prototype 1</a></p>
+              <img src="/imgs/case-study/on-boarding-estimates.png" title="">
+
             </header>
           </section>
         </div>
@@ -329,10 +403,11 @@
             <header>
               <h3>Problems to over come</h3>
               <p>Live updating of prices when a mechanic confirms a price. So i set about creating prototypes and animations to support the devs.</p>
+
               <blockquote>
                 "What if a driver accepts a quote that's wrong? We need to be able to update and monitor quotes"
               </blockquote>
-              <img src="/imgs/case-study/on-boarding-estimates.png" title="">
+
               <p>Here are the prototypes and UI i provided to supprt the dev.</p>
               <figure>
                       <img src="/imgs/wcfmc/notifications-for-drivers.png" title="">
@@ -364,6 +439,14 @@
               <h2>Releases</h2>
               <p>A session with the product team was then held, to work out how we want to release, how we are going to monitor and how we are going to gather data on the release.</p>
             </header>
+
+            <!-- <h3>Defined MVP for the AI solution</h3>
+            <p>Myself, the product manager and the data scientist then decided on a MVP to go live with. This was based on when we could have the first cut of data, how quickly we could test a prototype and how much management we want to give to the drivers on the release.</p>
+            <ul>
+              <li>Onboarding for the mechanics</li>
+              <li>New quote tiles, tooltips, more info sections as well as email coms</li>
+              <li>Management tool that allows the mechanic to view all prices and update</li>
+            </ul> -->
             <h3>Decisions</h3>
             <p>
               <ul>
